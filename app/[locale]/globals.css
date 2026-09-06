@@ -67,17 +67,35 @@
 }
 
 :root {
-  /* warm neutral palette — luxury interior tones */
-  --warmwhite: oklch(0.985 0.004 75);
-  --beige: oklch(0.94 0.014 75);
-  --stone: oklch(0.87 0.014 65);
-  --sand: oklch(0.8 0.024 70);
-  --charcoal: oklch(0.28 0.006 60);
-  --walnut: oklch(0.34 0.045 45);
-  --matte-black: oklch(0.16 0.004 60);
-  --olive: oklch(0.5 0.05 120);
-  --terracotta: oklch(0.6 0.09 40);
-  --bronze: oklch(0.52 0.045 60);
+  /* 米白與深棕 —— the whole brand, ten values.
+     Everything below this block points at these rather than holding a colour
+     of its own, so this is the only place a colour is decided.
+
+     The names are roles, not descriptions: `warmwhite` is the paper the site
+     is printed on and `charcoal` is the ink, which here are a rice white and
+     a deep brown rather than the near-neutrals those two words suggest. They
+     are kept because forty-one components say `text-charcoal` meaning "the
+     ink", and renaming a role to match one brand's palette only moves the
+     problem to the next one.
+
+     Written in oklch so lightness is perceptual: two colours a step apart in
+     L look a step apart, which they do not in hex. Anything that cannot read
+     a CSS variable — the preloader's canvas, the share card, the logo cutter
+     — carries the same values as hex, and `docs/rebrand.md` lists where. */
+  --warmwhite: oklch(0.97 0.016 88);
+  --beige: oklch(0.93 0.024 84);
+  --stone: oklch(0.86 0.03 78);
+  --sand: oklch(0.78 0.042 72);
+  --charcoal: oklch(0.285 0.045 54);
+  --walnut: oklch(0.4 0.06 48);
+  --matte-black: oklch(0.165 0.02 55);
+  --olive: oklch(0.5 0.05 115);
+  /* Lifted off its old lightness on purpose: this is the only accent the site
+     sets running text in — a product code, and the contact form's error — and
+     where it was it read at 3.9:1 on the paper, under the 4.5:1 a person with
+     low vision needs. It is 4.7:1 now, and still terracotta. */
+  --terracotta: oklch(0.55 0.105 42);
+  --bronze: oklch(0.52 0.055 62);
 
   --background: var(--warmwhite);
   --foreground: var(--charcoal);
@@ -90,12 +108,12 @@
   --secondary: var(--beige);
   --secondary-foreground: var(--charcoal);
   --muted: var(--beige);
-  --muted-foreground: oklch(0.48 0.012 60);
+  --muted-foreground: oklch(0.475 0.032 55);
   --accent: var(--sand);
   --accent-foreground: var(--charcoal);
   --destructive: oklch(0.55 0.18 27);
-  --border: oklch(0.88 0.012 65);
-  --input: oklch(0.88 0.012 65);
+  --border: oklch(0.865 0.024 80);
+  --input: oklch(0.865 0.024 80);
   --ring: var(--walnut);
   --chart-1: var(--walnut);
   --chart-2: var(--olive);
@@ -109,24 +127,24 @@
   --sidebar-primary-foreground: var(--warmwhite);
   --sidebar-accent: var(--beige);
   --sidebar-accent-foreground: var(--charcoal);
-  --sidebar-border: oklch(0.88 0.012 65);
+  --sidebar-border: oklch(0.865 0.024 80);
   --sidebar-ring: var(--walnut);
 }
 
 .dark {
   --background: var(--matte-black);
   --foreground: var(--warmwhite);
-  --card: oklch(0.2 0.006 60);
+  --card: oklch(0.21 0.022 52);
   --card-foreground: var(--warmwhite);
-  --popover: oklch(0.2 0.006 60);
+  --popover: oklch(0.21 0.022 52);
   --popover-foreground: var(--warmwhite);
   --primary: var(--warmwhite);
   --primary-foreground: var(--matte-black);
-  --secondary: oklch(0.24 0.008 60);
+  --secondary: oklch(0.25 0.024 52);
   --secondary-foreground: var(--warmwhite);
-  --muted: oklch(0.24 0.008 60);
-  --muted-foreground: oklch(0.68 0.012 65);
-  --accent: oklch(0.28 0.02 55);
+  --muted: oklch(0.25 0.024 52);
+  --muted-foreground: oklch(0.7 0.026 70);
+  --accent: oklch(0.29 0.032 50);
   --accent-foreground: var(--warmwhite);
   --destructive: oklch(0.62 0.19 27);
   --border: oklch(1 0 0 / 10%);
@@ -137,11 +155,11 @@
   --chart-3: var(--terracotta);
   --chart-4: var(--bronze);
   --chart-5: var(--stone);
-  --sidebar: oklch(0.2 0.006 60);
+  --sidebar: oklch(0.21 0.022 52);
   --sidebar-foreground: var(--warmwhite);
   --sidebar-primary: var(--warmwhite);
   --sidebar-primary-foreground: var(--matte-black);
-  --sidebar-accent: oklch(0.26 0.01 60);
+  --sidebar-accent: oklch(0.27 0.026 52);
   --sidebar-accent-foreground: var(--warmwhite);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: var(--sand);

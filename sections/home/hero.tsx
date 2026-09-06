@@ -263,7 +263,7 @@ export function Hero() {
   //
   // Fonts load with `swap`, so the first paint uses a fallback whose Chinese
   // characters are proportioned differently — and this strip magnifies height
-  // sixteen times, so what is normally an unnoticed reflow became 萬角 visibly
+  // sixteen times, so what is normally an unnoticed reflow became 漫家居 visibly
   // jumping from small to large as the webfont arrived. Everything else on the
   // page is at its own size and swaps without drawing attention, so only this
   // one strip holds back; it is decoration and `aria-hidden`, so nothing is
@@ -344,41 +344,44 @@ export function Hero() {
                 {/* `scale-x-125` paints this span 25% wider than its own layout
                     box — CSS `scale` doesn't reserve extra room for the
                     overflow the way layout-affecting properties would. With
-                    zero gap elsewhere, that overflow drew "MAANGOK" straight
-                    through the characters on both sides (角/M within a
-                    repeat, K/萬 across the seam). `mx-[0.65em]` is the
+                    zero gap elsewhere, that overflow drew the Latin run straight
+                    through the characters on both sides (居/M within a
+                    repeat, N/漫 across the seam). `mx-[0.65em]` is the
                     measured amount of self-overlap this exact scale creates
                     on each edge — closes it to ~0px without reopening a
                     visible gap. */}
                 {/* The scale and offset here are not taste calls. Chinese
                     ideographs fill far more of the em than Latin capitals do —
-                    measured in this face, 萬角 inks 96 units where MAANGOK inks
-                    74, so the Latin sat 30% short and the old `scale-y-90`
-                    shortened it further. Stretched sixteen times over, that
-                    read as the two scripts having nothing to do with each
-                    other.
+                    measured in these two faces, 漫家居 inks 0.978em where MAAN
+                    inks 0.725em, so the Latin sits a quarter short. Stretched
+                    sixteen times over, that reads as the two scripts having
+                    nothing to do with each other.
 
                     Both numbers were solved against rendered pixels rather
                     than font metrics, and they have to be solved together: a
                     scale alone cannot land it, because the transform grows the
                     box about its centre while the mismatch is measured from
                     the baseline, so matching the heights leaves the run
-                    sitting low. At these two values the ink boxes of the two
-                    scripts agree to within a pixel at 250px type. Re-derive
-                    them the same way if the face ever changes — they are
-                    specific to Inter against Noto Sans TC.
+                    sitting low. At these two values the two ink boxes land on
+                    the same pixel, top and bottom, at 400px type. Re-derive
+                    them the same way if either the name or the face changes —
+                    they are specific to 漫家居 in Noto Sans TC against MAAN in
+                    Inter, and the first brand's pair wanted different numbers.
 
-                    `GO` carries its own correction because round letters are
-                    drawn to overshoot the baseline — a real convention, so
-                    they read as the same size as flat ones — which stops being
-                    invisible when the line is stretched this far. 0.992 takes
-                    the overshoot back out so the band's bottom edge is
-                    straight. Which letters are round is a property of the name
-                    rather than of this component, so it is spelled out in
-                    `brand.wordmarkRuns`; in MAANGOK the round pair happens to
-                    be adjacent, so it costs one span. */}
+                    The margin is the third measured value and belongs to the
+                    string, not to the type: `scale-x-125` paints the run 25%
+                    wider than its own layout box without reserving the room,
+                    so each edge overflows by an eighth of the box — 0.39em for
+                    a wordmark this wide. Without it the Latin was drawn
+                    straight through the characters on both sides.
+
+                    Round letters — drawn to overshoot the baseline so they
+                    read as the same size as flat ones — would need that
+                    overshoot taken back out at this stretch, which is what
+                    `brand.wordmarkRuns` marks. MAAN has no curve in it, so
+                    there is one run here and nothing to correct. */}
                 {brand.zh}
-                <span className="mx-[0.65em] inline-block -translate-y-[0.008em] scale-x-125 scale-y-[1.272] tracking-[-0.05em]">
+                <span className="mx-[0.39em] inline-block -translate-y-[0.0135em] scale-x-125 scale-y-[1.354] tracking-[-0.05em]">
                   {brand.wordmarkRuns.map((run) =>
                     run.round ? (
                       <span key={run.text} className="inline-block origin-top scale-y-[0.992]">

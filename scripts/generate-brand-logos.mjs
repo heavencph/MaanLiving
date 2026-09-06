@@ -20,6 +20,8 @@
  *
  *   npm i --no-save playwright fontkit wawoff2 && npx playwright install chromium
  *
+ * (or set CHROMIUM_PATH to a browser that is already on the machine)
+ *
  * Then, against a build of the site (`npm run build && npx next start -p 3100`):
  *
  *   node scripts/generate-brand-logos.mjs
@@ -40,8 +42,8 @@ const ROOT = new URL("..", import.meta.url).pathname;
 const MEDIA = join(ROOT, ".next/static/media");
 const OUT = join(ROOT, "public/brand");
 const SITE = process.env.SITE ?? "http://localhost:3100";
-const INK = "#2a2724";
-const LIGHT = "#fcfaf7";
+const INK = "#3b2414";
+const LIGHT = "#faf5e9";
 
 /**
  * Which file carries which character, found by opening every chunk and asking
@@ -120,7 +122,11 @@ const VARIANTS = {
   wordmark: `<span style="font-size:160px;font-weight:840;letter-spacing:-0.01em;line-height:1">${chars(brand.wordmark)}</span>`,
 };
 
-const browser = await chromium.launch();
+// CHROMIUM_PATH points at an already-installed browser, for a machine where
+// `npx playwright install` cannot reach the download host.
+const browser = await chromium.launch(
+  process.env.CHROMIUM_PATH ? { executablePath: process.env.CHROMIUM_PATH } : {}
+);
 const context = await browser.newContext({
   viewport: { width: 2400, height: 900 },
   deviceScaleFactor: 4,

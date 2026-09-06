@@ -20,11 +20,13 @@ const inter = Inter({
   display: "swap",
 });
 
-// Source Han Sans, 思源黑體 — the Traditional cut, matching the site's own
-// copy. The two cuts draw shared characters to different regional standards,
-// and 角 is one of them: Traditional carries its middle stroke down through
-// the base, Simplified stops it at the line. The brand name is 萬角, so the
-// wrong cut misdraws the wordmark.
+// Source Han Sans, 思源黑體 — the Traditional cut, matching the `zh-Hant` the
+// document declares and the copy it is set in. The two cuts draw shared
+// characters to different regional standards, so the wrong one does not fail
+// loudly: it quietly misspells a fraction of every Chinese sentence on the
+// site to a reader who can tell. 漫家居 happens to be drawn the same either
+// way, so the brand name is not what settles this — the other few thousand
+// characters are.
 //
 // The weight list is deliberately short of the hero's: it sets its wordmark
 // at 840 and its headline at 700, neither of which is loaded, and the

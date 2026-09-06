@@ -88,14 +88,14 @@ const WORDMARK = brand.wordmark;
 // reads on. Written as hex because canvas cannot resolve a CSS variable.
 const THEME = {
   portal: {
-    curtain: "#0f0d0c",
-    ink: "#fcfaf7",
+    curtain: "#150c06",
+    ink: "#faf5e9",
     chrome: "text-warmwhite/55",
     rule: "bg-warmwhite/25",
   },
   plain: {
-    curtain: "#fcfaf7",
-    ink: "#2a2724",
+    curtain: "#faf5e9",
+    ink: "#3b2414",
     chrome: "text-muted-foreground",
     rule: "bg-charcoal/20",
   },
@@ -203,7 +203,7 @@ function distanceToEdge(alpha: Uint8ClampedArray, w: number, h: number): Float32
  * directions — was tried and is wrong in exactly the way that matters here.
  * Inside a diagonal stroke every one of those rays runs along the stroke
  * rather than across it, so a 2px-thick diagonal measures 10px thick, and
- * MAANGOK is mostly diagonals. That left the curtain with a wedge of itself
+ * MAAN is mostly diagonals. That left the curtain with a wedge of itself
  * still standing when the loader was cut. A distance transform measures the
  * thin axis regardless of its angle.
  *
@@ -291,7 +291,7 @@ function measurePortal(width: number, height: number): Portal | null {
 }
 
 /**
- * MAANGOK resolving out of the same liquid the rest of the site uses, then
+ * the wordmark resolving out of the same liquid the rest of the site uses, then
  * opening into the page: once on arrival, and again over each page moved to.
  *
  * The wordmark is knocked out of the curtain rather than painted on it, so the
@@ -673,7 +673,7 @@ export function Preloader() {
             <span
               className={`text-[0.65rem] uppercase tracking-[0.3em] ${theme.chrome}`}
             >
-              Maan Gok
+              {brand.latin}
             </span>
             {/* Tabular figures so the count does not jitter its own width as
                 it climbs past each digit. */}

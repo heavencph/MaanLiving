@@ -1,44 +1,44 @@
 {
   "meta": {
-    "siteTitleDefault": "MAAN GOK | Contemporary Luxury Furniture",
-    "siteTitleTemplate": "%s | MAAN GOK",
-    "siteDescription": "MAAN GOK is a contemporary luxury furniture brand blending Nordic craftsmanship with an Australian sense of everyday living — pure lines, warm materials, and considered craft made to last.",
+    "siteTitleDefault": "MAAN | Contemporary Luxury Furniture",
+    "siteTitleTemplate": "%s | MAAN",
+    "siteDescription": "MAAN is a contemporary luxury furniture brand blending Nordic craftsmanship with an Australian sense of everyday living — pure lines, warm materials, and considered craft made to last.",
     "keywords": [
       "luxury furniture",
       "designer furniture",
       "custom furniture",
       "Nordic furniture",
       "modern minimalist furniture",
-      "MAAN GOK"
+      "MAAN"
     ],
-    "ogDescription": "Pure, warm, made to last — contemporary luxury furniture brand MAAN GOK.",
+    "ogDescription": "Pure, warm, made to last — contemporary luxury furniture brand MAAN.",
     "home": {
-      "title": "MAAN GOK | Contemporary Luxury Furniture",
-      "description": "MAAN GOK is a contemporary luxury furniture brand blending Nordic craftsmanship with an Australian sense of everyday living — pure lines, warm materials, and considered craft made to last."
+      "title": "MAAN | Contemporary Luxury Furniture",
+      "description": "MAAN is a contemporary luxury furniture brand blending Nordic craftsmanship with an Australian sense of everyday living — pure lines, warm materials, and considered craft made to last."
     },
     "products": {
       "title": "Collection",
-      "description": "Browse the complete MAAN GOK range: sofas, armchairs, dining tables and chairs, bed frames and storage."
+      "description": "Browse the complete MAAN range: sofas, armchairs, dining tables and chairs, bed frames and storage."
     },
     "about": {
       "title": "About Us",
-      "description": "The MAAN GOK story — a contemporary luxury furniture brand blending Nordic craftsmanship with an Australian sense of everyday living."
+      "description": "The MAAN story — a contemporary luxury furniture brand blending Nordic craftsmanship with an Australian sense of everyday living."
     },
     "projects": {
       "title": "Projects & Inspiration",
-      "description": "Step into real homes and commercial spaces furnished with MAAN GOK — see how design settles into everyday life."
+      "description": "Step into real homes and commercial spaces furnished with MAAN — see how design settles into everyday life."
     },
     "journal": {
       "title": "Journal",
-      "description": "The MAAN GOK Journal: long-form reading on craft, material, designer interviews, and ideas for living."
+      "description": "The MAAN Journal: long-form reading on craft, material, designer interviews, and ideas for living."
     },
     "explore": {
       "title": "Explore",
-      "description": "A first look at MAAN GOK's latest designs, still being refined, ahead of joining the collection."
+      "description": "A first look at MAAN's latest designs, still being refined, ahead of joining the collection."
     },
     "contact": {
       "title": "Contact",
-      "description": "Book a visit to the MAAN GOK showroom, or reach our advisory team to begin your custom furniture journey."
+      "description": "Book a visit to the MAAN showroom, or reach our advisory team to begin your custom furniture journey."
     }
   },
   "nav": {
@@ -79,7 +79,7 @@
     "linkBookConsultation": "Book a Consultation",
     "linkCustomService": "Custom Orders",
     "linkCareWarranty": "Care & Warranty",
-    "copyright": "© {year} MAAN GOK. All rights reserved.",
+    "copyright": "© {year} MAAN. All rights reserved.",
     "privacy": "Privacy Policy"
   },
   "home": {
@@ -108,25 +108,25 @@
       "eyebrow": "Design Philosophy",
       "title1": "We believe true luxury",
       "title2": "is honest material and well-placed restraint",
-      "description": "Every MAAN GOK piece refuses excess ornament. We let the natural character of grain, leather and fabric speak, and rely on precise proportion and structure to build interiors that only grow more timeless.",
+      "description": "Every MAAN piece refuses excess ornament. We let the natural character of grain, leather and fabric speak, and rely on precise proportion and structure to build interiors that only grow more timeless.",
       "cta": "Read our full philosophy →",
       "imageAlt": "Craft detail"
     },
     "projects": {
       "eyebrow": "Projects",
-      "title": "Homes Furnished by MAAN GOK",
-      "description": "From mountain retreats to sea-view apartments, see how designers and homeowners bring MAAN GOK pieces into real, lived-in spaces.",
+      "title": "Homes Furnished by MAAN",
+      "description": "From mountain retreats to sea-view apartments, see how designers and homeowners bring MAAN pieces into real, lived-in spaces.",
       "viewAll": "Browse all projects →"
     },
     "instagram": {
       "eyebrow": "@_hvn.c",
-      "title": "Everyday Moments with MAAN GOK",
-      "imageAlt": "MAAN GOK lifestyle photography"
+      "title": "Everyday Moments with MAAN",
+      "imageAlt": "MAAN lifestyle photography"
     }
   },
   "newsletter": {
     "eyebrow": "Subscribe",
-    "title": "Be Among the First to Read MAAN GOK",
+    "title": "Be Among the First to Read MAAN",
     "description": "Subscribe for early access to new releases, limited pieces, and design stories — no more than one email a month.",
     "placeholder": "Enter your email address",
     "button": "Subscribe",
@@ -171,7 +171,7 @@
     "eyebrow": "Collection",
     "description": "The complete {category} collection — every piece open to look at closely, from material to proportion.",
     "metaTitle": "{category}",
-    "metaDescription": "Browse the MAAN GOK {category} collection: solid timber, considered proportion, and finishes made to last."
+    "metaDescription": "Browse the MAAN {category} collection: solid timber, considered proportion, and finishes made to last."
   },
   "about": {
     "eyebrow": "About Us",
@@ -180,13 +180,13 @@
     "storyEyebrow": "Our Story",
     "storyTitle1": "From two city studios",
     "storyTitle2": "to one complete furniture system",
-    "storyP1": "MAAN GOK was founded on a belief in 'slow furniture' — in an age of fast consumption, we chose to spend longer refining every piece, so furniture becomes a companion for decades rather than a seasonal purchase.",
-    "storyP2": "The brand name '萬角' (MAAN GOK) comes from the image 'a house has ten thousand corners, and light lives in every one' — a home is made of countless corners, edges and details, and we believe only by weighing proportion and material from a thousand angles can every corner be treated with care. We fuse Nordic minimalist craft tradition with the relaxed aesthetic of Australian coastal living, developing a furniture language for the contemporary Asian home.",
-    "storyP3": "Today, MAAN GOK continues to collaborate with designers from Denmark, France and Japan, while developing a new generation of sustainable materials together with local Taiwanese workshops — hoping to redefine 'made to last' as a way of living anyone can practise.",
+    "storyP1": "MAAN was founded on a belief in 'slow furniture' — in an age of fast consumption, we chose to spend longer refining every piece, so furniture becomes a companion for decades rather than a seasonal purchase.",
+    "storyP2": "The brand name '漫家居' (MAAN) comes from the image 'a house has ten thousand corners, and light lives in every one' — a home is made of countless corners, edges and details, and we believe only by weighing proportion and material from a thousand angles can every corner be treated with care. We fuse Nordic minimalist craft tradition with the relaxed aesthetic of Australian coastal living, developing a furniture language for the contemporary Asian home.",
+    "storyP3": "Today, MAAN continues to collaborate with designers from Denmark, France and Japan, while developing a new generation of sustainable materials together with local Taiwanese workshops — hoping to redefine 'made to last' as a way of living anyone can practise.",
     "philosophyEyebrow": "Design Philosophy",
     "philosophyTitle1": "We don't design furniture —",
     "philosophyTitle2": "we design the everyday, treated gently by time",
-    "philosophyIntro": "At MAAN GOK, design is a series of trade-offs — form against function, character against restraint, the trend of the moment against staying power over years. Here are the three principles behind every decision we make.",
+    "philosophyIntro": "At MAAN, design is a series of trade-offs — form against function, character against restraint, the trend of the moment against staying power over years. Here are the three principles behind every decision we make.",
     "principles": [
       {
         "title": "Material Before Form",
@@ -194,7 +194,7 @@
       },
       {
         "title": "Proportion Is the Invisible Ornament",
-        "body": "With no elaborate carving or excess line, MAAN GOK adjusts proportion down to the millimetre so every piece sits exactly right in a room — which we consider the highest form of decoration."
+        "body": "With no elaborate carving or excess line, MAAN adjusts proportion down to the millimetre so every piece sits exactly right in a room — which we consider the highest form of decoration."
       },
       {
         "title": "Designed for Use, Not for Display",
@@ -203,7 +203,7 @@
     ],
     "quoteLine1": "\"The end goal of design is not to be seen,",
     "quoteLine2": "but to be forgotten by the person using it — because it has already become part of life.\"",
-    "quoteAttribution": "MAAN GOK Design Team",
+    "quoteAttribution": "MAAN Design Team",
     "milestonesEyebrow": "Milestones",
     "milestonesTitle": "Our Story So Far",
     "milestones": [
@@ -213,7 +213,7 @@
       },
       {
         "year": "2017",
-        "text": "MAAN GOK's first studio opens in Taipei, beginning long-term partnerships with European workshops."
+        "text": "MAAN's first studio opens in Taipei, beginning long-term partnerships with European workshops."
       },
       {
         "year": "2020",
@@ -248,7 +248,7 @@
         "text": "Sustainably certified materials come first, alongside support for local workshop craft."
       }
     ],
-    "studioAlt": "Inside a MAAN GOK studio"
+    "studioAlt": "Inside a MAAN studio"
   },
   "explore": {
     "title": "A First Look",
@@ -276,7 +276,7 @@
   "journalPage": {
     "eyebrow": "Journal",
     "title": "Journal",
-    "description": "Long-form reading on craft, material and ways of living — a record of how MAAN GOK thinks about the idea of home.",
+    "description": "Long-form reading on craft, material and ways of living — a record of how MAAN thinks about the idea of home.",
     "readMore": "Read the full story →",
     "furtherReading": "Further Reading",
     "writtenBy": "Written by — {author}"
@@ -297,7 +297,7 @@
       },
       {
         "q": "Do your products come with a warranty?",
-        "a": "All MAAN GOK furniture carries a five-year structural warranty, with separate care guidance and warranty terms for fabric and leather."
+        "a": "All MAAN furniture carries a five-year structural warranty, with separate care guidance and warranty terms for fabric and leather."
       },
       {
         "q": "Can I order fabric or timber-finish samples on their own?",
@@ -346,7 +346,7 @@
   "privacy": {
     "title": "Privacy Policy",
     "updated": "Last updated: August 2026",
-    "intro": "MAAN GOK respects your privacy. This policy explains what personal data we collect through this website, how we use and store it, and the rights you may exercise.",
+    "intro": "MAAN respects your privacy. This policy explains what personal data we collect through this website, how we use and store it, and the rights you may exercise.",
     "sections": [
       {
         "heading": "What we collect",

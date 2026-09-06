@@ -1,28 +1,20 @@
-> ## ⚠️ 這是一份尚未改名的複本
+> ## ⚠️ 產品與文案仍是複本
 >
-> 這個 repo 是從 **萬角 MAAN GOK**（`heavencph/MannGok`）複製過來的，版面、
-> 動畫與功能都完整可用，但**名字、顏色、產品都還是舊品牌的**。
+> 這個站是從 **萬角 MAAN GOK**（`heavencph/MannGok`）複製過來的。名字、顏色、
+> 標誌、分頁圖示都已經換成漫家居，但**產品資料、照片與品牌故事還是舊品牌的**：
+> `lib/data/*.json`、`public/images/`、`messages/{zh,en}.json` 裡的敘述只換了
+> 名字，沒換內容，兩個站現在講著同一個故事、賣著同一批家具。上線前要換掉。
 >
-> 改成新品牌的完整步驟見 **[`docs/rebrand.md`](docs/rebrand.md)**。目前的進度：
+> 還沒做的：
 >
-> - [x] 開新 repo
-> - [x] Vercel 匯入
-> - [x] `public/admin/config.yml` 的 `repo:` 已指向這個 repo
-> - [x] 網域 `maanliving.com`，已綁到 Vercel 並可連線
-> - [x] `base_url:` 已填入 `https://maanliving.com`
-> - [ ] 新的 GitHub OAuth App
-> - [ ] 新的 Google 試算表 + Apps Script
-> - [ ] Vercel 環境變數
-> - [ ] `lib/brand.ts` 換名字
-> - [ ] `app/[locale]/globals.css` 換顏色
-> - [ ] `messages/{zh,en}.json` 換文案
-> - [ ] `lib/data/*.json` 與 `public/images/` 換產品
-> - [ ] 重跑 `scripts/generate-brand-logos.mjs` 產出新標誌
-> - [ ] `app/icon.png`、`apple-icon.png`、`favicon.ico`
+> - [ ] 產品資料與照片（`lib/data/*.json`、`public/images/products/`）
+> - [ ] 品牌故事與 SEO 描述（`messages/{zh,en}.json`）
+> - [ ] `lib/brand.ts` 的 Instagram 連結仍指向前一個品牌的帳號
+> - [ ] 探索頁的兩個 3D 模型（`public/models/`）
 >
-> 下面的內容仍是舊品牌的說明，改名時一併重寫。
+> 換品牌的完整步驟見 [`docs/rebrand.md`](docs/rebrand.md)。
 
-# 萬角 MAAN GOK
+# 漫家居 MAAN
 
 當代高端家具品牌網站——以 Next.js App Router、TypeScript、Tailwind CSS 與 Framer Motion 打造，靈感取自 Jardan、Minotti、B&B Italia、Living Divani、Muuto 等國際高端家具品牌的質感，但為完全原創設計。
 
@@ -48,7 +40,7 @@ npm run lint    # ESLint 檢查
 | push 到 `main` | 自動建置並發佈到正式環境 |
 | 開 PR | 產生獨立的 preview 網址，合併前可先預覽 |
 
-正式網址是 **<https://maangok.com>**，網域在 Cloudflare、DNS 指向 Vercel（`cname-china.vercel-dns.com`，這組對中國大陸的連線相對友善；Cloudflare 那邊維持 DNS only，不要開橘雲代理）。自訂網域在 Vercel 的 Settings → Domains 設定。
+正式網址是 **<https://maanliving.com>**，自訂網域在 Vercel 的 Settings → Domains 設定。
 
 Vercel 提供的 `<專案名稱>.vercel.app` 仍然可用，作為備援。**那個網址由 Vercel 後台的專案名稱決定，改名後會跟著變**，而不是由此處的 `package.json` 決定。
 
@@ -96,7 +88,7 @@ npm 11 以現有 lock 檔解得開；npm 10 則要求額外安裝 `@swc/helpers@
 ## 專案結構
 
 ```
-app/                路由（App Router）：首頁、產品、產品詳情、關於我們、設計哲學、案例故事、期刊、聯繫我們
+app/                路由（App Router）：首頁、探索、產品、產品詳情、分類、關於我們、案例故事、期刊、聯繫我們
 components/         可重用元件（layout / product / shared / motion / ui）
 sections/           頁面專屬的組合區塊（首頁各段落、產品列表、聯絡表單…）
 lib/                資料存取層與工具函式（lib/data.ts、lib/data/*.json）
@@ -128,6 +120,6 @@ types/              TypeScript 型別定義（Product、JournalPost、Project…
 | `frankie.webp` | `image/jpeg` | `[0,0,0,255]` ← 黑色方塊 |
 | `frankie.png` | `image/png` | `[0,0,0,0]` ← 正常透明 |
 
-PNG 是普遍可接受的格式，因此能安全降級；WebP 不是。在米白色的 hero 背景上，這個差別就是一塊突兀的黑方塊。
+PNG 是普遍可接受的格式，因此能安全降級；WebP 不是。在米白的 hero 背景上，這個差別就是一塊突兀的黑方塊。
 
 要縮減透明 PNG 的體積，**維持 PNG 格式、改縮尺寸**即可。以 `frankie.png` 為例，1024×1024 縮到 768×768 讓檔案從 1396 KB 降到 316 KB，而 768px 仍涵蓋真實裝置會請求的最寬變體。改動後請驗證：`Accept` 不含 webp 時輸出仍為 `image/png`、四角 alpha 為 0，並將新舊圖合成到頁面背景色上比對差異。

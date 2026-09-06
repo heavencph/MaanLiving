@@ -61,10 +61,10 @@ git push -u origin main
 
 ```ts
 export const brand = {
-  slug: "maangok",        // 檔名用，小寫無空格
-  zh: "萬角",              // 中文名
-  latin: "MAAN GOK",      // 英文名，有空格的正式寫法
-  wordmark: "MAANGOK",    // 標誌用的無空格寫法
+  slug: "maan",           // 檔名用，小寫無空格
+  zh: "漫家居",            // 中文名
+  latin: "MAAN",          // 英文名，句子裡的寫法
+  wordmark: "MAAN",       // 標誌用的寫法（這個品牌兩者相同）
   wordmarkRuns: [ ... ],  // 見下
   social: { instagram: "..." },
 };
@@ -78,7 +78,7 @@ export const brand = {
 ### 2. 當成文案的名字 → `messages/zh.json`、`messages/en.json`
 
 品牌故事、SEO 描述、頁尾版權那一行等等。這些是句子，會跟著新品牌整段重寫，直接
-在這兩個檔案裡改。搜尋 `MAAN GOK` 與 `萬角` 可以找齊。
+在這兩個檔案裡改。搜尋現有的中英品牌名可以找齊。
 
 ### 3. 另外兩處（不能自動跟著改）
 
@@ -121,9 +121,9 @@ Noto Sans TC。換掉的話要一併確認：
 
 - 中文字體要選**繁體**那一版。簡繁把共用字畫得不一樣（`角` 就是一例），選錯會把
   品牌名畫錯。
-- `sections/home/hero.tsx` 跑馬燈裡那幾個數字（`scale-y-[1.272]`、
-  `-translate-y-[0.008em]`、`mx-[0.65em]`、`scale-y-[0.992]`）是**針對 Inter 配
-  Noto Sans TC 量出來的**，換字體後要重量一次，量法寫在該檔案的註解裡。
+- `sections/home/hero.tsx` 跑馬燈裡那幾個數字（`scale-y-[1.354]`、
+  `-translate-y-[0.0135em]`、`mx-[0.39em]`）是**針對「這個品牌名」配「這兩套字」
+  量出來的**——換字體要重量，換名字也要重量，換字體後要重量一次，量法寫在該檔案的註解裡。
 - 字重清單要對得上實際用到的字重。中文字體每個字重都是一整組檔案，多載一個字重
   就是網站最大宗下載量再多四分之一。
 
@@ -151,16 +151,21 @@ Noto Sans TC。換掉的話要一併確認：
 `public/brand/` 裡的八個 SVG 與八個 PNG 是從網站自己的字**切**出來的，換名字或
 換字體後要重跑：
 
+分頁圖示（`app/icon.png`、`apple-icon.png`、`favicon.ico`）同樣有腳本。兩支都要
+一個跑起來的網站才能讀到真正的字：
+
 ```bash
 npm i --no-save playwright fontkit wawoff2 && npx playwright install chromium
 npm run build && npx next start -p 3100 &
-node scripts/generate-brand-logos.mjs
+node scripts/generate-brand-logos.mjs    # public/brand 的八個標誌
+node scripts/generate-brand-icons.mjs    # app/ 的三個分頁圖示
 ```
 
-它會讀 `lib/brand.ts`，所以名字改好就不用再動這支腳本。檔名會跟著 `brand.slug`。
+兩支都讀 `lib/brand.ts`，所以名字改好就不用再動腳本；標誌檔名會跟著
+`brand.slug`，圖示取中文名的第一個字。舊的標誌檔要自己刪掉——檔名換了，舊檔不會
+被覆蓋。
 
-`app/icon.png`、`app/apple-icon.png`、`app/favicon.ico` 是分頁上的小圖示，目前沒
-有向量來源，要另外做。
+裝不了瀏覽器的機器（例如受限的容器）可以用 `CHROMIUM_PATH` 指向現成的 Chromium。
 
 ---
 
@@ -168,7 +173,7 @@ node scripts/generate-brand-logos.mjs
 
 - [ ] `npx tsc --noEmit` 與 `npx eslint` 都過
 - [ ] `npm run build` 過
-- [ ] 全站搜尋不到舊品牌：`grep -rn "萬角\|MAAN GOK\|MAANGOK\|maangok" --include="*.ts*" --include="*.json" --include="*.yml" .`
+- [ ] 全站搜尋不到舊品牌：`grep -rn "漫家居\|MAAN\|maan" --include="*.ts*" --include="*.json" --include="*.yml" .`（換成舊品牌的名字來搜）
 - [ ] 中英文首頁的載入動畫都看得到新名字
 - [ ] 分享一個連結到通訊軟體，卡片是新品牌
 - [ ] `/admin` 登入得進去，存檔 commit 進**新** repo

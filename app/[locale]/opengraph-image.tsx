@@ -32,8 +32,8 @@ export default async function OpengraphImage({
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
-          background: "#fcfaf7",
-          color: "#2a2724",
+          background: "#faf5e9",
+          color: "#3b2414",
           padding: "72px 80px",
           fontFamily: "sans-serif",
         }}
@@ -42,11 +42,11 @@ export default async function OpengraphImage({
           <div style={{ fontSize: 116, fontWeight: 700, letterSpacing: "-0.03em" }}>
             {brand.wordmark}
           </div>
-          <div style={{ fontSize: 40, letterSpacing: "0.42em", color: "#6b635c" }}>{brand.zh}</div>
+          <div style={{ fontSize: 40, letterSpacing: "0.42em", color: "#6b584b" }}>{brand.zh}</div>
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
-          <div style={{ height: 1, width: "100%", background: "#ddd6cd" }} />
-          <div style={{ fontSize: 27, lineHeight: 1.45, color: "#57504a", maxWidth: 900 }}>
+          <div style={{ height: 1, width: "100%", background: "#dbd1c1" }} />
+          <div style={{ fontSize: 27, lineHeight: 1.45, color: "#5b493d", maxWidth: 900 }}>
             {t("ogDescription")}
           </div>
         </div>

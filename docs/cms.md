@@ -28,7 +28,7 @@
 
 ## 步驟一：確定網站網址
 
-目前的正式網址是 **`https://maangok.com`**，`public/admin/config.yml` 的 `base_url` 已指向它。
+目前的正式網址是 **`https://maanliving.com`**，`public/admin/config.yml` 的 `base_url` 已指向它。
 
 **日後若換網域，舊網址即刻失效**，且以下三處必須一起更新：
 
@@ -42,9 +42,9 @@
 
 | 欄位 | 填入 |
 | --- | --- |
-| Application name | `MAAN GOK CMS` |
-| Homepage URL | `https://maangok.com` |
-| Authorization callback URL | `https://maangok.com/api/auth/callback` |
+| Application name | `MAAN CMS` |
+| Homepage URL | `https://maanliving.com` |
+| Authorization callback URL | `https://maanliving.com/api/auth/callback` |
 
 建立後按 **Generate a new client secret**，把 Client ID 與 Secret 記下來（Secret 只會顯示一次）。
 
@@ -58,7 +58,7 @@ Vercel → Settings → Environment Variables，新增三筆，三個環境都�
 | --- | --- |
 | `GITHUB_OAUTH_CLIENT_ID` | OAuth App 的 Client ID |
 | `GITHUB_OAUTH_CLIENT_SECRET` | OAuth App 的 Client Secret |
-| `GITHUB_OAUTH_ALLOWED_HOSTS` | 網址但不含 `https://`，目前為 `maangok.com` |
+| `GITHUB_OAUTH_ALLOWED_HOSTS` | 網址但不含 `https://`，目前為 `maanliving.com` |
 
 `GITHUB_OAUTH_ALLOWED_HOSTS` 限制哪些網站可以透過這個端點登入。少了它，任何人都能把自己的 CMS 指向這裡來借用你的 OAuth App。多個網址以逗號分隔。
 
@@ -68,7 +68,7 @@ Vercel → Settings → Environment Variables，新增三筆，三個環境都�
 
 # 日常使用
 
-開啟 <https://maangok.com/admin>，以 GitHub 帳號登入。
+開啟 <https://maanliving.com/admin>，以 GitHub 帳號登入。
 
 - 左側選單切換內容類型，點開項目即可編輯
 - 每個文字欄位都有「中文」與「English」兩格，**兩邊都要填**，否則該語言的頁面會顯示空白

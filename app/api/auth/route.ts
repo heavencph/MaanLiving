@@ -12,7 +12,7 @@ const CLIENT_SECRET = process.env.GITHUB_OAUTH_CLIENT_SECRET;
 
 /**
  * Hosts allowed to start a sign-in, comma separated, e.g.
- * "maangok.com,localhost:3000". Without it any site could point its CMS
+ * "maanliving.com,localhost:3000". Without it any site could point its CMS
  * at this endpoint and use the OAuth app.
  */
 const ALLOWED_HOSTS = (process.env.GITHUB_OAUTH_ALLOWED_HOSTS ?? "")
