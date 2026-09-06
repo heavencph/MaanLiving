@@ -8,13 +8,21 @@ import { ProductCoverflow } from "@/components/product/product-coverflow";
 import { getProducts } from "@/lib/data";
 import type { AppLocale } from "@/i18n/routing";
 
+/** How many pieces "this season's selection" is. */
+const FEATURED_COUNT = 14;
+
 export function FeaturedProducts() {
   const t = useTranslations("home.featured");
   const locale = useLocale() as AppLocale;
-  // The whole range rather than the four the grid showed: a carousel is worth
-  // dragging only if there is something behind the card in view, and with
-  // eight pieces in the catalogue "this season's selection" still holds.
-  const featured = [...getProducts(locale)].sort((a, b) => Number(b.isNew) - Number(a.isNew));
+  // A selection, evenly spaced through the catalogue so every category is in
+  // it. It used to be the whole range, which was fine at eight pieces and is
+  // not at a hundred and ninety-three: the carousel lays every card out at
+  // once, so the home page was asking the browser for every product
+  // photograph the site has before anyone had scrolled to see one of them.
+  // Fourteen is what fits behind the card in view without that.
+  const all = getProducts(locale);
+  const stride = Math.max(1, Math.floor(all.length / FEATURED_COUNT));
+  const featured = all.filter((_, i) => i % stride === 0).slice(0, FEATURED_COUNT);
 
   return (
     // The neighbouring cards are meant to run off both edges, which on a phone

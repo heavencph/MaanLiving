@@ -3,7 +3,7 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Reveal } from "@/components/motion/reveal";
 
-const IMG = "/images/lifestyle/dining-03.webp";
+const IMG = "/images/lifestyle/lounge-01.webp";
 
 export function PhilosophyTeaser() {
   const t = useTranslations("home.philosophyTeaser");

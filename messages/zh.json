@@ -91,12 +91,8 @@
     "collectionPreview": {
       "eyebrow": "Collection",
       "title": "以空間場景，重新認識家具",
-      "description": "從客廳到臥室，每一件作品都因應真實的生活場景而生，點選系列即可深入了解完整產品線。",
-      "viewCollection": "查看系列",
-      "categorySofa": "沙發系列",
-      "categoryArmchair": "單椅與休閒椅",
-      "categoryDining": "餐桌與餐椅",
-      "categoryBedroom": "臥室系列"
+      "description": "從餐桌到閱讀的角落，每一件作品都因應真實的生活場景而生，點選系列即可看見完整產品線。",
+      "viewCollection": "查看系列"
     },
     "featured": {
       "eyebrow": "Featured",

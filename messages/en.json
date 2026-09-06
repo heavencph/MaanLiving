@@ -91,12 +91,8 @@
     "collectionPreview": {
       "eyebrow": "Collection",
       "title": "Furniture, reintroduced through real rooms",
-      "description": "From living room to bedroom, every piece answers to a real scene of daily life — choose a collection to see the full range.",
-      "viewCollection": "View collection",
-      "categorySofa": "Sofa Collection",
-      "categoryArmchair": "Armchairs & Lounge Chairs",
-      "categoryDining": "Dining Tables & Chairs",
-      "categoryBedroom": "Bedroom Collection"
+      "description": "From the dining table to the reading corner, every piece answers to a real scene of daily life — choose a collection to see the full range.",
+      "viewCollection": "View collection"
     },
     "featured": {
       "eyebrow": "Featured",

@@ -20,9 +20,7 @@
       "gallery": [
         "/images/projects/case-02.webp",
         "/images/projects/case-03.webp",
-        "/images/projects/case-04.webp",
-        "/images/projects/case-05.webp",
-        "/images/projects/case-06.webp"
+        "/images/projects/case-04.webp"
       ],
       "description": {
         "zh": "一座隱於山林間的家，以悅風沙發與山形餐桌為軸心，搭配大面開窗引入四季光影，呈現極簡卻富有溫度的生活場景。",
@@ -45,12 +43,11 @@
         "en": "Penthouse Residence"
       },
       "year": "2025",
-      "coverImage": "/images/projects/case-07.webp",
+      "coverImage": "/images/projects/case-05.webp",
       "gallery": [
-        "/images/projects/case-08.webp",
-        "/images/projects/case-09.webp",
-        "/images/projects/case-10.webp",
-        "/images/projects/case-11.webp"
+        "/images/projects/case-06.webp",
+        "/images/projects/case-07.webp",
+        "/images/projects/case-08.webp"
       ],
       "description": {
         "zh": "俯瞰港灣的頂層空間，設計團隊選用暮陽休閒椅與岩層邊櫃，以溫潤木質平衡大片落地窗帶來的開闊視野。",
@@ -73,12 +70,11 @@
         "en": "Commercial Space"
       },
       "year": "2024",
-      "coverImage": "/images/projects/case-12.webp",
+      "coverImage": "/images/projects/case-09.webp",
       "gallery": [
-        "/images/projects/case-13.webp",
-        "/images/projects/case-14.webp",
-        "/images/projects/case-15.webp",
-        "/images/projects/case-16.webp"
+        "/images/projects/case-10.webp",
+        "/images/projects/case-11.webp",
+        "/images/projects/case-12.webp"
       ],
       "description": {
         "zh": "由老屋改建的設計工作室，保留原始樑柱結構，搭配靜谷單椅與潮汐茶几，打造靜謐的會客與討論角落。",
@@ -101,12 +97,11 @@
         "en": "Holiday Residence"
       },
       "year": "2024",
-      "coverImage": "/images/projects/case-17.webp",
+      "coverImage": "/images/projects/case-13.webp",
       "gallery": [
-        "/images/projects/case-01.webp",
-        "/images/projects/case-02.webp",
-        "/images/projects/case-03.webp",
-        "/images/projects/case-04.webp"
+        "/images/projects/case-14.webp",
+        "/images/projects/case-15.webp",
+        "/images/projects/case-16.webp"
       ],
       "description": {
         "zh": "面海而建的度假宅邸，室內以眠雲床架與弧月餐椅為主角，呼應窗外潮汐節奏，營造遠離塵囂的靜謐感受。",
