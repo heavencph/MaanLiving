@@ -1,0 +1,241 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  /* warm neutral brand palette */
+  --color-warmwhite: var(--warmwhite);
+  --color-beige: var(--beige);
+  --color-stone: var(--stone);
+  --color-sand: var(--sand);
+  --color-charcoal: var(--charcoal);
+  --color-walnut: var(--walnut);
+  --color-matte-black: var(--matte-black);
+  --color-olive: var(--olive);
+  --color-terracotta: var(--terracotta);
+  --color-bronze: var(--bronze);
+
+  /* One family across the site: Inter for Latin, Noto Sans TC — Source Han
+     Sans, 思源黑體, Traditional cut — for Chinese, matching the `zh-Hant` the
+     document declares. `font-heading` is kept as its own token so the
+     headings can be given their own face again later without touching every
+     component, but it currently resolves to the same stack as the body
+     rather than to the serif pairing it used to carry. */
+  --font-heading: var(--font-body-latin), var(--font-body-tc), sans-serif;
+  --font-sans: var(--font-body-latin), var(--font-body-tc), sans-serif;
+  --font-mono: var(--font-geist-mono);
+
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.5);
+  --radius-md: calc(var(--radius) * 0.75);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+}
+
+:root {
+  /* warm neutral palette — luxury interior tones */
+  --warmwhite: oklch(0.985 0.004 75);
+  --beige: oklch(0.94 0.014 75);
+  --stone: oklch(0.87 0.014 65);
+  --sand: oklch(0.8 0.024 70);
+  --charcoal: oklch(0.28 0.006 60);
+  --walnut: oklch(0.34 0.045 45);
+  --matte-black: oklch(0.16 0.004 60);
+  --olive: oklch(0.5 0.05 120);
+  --terracotta: oklch(0.6 0.09 40);
+  --bronze: oklch(0.52 0.045 60);
+
+  --background: var(--warmwhite);
+  --foreground: var(--charcoal);
+  --card: oklch(1 0 0);
+  --card-foreground: var(--charcoal);
+  --popover: oklch(1 0 0);
+  --popover-foreground: var(--charcoal);
+  --primary: var(--charcoal);
+  --primary-foreground: var(--warmwhite);
+  --secondary: var(--beige);
+  --secondary-foreground: var(--charcoal);
+  --muted: var(--beige);
+  --muted-foreground: oklch(0.48 0.012 60);
+  --accent: var(--sand);
+  --accent-foreground: var(--charcoal);
+  --destructive: oklch(0.55 0.18 27);
+  --border: oklch(0.88 0.012 65);
+  --input: oklch(0.88 0.012 65);
+  --ring: var(--walnut);
+  --chart-1: var(--walnut);
+  --chart-2: var(--olive);
+  --chart-3: var(--terracotta);
+  --chart-4: var(--bronze);
+  --chart-5: var(--stone);
+  --radius: 0.25rem;
+  --sidebar: var(--warmwhite);
+  --sidebar-foreground: var(--charcoal);
+  --sidebar-primary: var(--charcoal);
+  --sidebar-primary-foreground: var(--warmwhite);
+  --sidebar-accent: var(--beige);
+  --sidebar-accent-foreground: var(--charcoal);
+  --sidebar-border: oklch(0.88 0.012 65);
+  --sidebar-ring: var(--walnut);
+}
+
+.dark {
+  --background: var(--matte-black);
+  --foreground: var(--warmwhite);
+  --card: oklch(0.2 0.006 60);
+  --card-foreground: var(--warmwhite);
+  --popover: oklch(0.2 0.006 60);
+  --popover-foreground: var(--warmwhite);
+  --primary: var(--warmwhite);
+  --primary-foreground: var(--matte-black);
+  --secondary: oklch(0.24 0.008 60);
+  --secondary-foreground: var(--warmwhite);
+  --muted: oklch(0.24 0.008 60);
+  --muted-foreground: oklch(0.68 0.012 65);
+  --accent: oklch(0.28 0.02 55);
+  --accent-foreground: var(--warmwhite);
+  --destructive: oklch(0.62 0.19 27);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: var(--sand);
+  --chart-1: var(--sand);
+  --chart-2: var(--olive);
+  --chart-3: var(--terracotta);
+  --chart-4: var(--bronze);
+  --chart-5: var(--stone);
+  --sidebar: oklch(0.2 0.006 60);
+  --sidebar-foreground: var(--warmwhite);
+  --sidebar-primary: var(--warmwhite);
+  --sidebar-primary-foreground: var(--matte-black);
+  --sidebar-accent: oklch(0.26 0.01 60);
+  --sidebar-accent-foreground: var(--warmwhite);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: var(--sand);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    @apply font-sans;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "palt" 1;
+  }
+  h1, h2, h3, h4 {
+    @apply font-heading;
+    letter-spacing: 0.01em;
+  }
+}
+
+@layer utilities {
+  .container-fluid {
+    @apply mx-auto w-full max-w-[1600px] px-6 md:px-10 lg:px-16;
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+  .underline-reveal {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: background-size 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+  }
+  .underline-reveal:hover {
+    background-size: 100% 1px;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /**
+   * A tinted band whose edges dissolve into the page instead of cutting a
+   * ruled line across it. A flat `bg-beige/50` drew a visible seam wherever a
+   * section met the warm white behind it; here the tint is at full strength
+   * through the middle and fades out over a fixed distance top and bottom, so
+   * the join reads as a change of light rather than an edge.
+   *
+   * Fixed lengths rather than percentages: a percentage fade would be gentle
+   * on a tall section and abrupt on a short one, and these sections range from
+   * roughly 550px to 950px.
+   */
+  .band-tint {
+    --band-fade: 5.5rem;
+    --band-color: color-mix(in oklab, var(--beige) 50%, transparent);
+    background-image: linear-gradient(
+      to bottom,
+      transparent 0,
+      var(--band-color) var(--band-fade),
+      var(--band-color) calc(100% - var(--band-fade)),
+      transparent 100%
+    );
+  }
+  @media (min-width: 768px) {
+    .band-tint {
+      --band-fade: 9rem;
+    }
+  }
+
+  /**
+   * The dark closing band. Fading a near-black into warm white goes grey and
+   * muddy if it is given any real distance, so this ramp is much shorter than
+   * the tinted one — just enough that the band arrives and leaves rather than
+   * being cut out with a knife.
+   */
+  .band-dark {
+    --band-fade: 3.5rem;
+    background-image: linear-gradient(
+      to bottom,
+      transparent 0,
+      var(--charcoal) var(--band-fade),
+      var(--charcoal) calc(100% - var(--band-fade)),
+      transparent 100%
+    );
+  }
+  @media (min-width: 768px) {
+    .band-dark {
+      --band-fade: 5rem;
+    }
+  }
+}

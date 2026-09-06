@@ -1,0 +1,117 @@
+{
+  "projects": [
+    {
+      "id": "pr1",
+      "slug": "the-quiet-house-yangmingshan",
+      "title": {
+        "zh": "陽明山靜居",
+        "en": "The Quiet House, Yangmingshan"
+      },
+      "location": {
+        "zh": "台北・陽明山",
+        "en": "Taipei · Yangmingshan"
+      },
+      "category": {
+        "zh": "私人住宅",
+        "en": "Private Residence"
+      },
+      "year": "2025",
+      "coverImage": "/images/products/yuefeng-sofa/insitu-1.jpg",
+      "gallery": [
+        "/images/products/yuefeng-sofa/insitu-2.jpg",
+        "/images/products/yuefeng-sofa/insitu-3.jpg",
+        "/images/products/yuefeng-sofa/insitu-4.jpg",
+        "/images/products/yuefeng-sofa/insitu-5.jpg",
+        "/images/products/shanxing-dining-table/insitu-1.jpg"
+      ],
+      "description": {
+        "zh": "一座隱於山林間的家，以悅風沙發與山形餐桌為軸心，搭配大面開窗引入四季光影，呈現極簡卻富有溫度的生活場景。",
+        "en": "A home tucked into the hillside forest, built around the Yuefeng Sofa and Shanxing Dining Table, with expansive windows drawing in each season's light for a minimal yet warm way of living."
+      }
+    },
+    {
+      "id": "pr2",
+      "slug": "harbor-view-penthouse",
+      "title": {
+        "zh": "港灣頂層公寓",
+        "en": "Harbor View Penthouse"
+      },
+      "location": {
+        "zh": "高雄・鼓山",
+        "en": "Kaohsiung · Gushan"
+      },
+      "category": {
+        "zh": "頂層住宅",
+        "en": "Penthouse Residence"
+      },
+      "year": "2025",
+      "coverImage": "/images/products/muyang-lounge-chair/insitu-1.jpg",
+      "gallery": [
+        "/images/products/muyang-lounge-chair/insitu-2.jpg",
+        "/images/products/muyang-lounge-chair/insitu-3.jpg",
+        "/images/products/yanceng-sideboard/insitu-1.jpg",
+        "/images/products/yanceng-sideboard/insitu-2.jpg"
+      ],
+      "description": {
+        "zh": "俯瞰港灣的頂層空間，設計團隊選用暮陽休閒椅與岩層邊櫃，以溫潤木質平衡大片落地窗帶來的開闊視野。",
+        "en": "A penthouse overlooking the harbour, where the design team chose the Muyang Lounge Chair and Yanceng Sideboard to balance the sweeping views from the floor-to-ceiling windows with warm timber tones."
+      }
+    },
+    {
+      "id": "pr3",
+      "slug": "atelier-loft-taichung",
+      "title": {
+        "zh": "台中工作室閣樓",
+        "en": "Atelier Loft, Taichung"
+      },
+      "location": {
+        "zh": "台中・審計新村",
+        "en": "Taichung · Shengji Village"
+      },
+      "category": {
+        "zh": "商業空間",
+        "en": "Commercial Space"
+      },
+      "year": "2024",
+      "coverImage": "/images/products/jinggu-lounge-chair/insitu-1.jpg",
+      "gallery": [
+        "/images/products/jinggu-lounge-chair/insitu-2.jpg",
+        "/images/products/jinggu-lounge-chair/insitu-3.jpg",
+        "/images/products/jinggu-lounge-chair/insitu-4.jpg",
+        "/images/products/chaoxi-coffee-table/insitu-1.jpg"
+      ],
+      "description": {
+        "zh": "由老屋改建的設計工作室，保留原始樑柱結構，搭配靜谷單椅與潮汐茶几，打造靜謐的會客與討論角落。",
+        "en": "A design studio converted from an old house, its original beams and columns preserved, furnished with the Jinggu Lounge Chair and Chaoxi Coffee Table to create a quiet corner for meetings and conversation."
+      }
+    },
+    {
+      "id": "pr4",
+      "slug": "coastal-retreat-yilan",
+      "title": {
+        "zh": "宜蘭海岸別業",
+        "en": "Coastal Retreat, Yilan"
+      },
+      "location": {
+        "zh": "宜蘭・頭城",
+        "en": "Yilan · Toucheng"
+      },
+      "category": {
+        "zh": "度假宅邸",
+        "en": "Holiday Residence"
+      },
+      "year": "2024",
+      "coverImage": "/images/products/mianyun-bed-frame/insitu-1.jpg",
+      "gallery": [
+        "/images/products/mianyun-bed-frame/insitu-2.jpg",
+        "/images/products/mianyun-bed-frame/insitu-3.jpg",
+        "/images/products/huyue-dining-chair/insitu-1.jpg",
+        "/images/products/huyue-dining-chair/insitu-2.jpg"
+      ],
+      "description": {
+        "zh": "面海而建的度假宅邸，室內以眠雲床架與弧月餐椅為主角，呼應窗外潮汐節奏，營造遠離塵囂的靜謐感受。",
+        "en": "A retreat built facing the sea, where the Mianyun Bed Frame and Huyue Dining Chair take centre stage indoors, echoing the rhythm of the tides outside for a stillness far removed from the everyday."
+      }
+    }
+  ]
+}

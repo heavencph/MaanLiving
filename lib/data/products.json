@@ -1,0 +1,2023 @@
+{
+  "products": [
+    {
+      "id": "p1",
+      "slug": "yuefeng-sofa",
+      "name": {
+        "zh": "悅風沙發",
+        "en": "Yuefeng Sofa"
+      },
+      "category": {
+        "zh": "沙發",
+        "en": "Sofa"
+      },
+      "categoryKey": "sofa",
+      "designer": {
+        "name": "Pei",
+        "bio": {
+          "zh": "Pei 主導萬角自品牌創立以來的完整家具系列開發，工作足跡橫跨台北、哥本哈根與墨爾本，設計語彙貫穿北歐工藝的節制與亞洲生活的細膩感受，堅持每一件作品都從材質本身的個性出發。",
+          "en": "Pei has led MAAN GOK's complete furniture range since the brand's founding, working across Taipei, Copenhagen and Melbourne. Their design language bridges Nordic restraint with the nuance of Asian living, insisting that every piece begin with the character of its material."
+        }
+      },
+      "shortDescription": {
+        "zh": "低背寬座的三人沙發，以鬆軟羽絨與挺闊椅型，重新定義慵懶與端正之間的平衡。",
+        "en": "A low-back, wide-seat three-seater that redefines the balance between languid comfort and tailored posture, built from soft down fill and a structured silhouette."
+      },
+      "description": {
+        "zh": [
+          "悅風沙發源於一種對「柔軟結構」的探索——如何讓一件家具同時擁有雕塑般的輪廓，與被身體完全接納的鬆軟感受。椅身以實木框架為骨，內裡分層堆疊高密度泡棉與羽絨包覆，久坐不塌陷。",
+          "扶手以微微內收的斜角處理，讓整體比例在寬闊中仍保有精緻感；椅腳選用實木車製，與布藝形成溫潤對比。",
+          "所有布料皆通過十萬次馬丁代爾耐磨測試，並可依空間需求訂製尺寸與配置。"
+        ],
+        "en": [
+          "Yuefeng Sofa began as an exploration of 'soft structure' — how a single piece of furniture can hold a sculptural silhouette while still yielding completely to the body. A solid timber frame forms its skeleton, layered inside with high-density foam and down fill that resists sagging even after years of daily use.",
+          "The armrests taper inward at a subtle angle, keeping the generous proportions refined rather than bulky; solid-timber turned legs offer a warm contrast against the upholstery.",
+          "All fabrics are rated for 100,000 Martindale abrasion cycles, and the sofa can be configured or resized to suit your space."
+        ]
+      },
+      "currency": "TWD",
+      "isNew": true,
+      "heroImage": "/images/products/yuefeng-sofa/studio-1.jpg",
+      "gallery": [
+        {
+          "src": "/images/products/yuefeng-sofa/studio-1.jpg",
+          "kind": "studio"
+        },
+        {
+          "src": "/images/products/yuefeng-sofa/insitu-1.jpg",
+          "kind": "insitu"
+        },
+        {
+          "src": "/images/products/yuefeng-sofa/insitu-2.jpg",
+          "kind": "insitu"
+        },
+        {
+          "src": "/images/products/yuefeng-sofa/insitu-3.jpg",
+          "kind": "insitu"
+        },
+        {
+          "src": "/images/products/yuefeng-sofa/insitu-4.jpg",
+          "kind": "insitu"
+        },
+        {
+          "src": "/images/products/yuefeng-sofa/insitu-5.jpg",
+          "kind": "insitu"
+        }
+      ],
+      "variants": {
+        "colours": [
+          {
+            "id": "sand-linen",
+            "name": {
+              "zh": "沙棕亞麻",
+              "en": "Sand Linen"
+            },
+            "hex": "#D8C9AE",
+            "image": "/images/products/yuefeng-sofa/studio-1.jpg",
+            "thumbnail": "/images/products/yuefeng-sofa/studio-1.jpg"
+          },
+          {
+            "id": "stone-boucle",
+            "name": {
+              "zh": "石灰波麗",
+              "en": "Stone Bouclé"
+            },
+            "hex": "#C9C2B6",
+            "image": "/images/products/yuefeng-sofa/insitu-1.jpg",
+            "thumbnail": "/images/products/yuefeng-sofa/insitu-1.jpg"
+          },
+          {
+            "id": "olive-wool",
+            "name": {
+              "zh": "橄欖羊毛",
+              "en": "Olive Wool"
+            },
+            "hex": "#6B6E4E",
+            "image": "/images/products/yuefeng-sofa/insitu-2.jpg",
+            "thumbnail": "/images/products/yuefeng-sofa/insitu-2.jpg"
+          },
+          {
+            "id": "terracotta-weave",
+            "name": {
+              "zh": "陶土織紋",
+              "en": "Terracotta Weave"
+            },
+            "hex": "#B5714F",
+            "image": "/images/products/yuefeng-sofa/insitu-3.jpg",
+            "thumbnail": "/images/products/yuefeng-sofa/insitu-3.jpg"
+          },
+          {
+            "id": "charcoal-felt",
+            "name": {
+              "zh": "炭灰氈布",
+              "en": "Charcoal Felt"
+            },
+            "hex": "#3A3A38",
+            "image": "/images/products/yuefeng-sofa/insitu-4.jpg",
+            "thumbnail": "/images/products/yuefeng-sofa/insitu-4.jpg"
+          },
+          {
+            "id": "warm-white-boucle",
+            "name": {
+              "zh": "暖白波麗",
+              "en": "Warm White Bouclé"
+            },
+            "hex": "#EFE9DE",
+            "image": "/images/products/yuefeng-sofa/insitu-5.jpg",
+            "thumbnail": "/images/products/yuefeng-sofa/insitu-5.jpg"
+          }
+        ],
+        "sizes": [
+          {
+            "id": "two-seat",
+            "label": {
+              "zh": "雙人座",
+              "en": "Two-Seat"
+            },
+            "dimensions": "W180 x D92 x H78 cm"
+          },
+          {
+            "id": "three-seat",
+            "label": {
+              "zh": "三人座",
+              "en": "Three-Seat"
+            },
+            "dimensions": "W228 x D92 x H78 cm"
+          },
+          {
+            "id": "chaise",
+            "label": {
+              "zh": "貴妃加長",
+              "en": "Chaise Extended"
+            },
+            "dimensions": "W285 x D165 x H78 cm"
+          }
+        ],
+        "legFinishes": [
+          {
+            "id": "oak-leg",
+            "name": {
+              "zh": "原色橡木腳",
+              "en": "Natural Oak Legs"
+            },
+            "hex": "#C9A876"
+          },
+          {
+            "id": "walnut-leg",
+            "name": {
+              "zh": "胡桃木腳",
+              "en": "Walnut Legs"
+            },
+            "hex": "#5A3E2B"
+          },
+          {
+            "id": "black-leg",
+            "name": {
+              "zh": "霧黑金屬腳",
+              "en": "Matte Black Metal Legs"
+            },
+            "hex": "#2B2521"
+          }
+        ]
+      },
+      "dimensions": [
+        {
+          "label": {
+            "zh": "寬度",
+            "en": "Width"
+          },
+          "value": "228 cm"
+        },
+        {
+          "label": {
+            "zh": "深度",
+            "en": "Depth"
+          },
+          "value": "92 cm"
+        },
+        {
+          "label": {
+            "zh": "高度",
+            "en": "Height"
+          },
+          "value": "78 cm"
+        },
+        {
+          "label": {
+            "zh": "座高",
+            "en": "Seat Height"
+          },
+          "value": "42 cm"
+        },
+        {
+          "label": {
+            "zh": "淨重",
+            "en": "Net Weight"
+          },
+          "value": "68 kg"
+        }
+      ],
+      "materials": [
+        {
+          "title": {
+            "zh": "實木框架",
+            "en": "Solid Timber Frame"
+          },
+          "description": {
+            "zh": "選用五年以上乾燥處理之實木，確保結構穩定不變形。",
+            "en": "Built from timber seasoned for five years or more, ensuring a stable structure that resists warping."
+          }
+        },
+        {
+          "title": {
+            "zh": "高密度泡棉",
+            "en": "High-Density Foam"
+          },
+          "description": {
+            "zh": "多層次泡棉堆疊，兼顧支撐力與柔軟觸感。",
+            "en": "Multiple layers of foam balance firm support with a soft, yielding touch."
+          }
+        },
+        {
+          "title": {
+            "zh": "羽絨包覆",
+            "en": "Down Fill"
+          },
+          "description": {
+            "zh": "椅背採羽絨混合纖維填充，呈現自然鬆軟的表情。",
+            "en": "The backrest is filled with a down-and-fibre blend for a naturally soft, relaxed profile."
+          }
+        }
+      ],
+      "downloads": [
+        {
+          "label": {
+            "zh": "悅風沙發 產品規格書",
+            "en": "Yuefeng Sofa Product Spec Sheet"
+          },
+          "type": "PDF",
+          "size": "2.4 MB",
+          "href": "#"
+        },
+        {
+          "label": {
+            "zh": "悅風沙發 CAD 施工圖",
+            "en": "Yuefeng Sofa CAD Drawing"
+          },
+          "type": "CAD",
+          "size": "5.1 MB",
+          "href": "#"
+        },
+        {
+          "label": {
+            "zh": "悅風沙發 3D 模型檔",
+            "en": "Yuefeng Sofa 3D Model File"
+          },
+          "type": "3D",
+          "size": "18.6 MB",
+          "href": "#"
+        }
+      ],
+      "relatedProductIds": [
+        "p6",
+        "p5",
+        "p2"
+      ],
+      "tags": [
+        "客廳",
+        "沙發",
+        "布藝"
+      ]
+    },
+    {
+      "id": "p2",
+      "slug": "jinggu-lounge-chair",
+      "name": {
+        "zh": "靜谷單椅",
+        "en": "Jinggu Lounge Chair"
+      },
+      "category": {
+        "zh": "單椅",
+        "en": "Armchair"
+      },
+      "categoryKey": "armchair",
+      "designer": {
+        "name": "Pei",
+        "bio": {
+          "zh": "Pei 主導萬角自品牌創立以來的完整家具系列開發，工作足跡橫跨台北、哥本哈根與墨爾本，設計語彙貫穿北歐工藝的節制與亞洲生活的細膩感受，堅持每一件作品都從材質本身的個性出發。",
+          "en": "Pei has led MAAN GOK's complete furniture range since the brand's founding, working across Taipei, Copenhagen and Melbourne. Their design language bridges Nordic restraint with the nuance of Asian living, insisting that every piece begin with the character of its material."
+        }
+      },
+      "shortDescription": {
+        "zh": "一張為閱讀與沉思設計的單椅，傾角椅背與寬闊扶手，邀請身體徹底放鬆。",
+        "en": "An armchair designed for reading and quiet reflection — its reclined backrest and generous armrests invite the body to fully unwind."
+      },
+      "description": {
+        "zh": [
+          "靜谷單椅的靈感來自山谷中被風化的岩石——渾厚、安靜，卻在細節處透出溫度。椅背以 106 度傾角設計，貼合人體脊椎曲線。",
+          "椅身框架採外露實木結構，展現榫接工藝的誠實美感；坐墊可拆卸清洗，內裡為高回彈泡棉。",
+          "可搭配同系列腳凳，構成完整的休憩角落。"
+        ],
+        "en": [
+          "Jinggu Lounge Chair takes its cue from a weathered boulder in a mountain valley — solid and quiet, yet warm in its details. The backrest is set at a 106-degree recline to follow the natural curve of the spine.",
+          "Its frame is left exposed in solid timber, letting the honest craft of the joinery show through; the cushion is removable for cleaning and filled with high-resilience foam.",
+          "Pair it with the matching ottoman to complete a full reading corner."
+        ]
+      },
+      "currency": "TWD",
+      "heroImage": "/images/products/jinggu-lounge-chair/studio-1.jpg",
+      "gallery": [
+        {
+          "src": "/images/products/jinggu-lounge-chair/studio-1.jpg",
+          "kind": "studio"
+        },
+        {
+          "src": "/images/products/jinggu-lounge-chair/insitu-1.jpg",
+          "kind": "insitu"
+        },
+        {
+          "src": "/images/products/jinggu-lounge-chair/insitu-2.jpg",
+          "kind": "insitu"
+        },
+        {
+          "src": "/images/products/jinggu-lounge-chair/insitu-3.jpg",
+          "kind": "insitu"
+        },
+        {
+          "src": "/images/products/jinggu-lounge-chair/insitu-4.jpg",
+          "kind": "insitu"
+        }
+      ],
+      "variants": {
+        "colours": [
+          {
+            "id": "sand-linen",
+            "name": {
+              "zh": "沙棕亞麻",
+              "en": "Sand Linen"
+            },
+            "hex": "#D8C9AE",
+            "image": "/images/products/jinggu-lounge-chair/studio-1.jpg",
+            "thumbnail": "/images/products/jinggu-lounge-chair/studio-1.jpg"
+          },
+          {
+            "id": "stone-boucle",
+            "name": {
+              "zh": "石灰波麗",
+              "en": "Stone Bouclé"
+            },
+            "hex": "#C9C2B6",
+            "image": "/images/products/jinggu-lounge-chair/insitu-1.jpg",
+            "thumbnail": "/images/products/jinggu-lounge-chair/insitu-1.jpg"
+          },
+          {
+            "id": "olive-wool",
+            "name": {
+              "zh": "橄欖羊毛",
+              "en": "Olive Wool"
+            },
+            "hex": "#6B6E4E",
+            "image": "/images/products/jinggu-lounge-chair/insitu-2.jpg",
+            "thumbnail": "/images/products/jinggu-lounge-chair/insitu-2.jpg"
+          },
+          {
+            "id": "terracotta-weave",
+            "name": {
+              "zh": "陶土織紋",
+              "en": "Terracotta Weave"
+            },
+            "hex": "#B5714F",
+            "image": "/images/products/jinggu-lounge-chair/insitu-3.jpg",
+            "thumbnail": "/images/products/jinggu-lounge-chair/insitu-3.jpg"
+          },
+          {
+            "id": "charcoal-felt",
+            "name": {
+              "zh": "炭灰氈布",
+              "en": "Charcoal Felt"
+            },
+            "hex": "#3A3A38",
+            "image": "/images/products/jinggu-lounge-chair/insitu-4.jpg",
+            "thumbnail": "/images/products/jinggu-lounge-chair/insitu-4.jpg"
+          },
+          {
+            "id": "warm-white-boucle",
+            "name": {
+              "zh": "暖白波麗",
+              "en": "Warm White Bouclé"
+            },
+            "hex": "#EFE9DE",
+            "image": "/images/products/jinggu-lounge-chair/studio-1.jpg",
+            "thumbnail": "/images/products/jinggu-lounge-chair/studio-1.jpg"
+          }
+        ],
+        "woodFinishes": [
+          {
+            "id": "oak",
+            "name": {
+              "zh": "橡木",
+              "en": "Oak"
+            },
+            "hex": "#C9A876",
+            "image": "/images/products/jinggu-lounge-chair/studio-1.jpg",
+            "thumbnail": "/images/products/jinggu-lounge-chair/studio-1.jpg"
+          },
+          {
+            "id": "walnut",
+            "name": {
+              "zh": "胡桃木",
+              "en": "Walnut"
+            },
+            "hex": "#5A3E2B",
+            "image": "/images/products/jinggu-lounge-chair/insitu-1.jpg",
+            "thumbnail": "/images/products/jinggu-lounge-chair/insitu-1.jpg"
+          },
+          {
+            "id": "black-oak",
+            "name": {
+              "zh": "黑橡木",
+              "en": "Black Oak"
+            },
+            "hex": "#2B2521",
+            "image": "/images/products/jinggu-lounge-chair/insitu-2.jpg",
+            "thumbnail": "/images/products/jinggu-lounge-chair/insitu-2.jpg"
+          },
+          {
+            "id": "natural-ash",
+            "name": {
+              "zh": "天然梣木",
+              "en": "Natural Ash"
+            },
+            "hex": "#DCCBA8",
+            "image": "/images/products/jinggu-lounge-chair/insitu-3.jpg",
+            "thumbnail": "/images/products/jinggu-lounge-chair/insitu-3.jpg"
+          }
+        ]
+      },
+      "dimensions": [
+        {
+          "label": {
+            "zh": "寬度",
+            "en": "Width"
+          },
+          "value": "82 cm"
+        },
+        {
+          "label": {
+            "zh": "深度",
+            "en": "Depth"
+          },
+          "value": "88 cm"
+        },
+        {
+          "label": {
+            "zh": "高度",
+            "en": "Height"
+          },
+          "value": "104 cm"
+        },
+        {
+          "label": {
+            "zh": "座高",
+            "en": "Seat Height"
+          },
+          "value": "40 cm"
+        },
+        {
+          "label": {
+            "zh": "淨重",
+            "en": "Net Weight"
+          },
+          "value": "24 kg"
+        }
+      ],
+      "materials": [
+        {
+          "title": {
+            "zh": "實木外露框架",
+            "en": "Exposed Solid Timber Frame"
+          },
+          "description": {
+            "zh": "採用傳統榫接工法，結構外顯，是工藝自信的展現。",
+            "en": "Joined using traditional woodworking techniques left visible — a confident display of the craft."
+          }
+        },
+        {
+          "title": {
+            "zh": "高回彈泡棉",
+            "en": "High-Resilience Foam"
+          },
+          "description": {
+            "zh": "久坐不易塌陷，維持椅型的挺闊輪廓。",
+            "en": "Resists sagging under extended use, keeping the chair's structured silhouette intact."
+          }
+        },
+        {
+          "title": {
+            "zh": "可拆卸布套",
+            "en": "Removable Covers"
+          },
+          "description": {
+            "zh": "坐墊與靠墊皆可拆卸，方便日常清潔保養。",
+            "en": "Seat and back cushions both unzip for easy everyday cleaning and care."
+          }
+        }
+      ],
+      "downloads": [
+        {
+          "label": {
+            "zh": "靜谷單椅 產品規格書",
+            "en": "Jinggu Lounge Chair Product Spec Sheet"
+          },
+          "type": "PDF",
+          "size": "2.4 MB",
+          "href": "#"
+        },
+        {
+          "label": {
+            "zh": "靜谷單椅 CAD 施工圖",
+            "en": "Jinggu Lounge Chair CAD Drawing"
+          },
+          "type": "CAD",
+          "size": "5.1 MB",
+          "href": "#"
+        },
+        {
+          "label": {
+            "zh": "靜谷單椅 3D 模型檔",
+            "en": "Jinggu Lounge Chair 3D Model File"
+          },
+          "type": "3D",
+          "size": "18.6 MB",
+          "href": "#"
+        }
+      ],
+      "relatedProductIds": [
+        "p1",
+        "p8",
+        "p6"
+      ],
+      "tags": [
+        "單椅",
+        "客廳",
+        "閱讀角"
+      ]
+    },
+    {
+      "id": "p3",
+      "slug": "shanxing-dining-table",
+      "name": {
+        "zh": "山形餐桌",
+        "en": "Shanxing Dining Table"
+      },
+      "category": {
+        "zh": "餐桌",
+        "en": "Dining Table"
+      },
+      "categoryKey": "dining-table",
+      "designer": {
+        "name": "Pei",
+        "bio": {
+          "zh": "Pei 主導萬角自品牌創立以來的完整家具系列開發，工作足跡橫跨台北、哥本哈根與墨爾本，設計語彙貫穿北歐工藝的節制與亞洲生活的細膩感受，堅持每一件作品都從材質本身的個性出發。",
+          "en": "Pei has led MAAN GOK's complete furniture range since the brand's founding, working across Taipei, Copenhagen and Melbourne. Their design language bridges Nordic restraint with the nuance of Asian living, insisting that every piece begin with the character of its material."
+        }
+      },
+      "shortDescription": {
+        "zh": "以整塊實木桌面與略帶斜切的桌腳，勾勒出如山巒起伏般的沉穩輪廓。",
+        "en": "A single solid-timber tabletop paired with subtly angled legs traces a steady, mountain-like silhouette."
+      },
+      "description": {
+        "zh": [
+          "山形餐桌選用單一原木切片製作桌面，保留天然木紋與邊緣的原始肌理，每一張桌子都因此獨一無二。",
+          "桌腳以四十五度角切面設計，從側面看如山形般俐落有力，同時提供足夠的腳部活動空間。",
+          "桌面經多道天然油蠟處理，觸感溫潤且具防潑水效果，並會隨使用時間展現溫潤的包漿。"
+        ],
+        "en": [
+          "The tabletop is cut from a single timber slab, preserving the natural grain and raw edge texture — which makes every table one of a kind.",
+          "The legs are cut at a 45-degree angle, tracing a crisp, mountain-like profile from the side while leaving ample legroom underneath.",
+          "The surface is finished with several coats of natural oil wax, giving it a warm touch and water resistance that only deepens in patina over time."
+        ]
+      },
+      "currency": "TWD",
+      "isNew": true,
+      "heroImage": "/images/products/shanxing-dining-table/studio-1.jpg",
+      "gallery": [
+        {
+          "src": "/images/products/shanxing-dining-table/studio-1.jpg",
+          "kind": "studio"
+        },
+        {
+          "src": "/images/products/shanxing-dining-table/insitu-1.jpg",
+          "kind": "insitu"
+        },
+        {
+          "src": "/images/products/shanxing-dining-table/insitu-2.jpg",
+          "kind": "insitu"
+        },
+        {
+          "src": "/images/products/shanxing-dining-table/insitu-3.jpg",
+          "kind": "insitu"
+        }
+      ],
+      "variants": {
+        "colours": [
+          {
+            "id": "oak",
+            "name": {
+              "zh": "橡木",
+              "en": "Oak"
+            },
+            "hex": "#C9A876",
+            "image": "/images/products/shanxing-dining-table/studio-1.jpg",
+            "thumbnail": "/images/products/shanxing-dining-table/studio-1.jpg"
+          },
+          {
+            "id": "walnut",
+            "name": {
+              "zh": "胡桃木",
+              "en": "Walnut"
+            },
+            "hex": "#5A3E2B",
+            "image": "/images/products/shanxing-dining-table/insitu-1.jpg",
+            "thumbnail": "/images/products/shanxing-dining-table/insitu-1.jpg"
+          },
+          {
+            "id": "black-oak",
+            "name": {
+              "zh": "黑橡木",
+              "en": "Black Oak"
+            },
+            "hex": "#2B2521",
+            "image": "/images/products/shanxing-dining-table/insitu-2.jpg",
+            "thumbnail": "/images/products/shanxing-dining-table/insitu-2.jpg"
+          },
+          {
+            "id": "natural-ash",
+            "name": {
+              "zh": "天然梣木",
+              "en": "Natural Ash"
+            },
+            "hex": "#DCCBA8",
+            "image": "/images/products/shanxing-dining-table/insitu-3.jpg",
+            "thumbnail": "/images/products/shanxing-dining-table/insitu-3.jpg"
+          },
+          {
+            "id": "smoked-oak",
+            "name": {
+              "zh": "煙燻橡木",
+              "en": "Smoked Oak"
+            },
+            "hex": "#6B5643",
+            "image": "/images/products/shanxing-dining-table/studio-1.jpg",
+            "thumbnail": "/images/products/shanxing-dining-table/studio-1.jpg"
+          },
+          {
+            "id": "white",
+            "name": {
+              "zh": "白色",
+              "en": "White"
+            },
+            "hex": "#F3EFE8",
+            "image": "/images/products/shanxing-dining-table/insitu-1.jpg",
+            "thumbnail": "/images/products/shanxing-dining-table/insitu-1.jpg"
+          }
+        ],
+        "sizes": [
+          {
+            "id": "l180",
+            "label": {
+              "zh": "180 cm（六人座）",
+              "en": "180 cm (Seats 6)"
+            },
+            "dimensions": "L180 x W90 x H75 cm"
+          },
+          {
+            "id": "l220",
+            "label": {
+              "zh": "220 cm（八人座）",
+              "en": "220 cm (Seats 8)"
+            },
+            "dimensions": "L220 x W98 x H75 cm"
+          },
+          {
+            "id": "l260",
+            "label": {
+              "zh": "260 cm（十人座）",
+              "en": "260 cm (Seats 10)"
+            },
+            "dimensions": "L260 x W98 x H75 cm"
+          }
+        ]
+      },
+      "dimensions": [
+        {
+          "label": {
+            "zh": "長度",
+            "en": "Length"
+          },
+          "value": "220 cm"
+        },
+        {
+          "label": {
+            "zh": "寬度",
+            "en": "Width"
+          },
+          "value": "98 cm"
+        },
+        {
+          "label": {
+            "zh": "高度",
+            "en": "Height"
+          },
+          "value": "75 cm"
+        },
+        {
+          "label": {
+            "zh": "桌面厚度",
+            "en": "Tabletop Thickness"
+          },
+          "value": "4.2 cm"
+        },
+        {
+          "label": {
+            "zh": "淨重",
+            "en": "Net Weight"
+          },
+          "value": "58 kg"
+        }
+      ],
+      "materials": [
+        {
+          "title": {
+            "zh": "整塊原木桌面",
+            "en": "Single-Slab Tabletop"
+          },
+          "description": {
+            "zh": "選用單一原木切片拼接，紋理連貫一致。",
+            "en": "Cut from one continuous timber slab so the grain reads as a single, unbroken pattern."
+          }
+        },
+        {
+          "title": {
+            "zh": "天然油蠟塗裝",
+            "en": "Natural Oil-Wax Finish"
+          },
+          "description": {
+            "zh": "取代化學漆料，保留木材原有觸感與呼吸性。",
+            "en": "Used in place of chemical lacquer, preserving the timber's natural touch and breathability."
+          }
+        },
+        {
+          "title": {
+            "zh": "隱藏式桌腳結構",
+            "en": "Concealed Leg Fixings"
+          },
+          "description": {
+            "zh": "五金結構隱藏於桌腳內側，維持外觀純淨。",
+            "en": "All hardware is hidden inside the legs, keeping the silhouette clean."
+          }
+        }
+      ],
+      "downloads": [
+        {
+          "label": {
+            "zh": "山形餐桌 產品規格書",
+            "en": "Shanxing Dining Table Product Spec Sheet"
+          },
+          "type": "PDF",
+          "size": "2.4 MB",
+          "href": "#"
+        },
+        {
+          "label": {
+            "zh": "山形餐桌 CAD 施工圖",
+            "en": "Shanxing Dining Table CAD Drawing"
+          },
+          "type": "CAD",
+          "size": "5.1 MB",
+          "href": "#"
+        },
+        {
+          "label": {
+            "zh": "山形餐桌 3D 模型檔",
+            "en": "Shanxing Dining Table 3D Model File"
+          },
+          "type": "3D",
+          "size": "18.6 MB",
+          "href": "#"
+        }
+      ],
+      "relatedProductIds": [
+        "p4",
+        "p7",
+        "p5"
+      ],
+      "tags": [
+        "餐桌",
+        "實木",
+        "餐廳"
+      ]
+    },
+    {
+      "id": "p4",
+      "slug": "huyue-dining-chair",
+      "name": {
+        "zh": "弧月餐椅",
+        "en": "Huyue Dining Chair"
+      },
+      "category": {
+        "zh": "餐椅",
+        "en": "Dining Chair"
+      },
+      "categoryKey": "dining-chair",
+      "designer": {
+        "name": "Pei",
+        "bio": {
+          "zh": "Pei 主導萬角自品牌創立以來的完整家具系列開發，工作足跡橫跨台北、哥本哈根與墨爾本，設計語彙貫穿北歐工藝的節制與亞洲生活的細膩感受，堅持每一件作品都從材質本身的個性出發。",
+          "en": "Pei has led MAAN GOK's complete furniture range since the brand's founding, working across Taipei, Copenhagen and Melbourne. Their design language bridges Nordic restraint with the nuance of Asian living, insisting that every piece begin with the character of its material."
+        }
+      },
+      "shortDescription": {
+        "zh": "以一道弧形靠背貫穿椅身，線條簡練卻承托有力，是餐桌旁最安靜的存在。",
+        "en": "A single curved backrest runs through the chair's frame — spare in line, quietly supportive, the calmest presence at the table."
+      },
+      "description": {
+        "zh": [
+          "弧月餐椅的靠背取自新月的弧度，以蒸汽彎曲工藝一體成形，減少接合線的視覺干擾。",
+          "椅面採貼合人體工學的淺弧設計，並可選配布藝或皮革坐墊。",
+          "可堆疊收納設計，適合彈性運用於商業空間或家庭聚會場合。"
+        ],
+        "en": [
+          "The backrest takes its curve from a crescent moon, steam-bent into a single continuous form that minimises visible joints.",
+          "The seat is shaped with a shallow ergonomic curve and can be upholstered in fabric or leather.",
+          "Stackable for easy storage, making it equally suited to commercial spaces and family gatherings."
+        ]
+      },
+      "currency": "TWD",
+      "heroImage": "/images/products/huyue-dining-chair/studio-1.jpg",
+      "gallery": [
+        {
+          "src": "/images/products/huyue-dining-chair/studio-1.jpg",
+          "kind": "studio"
+        },
+        {
+          "src": "/images/products/huyue-dining-chair/insitu-1.jpg",
+          "kind": "insitu"
+        },
+        {
+          "src": "/images/products/huyue-dining-chair/insitu-2.jpg",
+          "kind": "insitu"
+        }
+      ],
+      "variants": {
+        "colours": [
+          {
+            "id": "oak",
+            "name": {
+              "zh": "橡木",
+              "en": "Oak"
+            },
+            "hex": "#C9A876",
+            "image": "/images/products/huyue-dining-chair/studio-1.jpg",
+            "thumbnail": "/images/products/huyue-dining-chair/studio-1.jpg"
+          },
+          {
+            "id": "walnut",
+            "name": {
+              "zh": "胡桃木",
+              "en": "Walnut"
+            },
+            "hex": "#5A3E2B",
+            "image": "/images/products/huyue-dining-chair/insitu-1.jpg",
+            "thumbnail": "/images/products/huyue-dining-chair/insitu-1.jpg"
+          },
+          {
+            "id": "black-oak",
+            "name": {
+              "zh": "黑橡木",
+              "en": "Black Oak"
+            },
+            "hex": "#2B2521",
+            "image": "/images/products/huyue-dining-chair/insitu-2.jpg",
+            "thumbnail": "/images/products/huyue-dining-chair/insitu-2.jpg"
+          },
+          {
+            "id": "natural-ash",
+            "name": {
+              "zh": "天然梣木",
+              "en": "Natural Ash"
+            },
+            "hex": "#DCCBA8",
+            "image": "/images/products/huyue-dining-chair/studio-1.jpg",
+            "thumbnail": "/images/products/huyue-dining-chair/studio-1.jpg"
+          },
+          {
+            "id": "smoked-oak",
+            "name": {
+              "zh": "煙燻橡木",
+              "en": "Smoked Oak"
+            },
+            "hex": "#6B5643",
+            "image": "/images/products/huyue-dining-chair/insitu-1.jpg",
+            "thumbnail": "/images/products/huyue-dining-chair/insitu-1.jpg"
+          },
+          {
+            "id": "white",
+            "name": {
+              "zh": "白色",
+              "en": "White"
+            },
+            "hex": "#F3EFE8",
+            "image": "/images/products/huyue-dining-chair/insitu-2.jpg",
+            "thumbnail": "/images/products/huyue-dining-chair/insitu-2.jpg"
+          }
+        ],
+        "fabrics": [
+          {
+            "id": "sand-linen",
+            "name": {
+              "zh": "沙棕亞麻",
+              "en": "Sand Linen"
+            },
+            "category": {
+              "zh": "布藝",
+              "en": "Fabric"
+            },
+            "hex": "#D8C9AE",
+            "image": "/images/products/huyue-dining-chair/studio-1.jpg",
+            "thumbnail": "/images/products/huyue-dining-chair/studio-1.jpg"
+          },
+          {
+            "id": "stone-boucle",
+            "name": {
+              "zh": "石灰波麗",
+              "en": "Stone Bouclé"
+            },
+            "category": {
+              "zh": "布藝",
+              "en": "Fabric"
+            },
+            "hex": "#C9C2B6",
+            "image": "/images/products/huyue-dining-chair/insitu-1.jpg",
+            "thumbnail": "/images/products/huyue-dining-chair/insitu-1.jpg"
+          },
+          {
+            "id": "olive-wool",
+            "name": {
+              "zh": "橄欖羊毛",
+              "en": "Olive Wool"
+            },
+            "category": {
+              "zh": "布藝",
+              "en": "Fabric"
+            },
+            "hex": "#6B6E4E",
+            "image": "/images/products/huyue-dining-chair/insitu-2.jpg",
+            "thumbnail": "/images/products/huyue-dining-chair/insitu-2.jpg"
+          },
+          {
+            "id": "terracotta-weave",
+            "name": {
+              "zh": "陶土織紋",
+              "en": "Terracotta Weave"
+            },
+            "category": {
+              "zh": "布藝",
+              "en": "Fabric"
+            },
+            "hex": "#B5714F",
+            "image": "/images/products/huyue-dining-chair/studio-1.jpg",
+            "thumbnail": "/images/products/huyue-dining-chair/studio-1.jpg"
+          },
+          {
+            "id": "charcoal-felt",
+            "name": {
+              "zh": "炭灰氈布",
+              "en": "Charcoal Felt"
+            },
+            "category": {
+              "zh": "布藝",
+              "en": "Fabric"
+            },
+            "hex": "#3A3A38",
+            "image": "/images/products/huyue-dining-chair/insitu-1.jpg",
+            "thumbnail": "/images/products/huyue-dining-chair/insitu-1.jpg"
+          },
+          {
+            "id": "warm-white-boucle",
+            "name": {
+              "zh": "暖白波麗",
+              "en": "Warm White Bouclé"
+            },
+            "category": {
+              "zh": "布藝",
+              "en": "Fabric"
+            },
+            "hex": "#EFE9DE",
+            "image": "/images/products/huyue-dining-chair/insitu-2.jpg",
+            "thumbnail": "/images/products/huyue-dining-chair/insitu-2.jpg"
+          }
+        ]
+      },
+      "dimensions": [
+        {
+          "label": {
+            "zh": "寬度",
+            "en": "Width"
+          },
+          "value": "52 cm"
+        },
+        {
+          "label": {
+            "zh": "深度",
+            "en": "Depth"
+          },
+          "value": "56 cm"
+        },
+        {
+          "label": {
+            "zh": "高度",
+            "en": "Height"
+          },
+          "value": "80 cm"
+        },
+        {
+          "label": {
+            "zh": "座高",
+            "en": "Seat Height"
+          },
+          "value": "45 cm"
+        },
+        {
+          "label": {
+            "zh": "淨重",
+            "en": "Net Weight"
+          },
+          "value": "6.5 kg"
+        }
+      ],
+      "materials": [
+        {
+          "title": {
+            "zh": "蒸汽彎曲實木",
+            "en": "Steam-Bent Solid Timber"
+          },
+          "description": {
+            "zh": "以傳統蒸汽彎木工藝塑形，一體成形減少接點。",
+            "en": "Shaped using traditional steam-bending, formed as a single continuous piece to minimise joints."
+          }
+        },
+        {
+          "title": {
+            "zh": "座墊皮革／布藝",
+            "en": "Leather or Fabric Seat"
+          },
+          "description": {
+            "zh": "可依需求選配天然頭層皮革或耐磨布藝。",
+            "en": "Choose between natural full-grain leather or hard-wearing fabric upholstery."
+          }
+        }
+      ],
+      "downloads": [
+        {
+          "label": {
+            "zh": "弧月餐椅 產品規格書",
+            "en": "Huyue Dining Chair Product Spec Sheet"
+          },
+          "type": "PDF",
+          "size": "2.4 MB",
+          "href": "#"
+        },
+        {
+          "label": {
+            "zh": "弧月餐椅 CAD 施工圖",
+            "en": "Huyue Dining Chair CAD Drawing"
+          },
+          "type": "CAD",
+          "size": "5.1 MB",
+          "href": "#"
+        },
+        {
+          "label": {
+            "zh": "弧月餐椅 3D 模型檔",
+            "en": "Huyue Dining Chair 3D Model File"
+          },
+          "type": "3D",
+          "size": "18.6 MB",
+          "href": "#"
+        }
+      ],
+      "relatedProductIds": [
+        "p3",
+        "p7",
+        "p2"
+      ],
+      "tags": [
+        "餐椅",
+        "實木",
+        "餐廳"
+      ]
+    },
+    {
+      "id": "p5",
+      "slug": "chaoxi-coffee-table",
+      "name": {
+        "zh": "潮汐茶几",
+        "en": "Chaoxi Coffee Table"
+      },
+      "category": {
+        "zh": "茶几",
+        "en": "Coffee Table"
+      },
+      "categoryKey": "coffee-table",
+      "designer": {
+        "name": "Pei",
+        "bio": {
+          "zh": "Pei 主導萬角自品牌創立以來的完整家具系列開發，工作足跡橫跨台北、哥本哈根與墨爾本，設計語彙貫穿北歐工藝的節制與亞洲生活的細膩感受，堅持每一件作品都從材質本身的個性出發。",
+          "en": "Pei has led MAAN GOK's complete furniture range since the brand's founding, working across Taipei, Copenhagen and Melbourne. Their design language bridges Nordic restraint with the nuance of Asian living, insisting that every piece begin with the character of its material."
+        }
+      },
+      "shortDescription": {
+        "zh": "圓潤桌緣與雙層結構，如潮水漫過沙灘般柔和，為客廳增添一處平靜焦點。",
+        "en": "Rounded edges and a two-tier structure move as softly as tide over sand, giving the living room a calm focal point."
+      },
+      "description": {
+        "zh": [
+          "潮汐茶几以雙層錯落的桌面設計，創造出高低有致的收納與展示層次。",
+          "桌緣經手工打磨呈現圓潤弧度，觸感溫潤不銳利，特別適合有孩童的家庭。",
+          "可選配天然石材桌面，紋理如水波流動，為空間注入沉穩的自然氣息。"
+        ],
+        "en": [
+          "Chaoxi Coffee Table's offset two-tier top creates natural variation in height for both storage and display.",
+          "Every edge is hand-sanded into a soft curve — gentle to the touch and especially well suited to homes with children.",
+          "An optional natural stone top brings a wave-like veining to the room, grounding it in quiet, natural texture."
+        ]
+      },
+      "currency": "TWD",
+      "heroImage": "/images/products/chaoxi-coffee-table/studio-1.jpg",
+      "gallery": [
+        {
+          "src": "/images/products/chaoxi-coffee-table/studio-1.jpg",
+          "kind": "studio"
+        },
+        {
+          "src": "/images/products/chaoxi-coffee-table/insitu-1.jpg",
+          "kind": "insitu"
+        },
+        {
+          "src": "/images/products/chaoxi-coffee-table/insitu-2.jpg",
+          "kind": "insitu"
+        },
+        {
+          "src": "/images/products/chaoxi-coffee-table/insitu-3.jpg",
+          "kind": "insitu"
+        }
+      ],
+      "variants": {
+        "colours": [
+          {
+            "id": "oak",
+            "name": {
+              "zh": "橡木",
+              "en": "Oak"
+            },
+            "hex": "#C9A876",
+            "image": "/images/products/chaoxi-coffee-table/studio-1.jpg",
+            "thumbnail": "/images/products/chaoxi-coffee-table/studio-1.jpg"
+          },
+          {
+            "id": "walnut",
+            "name": {
+              "zh": "胡桃木",
+              "en": "Walnut"
+            },
+            "hex": "#5A3E2B",
+            "image": "/images/products/chaoxi-coffee-table/insitu-1.jpg",
+            "thumbnail": "/images/products/chaoxi-coffee-table/insitu-1.jpg"
+          },
+          {
+            "id": "black-oak",
+            "name": {
+              "zh": "黑橡木",
+              "en": "Black Oak"
+            },
+            "hex": "#2B2521",
+            "image": "/images/products/chaoxi-coffee-table/insitu-2.jpg",
+            "thumbnail": "/images/products/chaoxi-coffee-table/insitu-2.jpg"
+          },
+          {
+            "id": "natural-ash",
+            "name": {
+              "zh": "天然梣木",
+              "en": "Natural Ash"
+            },
+            "hex": "#DCCBA8",
+            "image": "/images/products/chaoxi-coffee-table/insitu-3.jpg",
+            "thumbnail": "/images/products/chaoxi-coffee-table/insitu-3.jpg"
+          },
+          {
+            "id": "smoked-oak",
+            "name": {
+              "zh": "煙燻橡木",
+              "en": "Smoked Oak"
+            },
+            "hex": "#6B5643",
+            "image": "/images/products/chaoxi-coffee-table/studio-1.jpg",
+            "thumbnail": "/images/products/chaoxi-coffee-table/studio-1.jpg"
+          }
+        ],
+        "sizes": [
+          {
+            "id": "round-70",
+            "label": {
+              "zh": "圓形 70 cm",
+              "en": "Round 70 cm"
+            },
+            "dimensions": "Ø70 x H36 cm"
+          },
+          {
+            "id": "oval-110",
+            "label": {
+              "zh": "橢圓 110 cm",
+              "en": "Oval 110 cm"
+            },
+            "dimensions": "L110 x W60 x H36 cm"
+          }
+        ]
+      },
+      "dimensions": [
+        {
+          "label": {
+            "zh": "長度",
+            "en": "Length"
+          },
+          "value": "110 cm"
+        },
+        {
+          "label": {
+            "zh": "寬度",
+            "en": "Width"
+          },
+          "value": "60 cm"
+        },
+        {
+          "label": {
+            "zh": "高度",
+            "en": "Height"
+          },
+          "value": "36 cm"
+        },
+        {
+          "label": {
+            "zh": "淨重",
+            "en": "Net Weight"
+          },
+          "value": "22 kg"
+        }
+      ],
+      "materials": [
+        {
+          "title": {
+            "zh": "實木雙層結構",
+            "en": "Two-Tier Solid Timber"
+          },
+          "description": {
+            "zh": "上下兩層桌面錯落設計，兼具功能與視覺層次。",
+            "en": "Two offset timber tiers combine practical storage with visual layering."
+          }
+        },
+        {
+          "title": {
+            "zh": "天然石材桌面（選配）",
+            "en": "Natural Stone Top (Optional)"
+          },
+          "description": {
+            "zh": "採用天然大理石或萊姆石，紋理獨一無二。",
+            "en": "Available in natural marble or limestone, each with its own one-of-a-kind veining."
+          }
+        }
+      ],
+      "downloads": [
+        {
+          "label": {
+            "zh": "潮汐茶几 產品規格書",
+            "en": "Chaoxi Coffee Table Product Spec Sheet"
+          },
+          "type": "PDF",
+          "size": "2.4 MB",
+          "href": "#"
+        },
+        {
+          "label": {
+            "zh": "潮汐茶几 CAD 施工圖",
+            "en": "Chaoxi Coffee Table CAD Drawing"
+          },
+          "type": "CAD",
+          "size": "5.1 MB",
+          "href": "#"
+        },
+        {
+          "label": {
+            "zh": "潮汐茶几 3D 模型檔",
+            "en": "Chaoxi Coffee Table 3D Model File"
+          },
+          "type": "3D",
+          "size": "18.6 MB",
+          "href": "#"
+        }
+      ],
+      "relatedProductIds": [
+        "p1",
+        "p7",
+        "p3"
+      ],
+      "tags": [
+        "茶几",
+        "客廳",
+        "實木"
+      ]
+    },
+    {
+      "id": "p6",
+      "slug": "mianyun-bed-frame",
+      "name": {
+        "zh": "眠雲床架",
+        "en": "Mianyun Bed Frame"
+      },
+      "category": {
+        "zh": "床架",
+        "en": "Bed Frame"
+      },
+      "categoryKey": "bed",
+      "designer": {
+        "name": "Pei",
+        "bio": {
+          "zh": "Pei 主導萬角自品牌創立以來的完整家具系列開發，工作足跡橫跨台北、哥本哈根與墨爾本，設計語彙貫穿北歐工藝的節制與亞洲生活的細膩感受，堅持每一件作品都從材質本身的個性出發。",
+          "en": "Pei has led MAAN GOK's complete furniture range since the brand's founding, working across Taipei, Copenhagen and Melbourne. Their design language bridges Nordic restraint with the nuance of Asian living, insisting that every piece begin with the character of its material."
+        }
+      },
+      "shortDescription": {
+        "zh": "厚實包覆的床頭板如雲朵般柔軟，搭配低矮床身比例，營造靜謐的臥室氛圍。",
+        "en": "A generously padded headboard as soft as a cloud, paired with a low-slung frame that sets a calm, grounded mood in the bedroom."
+      },
+      "description": {
+        "zh": [
+          "眠雲床架的床頭板以分格車縫工藝製作，內裡填充高密度海綿，倚靠時提供飽滿支撐。",
+          "床身刻意降低高度比例，呼應日式與北歐風格中對「貼近地面」生活感的追求。",
+          "床底採實木排骨架設計，提升床墊透氣性，並可承重至 300 公斤。"
+        ],
+        "en": [
+          "The headboard is channel-stitched and filled with high-density foam, offering full support when you sit up against it.",
+          "The frame sits deliberately low, echoing the close-to-the-ground sensibility shared by Japanese and Nordic interiors.",
+          "A solid-timber slatted base improves mattress ventilation and supports up to 300 kg."
+        ]
+      },
+      "currency": "TWD",
+      "heroImage": "/images/products/mianyun-bed-frame/studio-1.jpg",
+      "gallery": [
+        {
+          "src": "/images/products/mianyun-bed-frame/studio-1.jpg",
+          "kind": "studio"
+        },
+        {
+          "src": "/images/products/mianyun-bed-frame/insitu-1.jpg",
+          "kind": "insitu"
+        },
+        {
+          "src": "/images/products/mianyun-bed-frame/insitu-2.jpg",
+          "kind": "insitu"
+        },
+        {
+          "src": "/images/products/mianyun-bed-frame/insitu-3.jpg",
+          "kind": "insitu"
+        }
+      ],
+      "variants": {
+        "colours": [
+          {
+            "id": "sand-linen",
+            "name": {
+              "zh": "沙棕亞麻",
+              "en": "Sand Linen"
+            },
+            "hex": "#D8C9AE",
+            "image": "/images/products/mianyun-bed-frame/studio-1.jpg",
+            "thumbnail": "/images/products/mianyun-bed-frame/studio-1.jpg"
+          },
+          {
+            "id": "stone-boucle",
+            "name": {
+              "zh": "石灰波麗",
+              "en": "Stone Bouclé"
+            },
+            "hex": "#C9C2B6",
+            "image": "/images/products/mianyun-bed-frame/insitu-1.jpg",
+            "thumbnail": "/images/products/mianyun-bed-frame/insitu-1.jpg"
+          },
+          {
+            "id": "olive-wool",
+            "name": {
+              "zh": "橄欖羊毛",
+              "en": "Olive Wool"
+            },
+            "hex": "#6B6E4E",
+            "image": "/images/products/mianyun-bed-frame/insitu-2.jpg",
+            "thumbnail": "/images/products/mianyun-bed-frame/insitu-2.jpg"
+          },
+          {
+            "id": "terracotta-weave",
+            "name": {
+              "zh": "陶土織紋",
+              "en": "Terracotta Weave"
+            },
+            "hex": "#B5714F",
+            "image": "/images/products/mianyun-bed-frame/insitu-3.jpg",
+            "thumbnail": "/images/products/mianyun-bed-frame/insitu-3.jpg"
+          },
+          {
+            "id": "charcoal-felt",
+            "name": {
+              "zh": "炭灰氈布",
+              "en": "Charcoal Felt"
+            },
+            "hex": "#3A3A38",
+            "image": "/images/products/mianyun-bed-frame/studio-1.jpg",
+            "thumbnail": "/images/products/mianyun-bed-frame/studio-1.jpg"
+          },
+          {
+            "id": "warm-white-boucle",
+            "name": {
+              "zh": "暖白波麗",
+              "en": "Warm White Bouclé"
+            },
+            "hex": "#EFE9DE",
+            "image": "/images/products/mianyun-bed-frame/insitu-1.jpg",
+            "thumbnail": "/images/products/mianyun-bed-frame/insitu-1.jpg"
+          }
+        ],
+        "sizes": [
+          {
+            "id": "queen",
+            "label": {
+              "zh": "雙人加大 5 尺",
+              "en": "Queen (5 ft)"
+            },
+            "dimensions": "W152 x L200 cm"
+          },
+          {
+            "id": "king",
+            "label": {
+              "zh": "特大雙人 6 尺",
+              "en": "King (6 ft)"
+            },
+            "dimensions": "W182 x L200 cm"
+          }
+        ]
+      },
+      "dimensions": [
+        {
+          "label": {
+            "zh": "床頭板高度",
+            "en": "Headboard Height"
+          },
+          "value": "118 cm"
+        },
+        {
+          "label": {
+            "zh": "床身高度",
+            "en": "Bed Base Height"
+          },
+          "value": "28 cm"
+        },
+        {
+          "label": {
+            "zh": "床墊尺寸",
+            "en": "Mattress Size"
+          },
+          "value": "182 x 200 cm"
+        },
+        {
+          "label": {
+            "zh": "承重",
+            "en": "Weight Capacity"
+          },
+          "value": "300 kg"
+        }
+      ],
+      "materials": [
+        {
+          "title": {
+            "zh": "分格車縫床頭板",
+            "en": "Channel-Stitched Headboard"
+          },
+          "description": {
+            "zh": "高密度海綿分格填充，長期使用不易塌陷變形。",
+            "en": "Filled section by section with high-density foam that resists sagging over years of use."
+          }
+        },
+        {
+          "title": {
+            "zh": "實木排骨床底",
+            "en": "Solid Timber Slat Base"
+          },
+          "description": {
+            "zh": "透氣排骨結構，延長床墊使用壽命。",
+            "en": "A ventilated slat structure that extends the life of your mattress."
+          }
+        }
+      ],
+      "downloads": [
+        {
+          "label": {
+            "zh": "眠雲床架 產品規格書",
+            "en": "Mianyun Bed Frame Product Spec Sheet"
+          },
+          "type": "PDF",
+          "size": "2.4 MB",
+          "href": "#"
+        },
+        {
+          "label": {
+            "zh": "眠雲床架 CAD 施工圖",
+            "en": "Mianyun Bed Frame CAD Drawing"
+          },
+          "type": "CAD",
+          "size": "5.1 MB",
+          "href": "#"
+        },
+        {
+          "label": {
+            "zh": "眠雲床架 3D 模型檔",
+            "en": "Mianyun Bed Frame 3D Model File"
+          },
+          "type": "3D",
+          "size": "18.6 MB",
+          "href": "#"
+        }
+      ],
+      "relatedProductIds": [
+        "p1",
+        "p7",
+        "p8"
+      ],
+      "tags": [
+        "臥室",
+        "床架",
+        "布藝"
+      ]
+    },
+    {
+      "id": "p7",
+      "slug": "yanceng-sideboard",
+      "name": {
+        "zh": "岩層邊櫃",
+        "en": "Yanceng Sideboard"
+      },
+      "category": {
+        "zh": "邊櫃",
+        "en": "Sideboard"
+      },
+      "categoryKey": "sideboard",
+      "designer": {
+        "name": "Pei",
+        "bio": {
+          "zh": "Pei 主導萬角自品牌創立以來的完整家具系列開發，工作足跡橫跨台北、哥本哈根與墨爾本，設計語彙貫穿北歐工藝的節制與亞洲生活的細膩感受，堅持每一件作品都從材質本身的個性出發。",
+          "en": "Pei has led MAAN GOK's complete furniture range since the brand's founding, working across Taipei, Copenhagen and Melbourne. Their design language bridges Nordic restraint with the nuance of Asian living, insisting that every piece begin with the character of its material."
+        }
+      },
+      "shortDescription": {
+        "zh": "水平堆疊的門片線條如地質岩層般沉穩，內藏可調式層板，兼具展示與收納機能。",
+        "en": "Horizontal, stacked door lines read like geological strata, with adjustable interior shelving for both display and storage."
+      },
+      "description": {
+        "zh": [
+          "岩層邊櫃的立面設計取自地質剖面的堆疊層次，門片以實木指接拼板製作，呈現細膩的木紋律動。",
+          "內部配置可調式層板與抽屜，能依需求彈性規劃收納配置。",
+          "櫃身底部懸空設計，搭配隱藏式腳座，讓量體在視覺上更為輕盈。"
+        ],
+        "en": [
+          "Yanceng Sideboard's façade takes its layered form from a geological cross-section; the doors are finger-jointed solid timber, giving the grain a subtle rhythm.",
+          "Inside, adjustable shelving and drawers let you configure storage to fit what you keep.",
+          "The cabinet floats above a concealed base, keeping its considerable volume visually light."
+        ]
+      },
+      "currency": "TWD",
+      "heroImage": "/images/products/yanceng-sideboard/studio-1.jpg",
+      "gallery": [
+        {
+          "src": "/images/products/yanceng-sideboard/studio-1.jpg",
+          "kind": "studio"
+        },
+        {
+          "src": "/images/products/yanceng-sideboard/studio-2.jpg",
+          "kind": "studio"
+        },
+        {
+          "src": "/images/products/yanceng-sideboard/insitu-1.jpg",
+          "kind": "insitu"
+        },
+        {
+          "src": "/images/products/yanceng-sideboard/insitu-2.jpg",
+          "kind": "insitu"
+        },
+        {
+          "src": "/images/products/yanceng-sideboard/insitu-3.jpg",
+          "kind": "insitu"
+        },
+        {
+          "src": "/images/products/yanceng-sideboard/insitu-4.jpg",
+          "kind": "insitu"
+        }
+      ],
+      "variants": {
+        "colours": [
+          {
+            "id": "oak",
+            "name": {
+              "zh": "橡木",
+              "en": "Oak"
+            },
+            "hex": "#C9A876",
+            "image": "/images/products/yanceng-sideboard/studio-1.jpg",
+            "thumbnail": "/images/products/yanceng-sideboard/studio-1.jpg"
+          },
+          {
+            "id": "walnut",
+            "name": {
+              "zh": "胡桃木",
+              "en": "Walnut"
+            },
+            "hex": "#5A3E2B",
+            "image": "/images/products/yanceng-sideboard/studio-2.jpg",
+            "thumbnail": "/images/products/yanceng-sideboard/studio-2.jpg"
+          },
+          {
+            "id": "black-oak",
+            "name": {
+              "zh": "黑橡木",
+              "en": "Black Oak"
+            },
+            "hex": "#2B2521",
+            "image": "/images/products/yanceng-sideboard/insitu-1.jpg",
+            "thumbnail": "/images/products/yanceng-sideboard/insitu-1.jpg"
+          },
+          {
+            "id": "natural-ash",
+            "name": {
+              "zh": "天然梣木",
+              "en": "Natural Ash"
+            },
+            "hex": "#DCCBA8",
+            "image": "/images/products/yanceng-sideboard/insitu-2.jpg",
+            "thumbnail": "/images/products/yanceng-sideboard/insitu-2.jpg"
+          },
+          {
+            "id": "smoked-oak",
+            "name": {
+              "zh": "煙燻橡木",
+              "en": "Smoked Oak"
+            },
+            "hex": "#6B5643",
+            "image": "/images/products/yanceng-sideboard/insitu-3.jpg",
+            "thumbnail": "/images/products/yanceng-sideboard/insitu-3.jpg"
+          },
+          {
+            "id": "white",
+            "name": {
+              "zh": "白色",
+              "en": "White"
+            },
+            "hex": "#F3EFE8",
+            "image": "/images/products/yanceng-sideboard/insitu-4.jpg",
+            "thumbnail": "/images/products/yanceng-sideboard/insitu-4.jpg"
+          }
+        ],
+        "sizes": [
+          {
+            "id": "w160",
+            "label": {
+              "zh": "160 cm",
+              "en": "160 cm"
+            },
+            "dimensions": "W160 x D45 x H75 cm"
+          },
+          {
+            "id": "w200",
+            "label": {
+              "zh": "200 cm",
+              "en": "200 cm"
+            },
+            "dimensions": "W200 x D45 x H75 cm"
+          }
+        ]
+      },
+      "dimensions": [
+        {
+          "label": {
+            "zh": "寬度",
+            "en": "Width"
+          },
+          "value": "200 cm"
+        },
+        {
+          "label": {
+            "zh": "深度",
+            "en": "Depth"
+          },
+          "value": "45 cm"
+        },
+        {
+          "label": {
+            "zh": "高度",
+            "en": "Height"
+          },
+          "value": "75 cm"
+        },
+        {
+          "label": {
+            "zh": "淨重",
+            "en": "Net Weight"
+          },
+          "value": "62 kg"
+        }
+      ],
+      "materials": [
+        {
+          "title": {
+            "zh": "實木指接拼板",
+            "en": "Finger-Jointed Solid Timber"
+          },
+          "description": {
+            "zh": "門片以實木指接工藝拼接，兼顧穩定性與紋理美感。",
+            "en": "Door panels are finger-jointed for both structural stability and a striking grain pattern."
+          }
+        },
+        {
+          "title": {
+            "zh": "緩衝鉸鏈五金",
+            "en": "Soft-Close German Hinges"
+          },
+          "description": {
+            "zh": "德國製緩衝鉸鏈，開闔靜音且耐用。",
+            "en": "German-made soft-close hinges for quiet, durable operation."
+          }
+        }
+      ],
+      "downloads": [
+        {
+          "label": {
+            "zh": "岩層邊櫃 產品規格書",
+            "en": "Yanceng Sideboard Product Spec Sheet"
+          },
+          "type": "PDF",
+          "size": "2.4 MB",
+          "href": "#"
+        },
+        {
+          "label": {
+            "zh": "岩層邊櫃 CAD 施工圖",
+            "en": "Yanceng Sideboard CAD Drawing"
+          },
+          "type": "CAD",
+          "size": "5.1 MB",
+          "href": "#"
+        },
+        {
+          "label": {
+            "zh": "岩層邊櫃 3D 模型檔",
+            "en": "Yanceng Sideboard 3D Model File"
+          },
+          "type": "3D",
+          "size": "18.6 MB",
+          "href": "#"
+        }
+      ],
+      "relatedProductIds": [
+        "p3",
+        "p5",
+        "p6"
+      ],
+      "tags": [
+        "收納",
+        "邊櫃",
+        "餐廳"
+      ]
+    },
+    {
+      "id": "p8",
+      "slug": "muyang-lounge-chair",
+      "name": {
+        "zh": "暮陽休閒椅",
+        "en": "Muyang Lounge Chair"
+      },
+      "category": {
+        "zh": "休閒椅",
+        "en": "Lounge Chair"
+      },
+      "categoryKey": "lounge-chair",
+      "designer": {
+        "name": "Pei",
+        "bio": {
+          "zh": "Pei 主導萬角自品牌創立以來的完整家具系列開發，工作足跡橫跨台北、哥本哈根與墨爾本，設計語彙貫穿北歐工藝的節制與亞洲生活的細膩感受，堅持每一件作品都從材質本身的個性出發。",
+          "en": "Pei has led MAAN GOK's complete furniture range since the brand's founding, working across Taipei, Copenhagen and Melbourne. Their design language bridges Nordic restraint with the nuance of Asian living, insisting that every piece begin with the character of its material."
+        }
+      },
+      "shortDescription": {
+        "zh": "低座寬扶手的休閒椅，皮革包覆隨光影變化色澤，如日暮餘暉灑落身側。",
+        "en": "A low-seat lounge chair with generous armrests, its leather shifting tone with the light like the last glow of sunset."
+      },
+      "description": {
+        "zh": [
+          "暮陽休閒椅以寬厚扶手與略微外張的椅腳，創造出穩重卻不失輕盈的姿態。",
+          "全皮革包覆工藝選用天然頭層牛皮，經植鞣處理，隨時間使用會產生獨特的光澤變化。",
+          "椅身可 360 度旋轉，搭配同系列腳凳，是書房與角落閱讀空間的理想選擇。"
+        ],
+        "en": [
+          "Muyang Lounge Chair's thick armrests and slightly splayed legs strike a stance that's grounded yet never heavy.",
+          "Fully upholstered in vegetable-tanned, full-grain leather that develops its own distinct patina with use over time.",
+          "The seat swivels a full 360 degrees, and paired with the matching ottoman, it's an ideal fit for a study or reading corner."
+        ]
+      },
+      "currency": "TWD",
+      "heroImage": "/images/products/muyang-lounge-chair/studio-1.jpg",
+      "gallery": [
+        {
+          "src": "/images/products/muyang-lounge-chair/studio-1.jpg",
+          "kind": "studio"
+        },
+        {
+          "src": "/images/products/muyang-lounge-chair/insitu-1.jpg",
+          "kind": "insitu"
+        },
+        {
+          "src": "/images/products/muyang-lounge-chair/insitu-2.jpg",
+          "kind": "insitu"
+        },
+        {
+          "src": "/images/products/muyang-lounge-chair/insitu-3.jpg",
+          "kind": "insitu"
+        }
+      ],
+      "variants": {
+        "colours": [
+          {
+            "id": "cognac-leather",
+            "name": {
+              "zh": "焦糖皮革",
+              "en": "Cognac Leather"
+            },
+            "hex": "#9C5A34",
+            "image": "/images/products/muyang-lounge-chair/studio-1.jpg",
+            "thumbnail": "/images/products/muyang-lounge-chair/studio-1.jpg"
+          },
+          {
+            "id": "walnut-leather",
+            "name": {
+              "zh": "胡桃棕皮革",
+              "en": "Walnut Brown Leather"
+            },
+            "hex": "#5A3E2B",
+            "image": "/images/products/muyang-lounge-chair/insitu-1.jpg",
+            "thumbnail": "/images/products/muyang-lounge-chair/insitu-1.jpg"
+          },
+          {
+            "id": "charcoal-leather",
+            "name": {
+              "zh": "炭灰皮革",
+              "en": "Charcoal Leather"
+            },
+            "hex": "#3A3A38",
+            "image": "/images/products/muyang-lounge-chair/insitu-2.jpg",
+            "thumbnail": "/images/products/muyang-lounge-chair/insitu-2.jpg"
+          },
+          {
+            "id": "cream-leather",
+            "name": {
+              "zh": "奶油白皮革",
+              "en": "Cream Leather"
+            },
+            "hex": "#E9DFCC",
+            "image": "/images/products/muyang-lounge-chair/insitu-3.jpg",
+            "thumbnail": "/images/products/muyang-lounge-chair/insitu-3.jpg"
+          }
+        ],
+        "legFinishes": [
+          {
+            "id": "oak-swivel",
+            "name": {
+              "zh": "原色橡木旋轉座",
+              "en": "Natural Oak Swivel Base"
+            },
+            "hex": "#C9A876"
+          },
+          {
+            "id": "black-swivel",
+            "name": {
+              "zh": "霧黑金屬旋轉座",
+              "en": "Matte Black Swivel Base"
+            },
+            "hex": "#2B2521"
+          }
+        ]
+      },
+      "dimensions": [
+        {
+          "label": {
+            "zh": "寬度",
+            "en": "Width"
+          },
+          "value": "86 cm"
+        },
+        {
+          "label": {
+            "zh": "深度",
+            "en": "Depth"
+          },
+          "value": "84 cm"
+        },
+        {
+          "label": {
+            "zh": "高度",
+            "en": "Height"
+          },
+          "value": "98 cm"
+        },
+        {
+          "label": {
+            "zh": "座高",
+            "en": "Seat Height"
+          },
+          "value": "41 cm"
+        },
+        {
+          "label": {
+            "zh": "淨重",
+            "en": "Net Weight"
+          },
+          "value": "32 kg"
+        }
+      ],
+      "materials": [
+        {
+          "title": {
+            "zh": "植鞣頭層牛皮",
+            "en": "Vegetable-Tanned Full-Grain Leather"
+          },
+          "description": {
+            "zh": "天然植鞣工藝處理，觸感柔韌並隨時間產生包漿。",
+            "en": "Naturally tanned for a supple hand-feel that develops its own patina over time."
+          }
+        },
+        {
+          "title": {
+            "zh": "360 度旋轉底座",
+            "en": "360° Swivel Base"
+          },
+          "description": {
+            "zh": "五金旋轉結構搭配靜音軸承，轉動順暢無聲。",
+            "en": "A metal swivel mechanism with a silent bearing turns smoothly without a sound."
+          }
+        }
+      ],
+      "downloads": [
+        {
+          "label": {
+            "zh": "暮陽休閒椅 產品規格書",
+            "en": "Muyang Lounge Chair Product Spec Sheet"
+          },
+          "type": "PDF",
+          "size": "2.4 MB",
+          "href": "#"
+        },
+        {
+          "label": {
+            "zh": "暮陽休閒椅 CAD 施工圖",
+            "en": "Muyang Lounge Chair CAD Drawing"
+          },
+          "type": "CAD",
+          "size": "5.1 MB",
+          "href": "#"
+        },
+        {
+          "label": {
+            "zh": "暮陽休閒椅 3D 模型檔",
+            "en": "Muyang Lounge Chair 3D Model File"
+          },
+          "type": "3D",
+          "size": "18.6 MB",
+          "href": "#"
+        }
+      ],
+      "relatedProductIds": [
+        "p2",
+        "p1",
+        "p6"
+      ],
+      "tags": [
+        "休閒椅",
+        "皮革",
+        "書房"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,411 @@
+{
+  "meta": {
+    "siteTitleDefault": "MAAN GOK | Contemporary Luxury Furniture",
+    "siteTitleTemplate": "%s | MAAN GOK",
+    "siteDescription": "MAAN GOK is a contemporary luxury furniture brand blending Nordic craftsmanship with an Australian sense of everyday living — pure lines, warm materials, and considered craft made to last.",
+    "keywords": [
+      "luxury furniture",
+      "designer furniture",
+      "custom furniture",
+      "Nordic furniture",
+      "modern minimalist furniture",
+      "MAAN GOK"
+    ],
+    "ogDescription": "Pure, warm, made to last — contemporary luxury furniture brand MAAN GOK.",
+    "home": {
+      "title": "MAAN GOK | Contemporary Luxury Furniture",
+      "description": "MAAN GOK is a contemporary luxury furniture brand blending Nordic craftsmanship with an Australian sense of everyday living — pure lines, warm materials, and considered craft made to last."
+    },
+    "products": {
+      "title": "Collection",
+      "description": "Browse the complete MAAN GOK range: sofas, armchairs, dining tables and chairs, bed frames and storage."
+    },
+    "about": {
+      "title": "About Us",
+      "description": "The MAAN GOK story — a contemporary luxury furniture brand blending Nordic craftsmanship with an Australian sense of everyday living."
+    },
+    "projects": {
+      "title": "Projects & Inspiration",
+      "description": "Step into real homes and commercial spaces furnished with MAAN GOK — see how design settles into everyday life."
+    },
+    "journal": {
+      "title": "Journal",
+      "description": "The MAAN GOK Journal: long-form reading on craft, material, designer interviews, and ideas for living."
+    },
+    "explore": {
+      "title": "Explore",
+      "description": "A first look at MAAN GOK's latest designs, still being refined, ahead of joining the collection."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Book a visit to the MAAN GOK showroom, or reach our advisory team to begin your custom furniture journey."
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "products": "Collection",
+    "about": "About",
+    "projects": "Projects",
+    "journal": "Journal",
+    "explore": "Explore",
+    "contact": "Contact",
+    "bookConsultation": "Book a Consultation",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "browseByCollection": "Browse by Collection",
+    "viewAllProducts": "View all products →"
+  },
+  "notFound": {
+    "title": "This page isn't here",
+    "body": "The link may have moved, or the address may have a character out of place. Here are a few places to pick up from.",
+    "toProducts": "Browse the collection",
+    "toHome": "Back to the home page",
+    "skipToContent": "Skip to content"
+  },
+  "footer": {
+    "description": "A contemporary luxury furniture brand blending Nordic craftsmanship with an Australian sense of everyday living — pure lines and warm materials, made to last.",
+    "groupProducts": "Collection",
+    "groupBrand": "Brand",
+    "groupServices": "Services",
+    "linkSofa": "Sofas",
+    "linkDiningSet": "Dining Tables & Chairs",
+    "linkArmchair": "Armchairs",
+    "linkBedroom": "Bedroom",
+    "linkAllProducts": "All Products",
+    "linkAbout": "About Us",
+    "linkProjects": "Projects",
+    "linkJournal": "Journal",
+    "linkContact": "Contact Us",
+    "linkBookConsultation": "Book a Consultation",
+    "linkCustomService": "Custom Orders",
+    "linkCareWarranty": "Care & Warranty",
+    "copyright": "© {year} MAAN GOK. All rights reserved.",
+    "privacy": "Privacy Policy"
+  },
+  "home": {
+    "hero": {
+      "tagline": "SHAPE YOUR CORNER",
+      "ctaExplore": "Explore",
+      "scrollHint": "Scroll to explore"
+    },
+    "collectionPreview": {
+      "eyebrow": "Collection",
+      "title": "Furniture, reintroduced through real rooms",
+      "description": "From living room to bedroom, every piece answers to a real scene of daily life — choose a collection to see the full range.",
+      "viewCollection": "View collection",
+      "categorySofa": "Sofa Collection",
+      "categoryArmchair": "Armchairs & Lounge Chairs",
+      "categoryDining": "Dining Tables & Chairs",
+      "categoryBedroom": "Bedroom Collection"
+    },
+    "featured": {
+      "eyebrow": "Featured",
+      "title": "This Season's Selection",
+      "description": "Each season, we choose the pieces that best represent where our craft and aesthetic stand today.",
+      "viewAll": "View all products →"
+    },
+    "philosophyTeaser": {
+      "eyebrow": "Design Philosophy",
+      "title1": "We believe true luxury",
+      "title2": "is honest material and well-placed restraint",
+      "description": "Every MAAN GOK piece refuses excess ornament. We let the natural character of grain, leather and fabric speak, and rely on precise proportion and structure to build interiors that only grow more timeless.",
+      "cta": "Read our full philosophy →",
+      "imageAlt": "Craft detail"
+    },
+    "projects": {
+      "eyebrow": "Projects",
+      "title": "Homes Furnished by MAAN GOK",
+      "description": "From mountain retreats to sea-view apartments, see how designers and homeowners bring MAAN GOK pieces into real, lived-in spaces.",
+      "viewAll": "Browse all projects →"
+    },
+    "instagram": {
+      "eyebrow": "@_hvn.c",
+      "title": "Everyday Moments with MAAN GOK",
+      "imageAlt": "MAAN GOK lifestyle photography"
+    }
+  },
+  "newsletter": {
+    "eyebrow": "Subscribe",
+    "title": "Be Among the First to Read MAAN GOK",
+    "description": "Subscribe for early access to new releases, limited pieces, and design stories — no more than one email a month.",
+    "placeholder": "Enter your email address",
+    "button": "Subscribe",
+    "thanks": "Thank you for subscribing — we'll be in touch soon.",
+    "sending": "Subscribing…",
+    "error": "Your subscription could not be completed. Please try again shortly."
+  },
+  "product": {
+    "new": "New",
+    "viewDetails": "View details →",
+    "galleryStudio": "Product Detail",
+    "galleryInsitu": "In Situ",
+    "fullscreenView": "View fullscreen",
+    "close": "Close",
+    "previous": "Previous",
+    "next": "Next",
+    "colourWood": "Colour & Wood Finish",
+    "fabricColour": "Fabric Colour",
+    "size": "Size",
+    "legBase": "Legs / Base",
+    "selectedSize": "Selected size: {dimensions}",
+    "bookConsultation": "Book a Consultation & Measurement",
+    "addToWishlist": "Add to Wishlist",
+    "bookConsultationShort": "Book a Consultation",
+    "specOverview": "Overview",
+    "specDimensions": "Dimensions",
+    "specMaterials": "Materials",
+    "specDesigner": "Designer",
+    "specDownloads": "Downloads",
+    "youMayAlsoLike": "You may also like",
+    "relatedProducts": "You May Also Like",
+    "allCategories": "All",
+    "emptyCategory": "No products in this collection yet.",
+    "carouselLabel": "Product carousel, drag sideways to browse"
+  },
+  "products": {
+    "eyebrow": "Collection",
+    "title": "Collection",
+    "description": "Every piece is refined through repeated study of material, proportion and process — choose a collection or a single piece to see the design detail."
+  },
+  "collection": {
+    "eyebrow": "Collection",
+    "description": "The complete {category} collection — every piece open to look at closely, from material to proportion.",
+    "metaTitle": "{category}",
+    "metaDescription": "Browse the MAAN GOK {category} collection: solid timber, considered proportion, and finishes made to last."
+  },
+  "about": {
+    "eyebrow": "About Us",
+    "title1": "A brand built on material, time,",
+    "title2": "and a way of living",
+    "storyEyebrow": "Our Story",
+    "storyTitle1": "From two city studios",
+    "storyTitle2": "to one complete furniture system",
+    "storyP1": "MAAN GOK was founded on a belief in 'slow furniture' — in an age of fast consumption, we chose to spend longer refining every piece, so furniture becomes a companion for decades rather than a seasonal purchase.",
+    "storyP2": "The brand name '萬角' (MAAN GOK) comes from the image 'a house has ten thousand corners, and light lives in every one' — a home is made of countless corners, edges and details, and we believe only by weighing proportion and material from a thousand angles can every corner be treated with care. We fuse Nordic minimalist craft tradition with the relaxed aesthetic of Australian coastal living, developing a furniture language for the contemporary Asian home.",
+    "storyP3": "Today, MAAN GOK continues to collaborate with designers from Denmark, France and Japan, while developing a new generation of sustainable materials together with local Taiwanese workshops — hoping to redefine 'made to last' as a way of living anyone can practise.",
+    "philosophyEyebrow": "Design Philosophy",
+    "philosophyTitle1": "We don't design furniture —",
+    "philosophyTitle2": "we design the everyday, treated gently by time",
+    "philosophyIntro": "At MAAN GOK, design is a series of trade-offs — form against function, character against restraint, the trend of the moment against staying power over years. Here are the three principles behind every decision we make.",
+    "principles": [
+      {
+        "title": "Material Before Form",
+        "body": "We believe good design begins with the character of the material itself. Every proposal starts with the feel of a piece of timber or a roll of leather — never with a sketch."
+      },
+      {
+        "title": "Proportion Is the Invisible Ornament",
+        "body": "With no elaborate carving or excess line, MAAN GOK adjusts proportion down to the millimetre so every piece sits exactly right in a room — which we consider the highest form of decoration."
+      },
+      {
+        "title": "Designed for Use, Not for Display",
+        "body": "Furniture should be remembered by the body before it's remembered by the eye. Every seat angle and table height is tested against real, lived-in scenarios, over and over."
+      }
+    ],
+    "quoteLine1": "\"The end goal of design is not to be seen,",
+    "quoteLine2": "but to be forgotten by the person using it — because it has already become part of life.\"",
+    "quoteAttribution": "MAAN GOK Design Team",
+    "milestonesEyebrow": "Milestones",
+    "milestonesTitle": "Our Story So Far",
+    "milestones": [
+      {
+        "year": "2014",
+        "text": "Our founders begin hand experiments in solid-wood furniture across studios in Copenhagen and Melbourne."
+      },
+      {
+        "year": "2017",
+        "text": "MAAN GOK's first studio opens in Taipei, beginning long-term partnerships with European workshops."
+      },
+      {
+        "year": "2020",
+        "text": "The first complete product line launches, alongside a set of sustainable sourcing standards."
+      },
+      {
+        "year": "2023",
+        "text": "A custom collaboration programme with independent designers begins; pieces are placed in over a dozen homes and commercial spaces."
+      },
+      {
+        "year": "2026",
+        "text": "Continued investment in material research, working toward becoming one of Asia's leading contemporary luxury furniture brands."
+      }
+    ],
+    "valuesEyebrow": "Our Values",
+    "valuesTitle": "What We Hold To",
+    "values": [
+      {
+        "title": "Honest Material",
+        "text": "No disguise, no over-processing — letting grain, leather and fabric show their true character."
+      },
+      {
+        "title": "Restrained Design",
+        "text": "No excess ornament — proportion and negative space define how a room breathes."
+      },
+      {
+        "title": "Lasting Craft",
+        "text": "Every piece is designed on the assumption of at least a decade of daily use."
+      },
+      {
+        "title": "Local & Sustainable",
+        "text": "Sustainably certified materials come first, alongside support for local workshop craft."
+      }
+    ],
+    "studioAlt": "Inside a MAAN GOK studio"
+  },
+  "explore": {
+    "title": "A First Look",
+    "items": [
+      {
+        "code": "MAAN_GOK_01",
+        "name": "Tripod Stool",
+        "category": "Side Table · Solid Wood",
+        "cta": "Enquire"
+      },
+      {
+        "code": "MAAN_GOK_02",
+        "name": "Frankie Marble Stool",
+        "category": "Side Table · Marble × Wood",
+        "cta": "Enquire"
+      }
+    ]
+  },
+  "projectsPage": {
+    "eyebrow": "Projects & Inspiration",
+    "title": "Projects",
+    "description": "From mountain homes to sea-view apartments, every space tells a story of what homeowner and designer built together.",
+    "backToAll": "← Back to all projects"
+  },
+  "journalPage": {
+    "eyebrow": "Journal",
+    "title": "Journal",
+    "description": "Long-form reading on craft, material and ways of living — a record of how MAAN GOK thinks about the idea of home.",
+    "readMore": "Read the full story →",
+    "furtherReading": "Further Reading",
+    "writtenBy": "Written by — {author}"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Get in Touch",
+    "description": "Whether it's a product question, an in-home measurement, or a custom proposal, our advisory team is glad to help.",
+    "faqTitle": "Frequently Asked Questions",
+    "faqs": [
+      {
+        "q": "Do you offer in-home measurement and planning?",
+        "a": "Yes — any client who books a consultation can arrange for a design consultant to measure on site and advise on furniture layout."
+      },
+      {
+        "q": "How long does a custom order take?",
+        "a": "Depending on the product and material selection, lead times typically run 8–14 weeks; major custom projects will have a dedicated timeline communicated by our team."
+      },
+      {
+        "q": "Do your products come with a warranty?",
+        "a": "All MAAN GOK furniture carries a five-year structural warranty, with separate care guidance and warranty terms for fabric and leather."
+      },
+      {
+        "q": "Can I order fabric or timber-finish samples on their own?",
+        "a": "Yes — we offer a sample request service so you can compare materials against your space before placing an order."
+      }
+    ],
+    "form": {
+      "name": "Name",
+      "phone": "Phone Number",
+      "email": "Email Address",
+      "topic": "Enquiry Type",
+      "topicOptions": [
+        "Product Enquiry",
+        "Custom Order",
+        "Showroom Booking",
+        "After-Sales & Care",
+        "Other"
+      ],
+      "message": "Message",
+      "submit": "Send Message",
+      "thanksTitle": "Thank you for your message",
+      "thanksBody": "Our team will be in touch within one business day.",
+      "sending": "Sending…",
+      "error": "Your message could not be sent. Please try again shortly."
+    }
+  },
+  "categories": {
+    "sofa": "Sofa",
+    "armchair": "Armchair",
+    "dining-table": "Dining Table",
+    "dining-chair": "Dining Chair",
+    "coffee-table": "Coffee Table",
+    "bed": "Bed Frame",
+    "sideboard": "Sideboard",
+    "lounge-chair": "Lounge Chair"
+  },
+  "imageComparison": {
+    "before": "Before",
+    "after": "After"
+  },
+  "languageSwitcher": {
+    "label": "Language",
+    "zh": "中文",
+    "en": "English"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "updated": "Last updated: August 2026",
+    "intro": "MAAN GOK respects your privacy. This policy explains what personal data we collect through this website, how we use and store it, and the rights you may exercise.",
+    "sections": [
+      {
+        "heading": "What we collect",
+        "body": [
+          "When you submit the contact form we collect the name, email address, phone number (optional), enquiry topic and message you provide.",
+          "When you subscribe to the newsletter we collect your email address only.",
+          "All of this is given voluntarily. Without it we cannot answer your enquiry or send you the newsletter."
+        ]
+      },
+      {
+        "heading": "How we use it",
+        "body": [
+          "Contact form submissions are used solely to answer your enquiry and to follow up on product advice and related service.",
+          "Newsletter addresses are used solely to send new releases and brand news.",
+          "We do not sell, rent or trade your personal data, and we do not use it for purposes you would not expect."
+        ]
+      },
+      {
+        "heading": "Where your data is held",
+        "body": [
+          "Form submissions are stored in a Google Sheet. That service is provided by Google LLC and the data may reside on servers outside Taiwan.",
+          "This website is hosted by Vercel Inc., whose server logs may include your IP address and browser information for operational and security purposes.",
+          "This website uses no Google Analytics and no third-party tracking or advertising scripts."
+        ]
+      },
+      {
+        "heading": "Cookies",
+        "body": [
+          "This website sets a single necessary cookie, NEXT_LOCALE, which remembers whether you are reading the Chinese or English version.",
+          "It contains no identifying information and is not used to track your browsing. You may clear it in your browser at any time; the only effect is that your language preference is forgotten."
+        ]
+      },
+      {
+        "heading": "How long we keep it",
+        "body": [
+          "Contact form submissions are kept for two years from the date of submission, so that we can handle follow-up service and warranty matters, and are deleted thereafter.",
+          "Newsletter addresses are kept until you unsubscribe."
+        ]
+      },
+      {
+        "heading": "Your rights",
+        "body": [
+          "Under Taiwan's Personal Data Protection Act you may request to review, obtain a copy of, supplement, correct or delete the personal data we hold about you, or ask us to stop collecting, processing or using it.",
+          "To exercise these rights, please contact us through the form on this website, stating your request. We will respond within thirty days of receipt."
+        ]
+      },
+      {
+        "heading": "Security",
+        "body": [
+          "The entire site is served over HTTPS. Form data is encrypted in transit and access to the stored data is limited to authorised accounts.",
+          "No transmission over the internet can be guaranteed absolutely secure, but we take reasonable measures to protect your data."
+        ]
+      },
+      {
+        "heading": "Changes to this policy",
+        "body": [
+          "Any revision will be published on this page with an updated date. Please check back from time to time."
+        ]
+      }
+    ]
+  }
+}

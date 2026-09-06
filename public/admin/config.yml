@@ -1,0 +1,389 @@
+backend:
+  name: github
+  repo: heavencph/MaanLiving
+  branch: main
+  # Origin of the OAuth relay in app/api/auth. It has to be absolute, so it
+  # cannot follow a domain change on its own — if the site moves, this line
+  # moves with it. Must also match the callback URL registered on the GitHub
+  # OAuth App. See docs/cms.md.
+  #
+  # ⚠️ 尚未設定。填入「這個站自己的網址」：網域還沒定之前，先用 Vercel 給的
+  # xxx.vercel.app，接上自訂網域後再改成正式網域。改這行的同時，GitHub OAuth
+  # App 的 Authorization callback URL 也要是同一個主機，兩邊必須一致。
+  # 維持現狀不改的話，/admin 會登不進去（這是刻意的：寧可登不進去，也不要
+  # 悄悄把內容存到別的站去）。
+  base_url: https://TODO-填入本站網址
+  auth_endpoint: api/auth
+  commit_messages:
+    update: '內容更新：{{collection}} · {{path}}'
+
+# Where newly uploaded images land. Existing entries keep whatever path or URL
+# they already hold.
+media_folder: public/images/uploads
+public_folder: /images/uploads
+
+collections:
+  - name: catalogue
+    label: 內容
+    files:
+      # ------------------------------------------------------------------
+      - name: products
+        label: 產品
+        file: lib/data/products.json
+        description: 產品系列與產品詳情頁的內容來源。
+        fields:
+          - name: products
+            label: 產品
+            label_singular: 產品
+            widget: list
+            summary: '{{fields.name.zh}}'
+            fields:
+              - { name: id, label: 內部識別碼, widget: string, hint: 供「相關產品」參照，請勿更改既有值 }
+              - { name: slug, label: 網址代稱, widget: string, hint: 決定產品頁網址，更改會使舊連結失效 }
+              - name: name
+                label: 產品名稱
+                widget: object
+                fields:
+                  - { name: zh, label: 中文, widget: string }
+                  - { name: en, label: English, widget: string }
+              - name: category
+                label: 分類名稱
+                widget: object
+                fields:
+                  - { name: zh, label: 中文, widget: string }
+                  - { name: en, label: English, widget: string }
+              - name: categoryKey
+                label: 分類代碼
+                widget: select
+                hint: 決定產品列表的篩選歸屬
+                options: [sofa, armchair, lounge-chair, dining-chair, dining-table, coffee-table, sideboard, bed]
+              - name: designer
+                label: 設計師
+                widget: object
+                fields:
+                  - { name: name, label: 姓名, widget: string }
+                  - name: bio
+                    label: 簡介
+                    widget: object
+                    fields:
+                      - { name: zh, label: 中文, widget: text }
+                      - { name: en, label: English, widget: text }
+              - name: shortDescription
+                label: 簡短描述
+                widget: object
+                fields:
+                  - { name: zh, label: 中文, widget: text }
+                  - { name: en, label: English, widget: text }
+              - name: description
+                label: 完整描述
+                widget: object
+                hint: 每一段落為一個項目
+                fields:
+                  - name: zh
+                    label: 中文
+                    widget: list
+                    field: { name: paragraph, label: 段落, widget: text }
+                  - name: en
+                    label: English
+                    widget: list
+                    field: { name: paragraph, label: Paragraph, widget: text }
+              - { name: price, label: 價格, widget: number, value_type: int, min: 0, required: false, hint: 留空則顯示「詢問銷售人員」 }
+              - { name: currency, label: 幣別, widget: string, default: TWD }
+              - { name: isNew, label: 標示為新品, widget: boolean, required: false }
+              - { name: heroImage, label: 主圖, widget: image }
+              - name: gallery
+                label: 圖庫
+                widget: list
+                fields:
+                  - { name: src, label: 圖片, widget: image }
+                  - { name: kind, label: 類型, widget: select, options: [studio, insitu] }
+              - name: variants
+                label: 可選規格
+                widget: object
+                fields:
+                  - name: colours
+                    label: 顏色／材質
+                    widget: list
+                    summary: '{{fields.name.zh}}'
+                    fields:
+                      - { name: id, label: 識別碼, widget: string }
+                      - name: name
+                        label: 名稱
+                        widget: object
+                        fields:
+                          - { name: zh, label: 中文, widget: string }
+                          - { name: en, label: English, widget: string }
+                      - { name: hex, label: 色票, widget: color }
+                      - { name: image, label: 主圖, widget: image }
+                      - { name: thumbnail, label: 縮圖, widget: image }
+                  # Only `colours` is present on every product. The rest appear
+                  # on a handful each, so they must stay optional — a required
+                  # widget would write empty arrays onto products that have
+                  # never had them.
+                  - name: fabrics
+                    label: 布料
+                    widget: list
+                    required: false
+                    summary: '{{fields.name.zh}}'
+                    fields:
+                      - { name: id, label: 識別碼, widget: string }
+                      - name: name
+                        label: 名稱
+                        widget: object
+                        fields:
+                          - { name: zh, label: 中文, widget: string }
+                          - { name: en, label: English, widget: string }
+                      - name: category
+                        label: 材質分類
+                        widget: object
+                        fields:
+                          - { name: zh, label: 中文, widget: string }
+                          - { name: en, label: English, widget: string }
+                      - { name: hex, label: 色票, widget: color }
+                      - { name: image, label: 主圖, widget: image }
+                      - { name: thumbnail, label: 縮圖, widget: image }
+                  - name: woodFinishes
+                    label: 木材飾面
+                    widget: list
+                    required: false
+                    summary: '{{fields.name.zh}}'
+                    fields:
+                      - { name: id, label: 識別碼, widget: string }
+                      - name: name
+                        label: 名稱
+                        widget: object
+                        fields:
+                          - { name: zh, label: 中文, widget: string }
+                          - { name: en, label: English, widget: string }
+                      - { name: hex, label: 色票, widget: color }
+                      - { name: image, label: 主圖, widget: image }
+                      - { name: thumbnail, label: 縮圖, widget: image }
+                  - name: sizes
+                    label: 尺寸
+                    widget: list
+                    required: false
+                    summary: '{{fields.label.zh}}'
+                    fields:
+                      - { name: id, label: 識別碼, widget: string }
+                      - name: label
+                        label: 名稱
+                        widget: object
+                        fields:
+                          - { name: zh, label: 中文, widget: string }
+                          - { name: en, label: English, widget: string }
+                      - { name: dimensions, label: 尺寸標示, widget: string }
+                  - name: legFinishes
+                    label: 椅腳飾面
+                    widget: list
+                    required: false
+                    summary: '{{fields.name.zh}}'
+                    fields:
+                      - { name: id, label: 識別碼, widget: string }
+                      - name: name
+                        label: 名稱
+                        widget: object
+                        fields:
+                          - { name: zh, label: 中文, widget: string }
+                          - { name: en, label: English, widget: string }
+                      - { name: hex, label: 色票, widget: color }
+              - name: dimensions
+                label: 尺寸規格
+                widget: list
+                summary: '{{fields.label.zh}}：{{fields.value}}'
+                fields:
+                  - name: label
+                    label: 項目
+                    widget: object
+                    fields:
+                      - { name: zh, label: 中文, widget: string }
+                      - { name: en, label: English, widget: string }
+                  - { name: value, label: 數值, widget: string }
+              - name: materials
+                label: 材質說明
+                widget: list
+                summary: '{{fields.title.zh}}'
+                fields:
+                  - name: title
+                    label: 標題
+                    widget: object
+                    fields:
+                      - { name: zh, label: 中文, widget: string }
+                      - { name: en, label: English, widget: string }
+                  - name: description
+                    label: 說明
+                    widget: object
+                    fields:
+                      - { name: zh, label: 中文, widget: text }
+                      - { name: en, label: English, widget: text }
+              - name: downloads
+                label: 下載檔案
+                widget: list
+                summary: '{{fields.label.zh}}'
+                fields:
+                  - name: label
+                    label: 名稱
+                    widget: object
+                    fields:
+                      - { name: zh, label: 中文, widget: string }
+                      - { name: en, label: English, widget: string }
+                  - { name: type, label: 格式, widget: select, options: [PDF, CAD, 3D] }
+                  - { name: size, label: 檔案大小, widget: string }
+                  - { name: href, label: 連結, widget: string }
+              - name: relatedProductIds
+                label: 相關產品
+                widget: list
+                required: false
+                hint: 填入其他產品的「內部識別碼」
+                field: { name: id, label: 識別碼, widget: string }
+              - name: tags
+                label: 標籤
+                widget: list
+                required: false
+                field: { name: tag, label: 標籤, widget: string }
+
+      # ------------------------------------------------------------------
+      - name: journal
+        label: 期刊
+        file: lib/data/journal.json
+        fields:
+          - name: posts
+            label: 文章
+            label_singular: 文章
+            widget: list
+            summary: '{{fields.title.zh}}'
+            fields:
+              - { name: id, label: 內部識別碼, widget: string }
+              - { name: slug, label: 網址代稱, widget: string, hint: 決定文章網址，更改會使舊連結失效 }
+              # Sveltia dropped Decap's `date` widget; `datetime` with
+              # `type: date` is its replacement and keeps the stored value a
+              # bare YYYY-MM-DD, which is what the journal entries already hold.
+              - { name: date, label: 發表日期, widget: datetime, type: date, format: 'YYYY-MM-DD' }
+              - { name: coverImage, label: 封面圖, widget: image }
+              - name: title
+                label: 標題
+                widget: object
+                fields:
+                  - { name: zh, label: 中文, widget: string }
+                  - { name: en, label: English, widget: string }
+              - name: category
+                label: 分類
+                widget: object
+                fields:
+                  - { name: zh, label: 中文, widget: string }
+                  - { name: en, label: English, widget: string }
+              - name: author
+                label: 作者
+                widget: object
+                fields:
+                  - { name: zh, label: 中文, widget: string }
+                  - { name: en, label: English, widget: string }
+              - name: readTime
+                label: 閱讀時間
+                widget: object
+                fields:
+                  - { name: zh, label: 中文, widget: string }
+                  - { name: en, label: English, widget: string }
+              - name: excerpt
+                label: 摘要
+                widget: object
+                fields:
+                  - { name: zh, label: 中文, widget: text }
+                  - { name: en, label: English, widget: text }
+              - name: content
+                label: 內文
+                widget: object
+                hint: 每一段落為一個項目
+                fields:
+                  - name: zh
+                    label: 中文
+                    widget: list
+                    field: { name: paragraph, label: 段落, widget: text }
+                  - name: en
+                    label: English
+                    widget: list
+                    field: { name: paragraph, label: Paragraph, widget: text }
+
+      # ------------------------------------------------------------------
+      - name: projects
+        label: 案例故事
+        file: lib/data/projects.json
+        fields:
+          - name: projects
+            label: 案例
+            label_singular: 案例
+            widget: list
+            summary: '{{fields.title.zh}}'
+            fields:
+              - { name: id, label: 內部識別碼, widget: string }
+              - { name: slug, label: 網址代稱, widget: string, hint: 決定案例網址，更改會使舊連結失效 }
+              - { name: year, label: 年份, widget: string }
+              - { name: coverImage, label: 封面圖, widget: image }
+              - name: title
+                label: 標題
+                widget: object
+                fields:
+                  - { name: zh, label: 中文, widget: string }
+                  - { name: en, label: English, widget: string }
+              - name: location
+                label: 地點
+                widget: object
+                fields:
+                  - { name: zh, label: 中文, widget: string }
+                  - { name: en, label: English, widget: string }
+              - name: category
+                label: 類型
+                widget: object
+                fields:
+                  - { name: zh, label: 中文, widget: string }
+                  - { name: en, label: English, widget: string }
+              - name: description
+                label: 描述
+                widget: object
+                fields:
+                  - { name: zh, label: 中文, widget: text }
+                  - { name: en, label: English, widget: text }
+              - name: gallery
+                label: 圖庫
+                widget: list
+                field: { name: image, label: 圖片, widget: image }
+
+      # ------------------------------------------------------------------
+      - name: materials
+        label: 材質介紹
+        file: lib/data/materials.json
+        description: 設計哲學頁的材質區塊（三項設計原則之後、結尾引言之前）。
+        fields:
+          - name: materials
+            label: 材質
+            label_singular: 材質
+            widget: list
+            summary: '{{fields.title.zh}}'
+            fields:
+              - { name: id, label: 內部識別碼, widget: string }
+              - { name: image, label: 圖片, widget: image }
+              - name: title
+                label: 名稱
+                widget: object
+                fields:
+                  - { name: zh, label: 中文, widget: string }
+                  - { name: en, label: English, widget: string }
+              - name: subtitle
+                label: 副標
+                widget: object
+                fields:
+                  - { name: zh, label: 中文, widget: string }
+                  - { name: en, label: English, widget: string }
+
+      # ------------------------------------------------------------------
+      - name: gallery
+        label: 首頁圖庫
+        file: lib/data/stock-gallery.json
+        description: 首頁底部連往 Instagram 的圖片牆。
+        fields:
+          - name: images
+            label: 圖片
+            label_singular: 圖片
+            widget: list
+            fields:
+              - { name: id, label: 內部識別碼, widget: string }
+              - { name: image, label: 圖片, widget: image }

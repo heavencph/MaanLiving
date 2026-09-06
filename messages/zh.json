@@ -1,0 +1,411 @@
+{
+  "meta": {
+    "siteTitleDefault": "萬角 MAAN GOK | 當代高端家具設計",
+    "siteTitleTemplate": "%s | 萬角 MAAN GOK",
+    "siteDescription": "萬角 MAAN GOK 是一個當代高端家具品牌，融合北歐工藝與澳洲式生活美學，以純粹的線條、溫潤的材質與精湛的工藝，打造歷久彌新的居家作品。",
+    "keywords": [
+      "高端家具",
+      "設計師家具",
+      "訂製家具",
+      "北歐家具",
+      "現代簡約家具",
+      "萬角"
+    ],
+    "ogDescription": "純粹、溫潤、歷久彌新——當代高端家具品牌萬角 MAAN GOK。",
+    "home": {
+      "title": "萬角 MAAN GOK | 當代高端家具設計",
+      "description": "萬角 MAAN GOK 是一個當代高端家具品牌，融合北歐工藝與澳洲式生活美學，以純粹的線條、溫潤的材質與精湛的工藝，打造歷久彌新的居家作品。"
+    },
+    "products": {
+      "title": "產品系列",
+      "description": "瀏覽萬角完整家具系列：沙發、單椅、餐桌餐椅、床架與收納家具。"
+    },
+    "about": {
+      "title": "關於我們",
+      "description": "萬角 MAAN GOK 的品牌故事——融合北歐工藝與澳洲式生活美學的當代高端家具品牌。"
+    },
+    "projects": {
+      "title": "案例故事",
+      "description": "走進使用萬角家具的真實居家與商業空間，看見設計如何融入日常生活。"
+    },
+    "journal": {
+      "title": "期刊",
+      "description": "萬角期刊：關於工藝、材質、設計師專訪與生活提案的長篇閱讀。"
+    },
+    "explore": {
+      "title": "探索",
+      "description": "搶先揭曉萬角尚在雕琢中的最新設計，即將加入系列的作品。"
+    },
+    "contact": {
+      "title": "聯繫我們",
+      "description": "預約萬角展示空間，或聯繫我們的顧問團隊，開始您的訂製家具旅程。"
+    }
+  },
+  "nav": {
+    "home": "首頁",
+    "products": "產品系列",
+    "about": "關於我們",
+    "projects": "案例故事",
+    "journal": "期刊",
+    "explore": "探索",
+    "contact": "聯繫我們",
+    "bookConsultation": "預約諮詢",
+    "openMenu": "開啟選單",
+    "closeMenu": "關閉選單",
+    "browseByCollection": "依系列瀏覽",
+    "viewAllProducts": "查看全部產品 →"
+  },
+  "notFound": {
+    "title": "這一頁不在了",
+    "body": "你點的連結可能已經改過位置，或是網址打錯了一個字。下面幾個地方可以繼續逛。",
+    "toProducts": "看產品系列",
+    "toHome": "回首頁",
+    "skipToContent": "跳到主要內容"
+  },
+  "footer": {
+    "description": "當代高端家具品牌，融合北歐工藝與澳洲式生活美學，以純粹線條與溫潤材質，打造歷久彌新的居家作品。",
+    "groupProducts": "產品系列",
+    "groupBrand": "品牌",
+    "groupServices": "服務",
+    "linkSofa": "沙發",
+    "linkDiningSet": "餐桌與餐椅",
+    "linkArmchair": "單椅",
+    "linkBedroom": "臥室",
+    "linkAllProducts": "全部產品",
+    "linkAbout": "關於我們",
+    "linkProjects": "案例故事",
+    "linkJournal": "期刊",
+    "linkContact": "聯繫我們",
+    "linkBookConsultation": "預約諮詢",
+    "linkCustomService": "訂製服務",
+    "linkCareWarranty": "保養與保固",
+    "copyright": "© {year} 萬角 MAAN GOK. All rights reserved.",
+    "privacy": "隱私權政策"
+  },
+  "home": {
+    "hero": {
+      "tagline": "營造屬於你的角落",
+      "ctaExplore": "探索",
+      "scrollHint": "向下探索"
+    },
+    "collectionPreview": {
+      "eyebrow": "Collection",
+      "title": "以空間場景，重新認識家具",
+      "description": "從客廳到臥室，每一件作品都因應真實的生活場景而生，點選系列即可深入了解完整產品線。",
+      "viewCollection": "查看系列",
+      "categorySofa": "沙發系列",
+      "categoryArmchair": "單椅與休閒椅",
+      "categoryDining": "餐桌與餐椅",
+      "categoryBedroom": "臥室系列"
+    },
+    "featured": {
+      "eyebrow": "Featured",
+      "title": "本季精選作品",
+      "description": "每一季，我們挑選最能代表當下工藝與美學進展的作品，向您完整呈現。",
+      "viewAll": "查看全部產品 →"
+    },
+    "philosophyTeaser": {
+      "eyebrow": "Design Philosophy",
+      "title1": "我們相信，真正的奢華",
+      "title2": "是誠實的材質與恰到好處的留白",
+      "description": "萬角的每一件作品都拒絕過度裝飾。我們選擇讓木紋、皮革與布料的天然表情說話，並用精準的比例與結構，成就歷久彌新的居家風景。",
+      "cta": "閱讀完整設計哲學 →",
+      "imageAlt": "工藝細節"
+    },
+    "projects": {
+      "eyebrow": "Projects",
+      "title": "住進萬角的家",
+      "description": "從山居到海景公寓，看看設計師與屋主如何將萬角的作品，融入真實的生活場景。",
+      "viewAll": "瀏覽全部案例 →"
+    },
+    "instagram": {
+      "eyebrow": "@_hvn.c",
+      "title": "日常中的萬角時刻",
+      "imageAlt": "萬角 生活風格攝影"
+    }
+  },
+  "newsletter": {
+    "eyebrow": "訂閱",
+    "title": "成為萬角的第一批讀者",
+    "description": "訂閱電子報，搶先獲得新品發布、限量作品與設計故事，每月不多於一封信件。",
+    "placeholder": "輸入您的電子郵件",
+    "button": "訂閱電子報",
+    "thanks": "感謝訂閱，我們很快就會與您見面。",
+    "sending": "訂閱中…",
+    "error": "訂閱未能完成，請稍後再試。"
+  },
+  "product": {
+    "new": "新品",
+    "viewDetails": "查看詳情 →",
+    "galleryStudio": "產品細節圖",
+    "galleryInsitu": "情境實拍",
+    "fullscreenView": "全螢幕檢視",
+    "close": "關閉",
+    "previous": "上一張",
+    "next": "下一張",
+    "colourWood": "顏色與木紋",
+    "fabricColour": "布藝顏色",
+    "size": "尺寸",
+    "legBase": "椅腳／底座",
+    "selectedSize": "所選尺寸：{dimensions}",
+    "bookConsultation": "預約諮詢與丈量",
+    "addToWishlist": "加入願望清單",
+    "bookConsultationShort": "預約諮詢",
+    "specOverview": "概覽 Overview",
+    "specDimensions": "尺寸 Dimensions",
+    "specMaterials": "材質 Materials",
+    "specDesigner": "設計師 Designer",
+    "specDownloads": "下載資料 Downloads",
+    "youMayAlsoLike": "You may also like",
+    "relatedProducts": "延伸搭配",
+    "allCategories": "全部",
+    "emptyCategory": "此系列暫無產品。",
+    "carouselLabel": "產品輪播，可左右滑動瀏覽"
+  },
+  "products": {
+    "eyebrow": "Collection",
+    "title": "產品系列",
+    "description": "每一件作品都經過材質、比例與工序的反覆推敲，點選系列或單品，深入了解設計細節。"
+  },
+  "collection": {
+    "eyebrow": "Collection",
+    "description": "{category}系列的完整作品，從材質到比例，每一件都可以點入看細節。",
+    "metaTitle": "{category}",
+    "metaDescription": "瀏覽萬角 MAAN GOK 的{category}系列——實木結構、講究的比例，以及耐得住時間的表面處理。"
+  },
+  "about": {
+    "eyebrow": "About Us",
+    "title1": "一個關於材質、時間",
+    "title2": "與生活方式的品牌",
+    "storyEyebrow": "Our Story",
+    "storyTitle1": "從兩座城市的工作室，",
+    "storyTitle2": "到一個完整的家具系統",
+    "storyP1": "萬角 MAAN GOK 創立於對「慢家具」的信念——在快速消費的時代，我們選擇用更長的時間打磨每一件作品，讓家具成為能陪伴數十年的日常夥伴，而非季節性的消耗品。",
+    "storyP2": "品牌名稱「萬角」取自「屋有萬角，角角藏光」的意象——一個家是由無數個轉角、邊線與細節構成的，我們相信唯有從萬千個角度反覆推敲比例與材質，才能讓每一道轉角都被溫柔以待。我們融合北歐的極簡工藝傳統，與澳洲海岸生活的鬆弛美學，發展出屬於當代亞洲家庭的家具語彙。",
+    "storyP3": "今日，萬角與來自丹麥、法國與日本的設計師持續合作，並與台灣在地工坊共同開發新一代永續材質，希望能將「歷久彌新」重新定義為一種可以被實踐的生活方式。",
+    "philosophyEyebrow": "Design Philosophy",
+    "philosophyTitle1": "我們設計的不是家具，",
+    "philosophyTitle2": "是能被時間溫柔對待的日常",
+    "philosophyIntro": "在萬角，設計是一連串的取捨——取捨造型與功能、取捨個性與節制、取捨當下的潮流與長遠的耐看。以下是支撐我們每一個決定的三個核心原則。",
+    "principles": [
+      {
+        "title": "材質先於造型",
+        "body": "我們相信好的設計始於材質本身的個性。每一次設計提案，都從一塊木料、一卷皮革的觸感開始，而非先畫出一張草圖。"
+      },
+      {
+        "title": "比例，是看不見的裝飾",
+        "body": "沒有繁複雕花與多餘線條，萬角以精確到公釐的比例調整，讓每件家具在空間中顯得恰如其分——這是我們認為最高級的裝飾方式。"
+      },
+      {
+        "title": "為使用而設計，而非為展示",
+        "body": "家具首先要被身體記住，才被眼睛記住。每一款座椅的角度、每一張桌子的高度，都經過真實生活情境的反覆測試。"
+      }
+    ],
+    "quoteLine1": "「設計的終點，不是被看見，",
+    "quoteLine2": "而是被使用者遺忘——因為它早已成為生活的一部分。」",
+    "quoteAttribution": "萬角設計團隊",
+    "milestonesEyebrow": "Milestones",
+    "milestonesTitle": "品牌歷程",
+    "milestones": [
+      {
+        "year": "2014",
+        "text": "創辦人於哥本哈根與墨爾本兩地展開實木家具的手工實驗。"
+      },
+      {
+        "year": "2017",
+        "text": "萬角第一間工作室於台北成立，開始與歐洲工坊建立長期合作。"
+      },
+      {
+        "year": "2020",
+        "text": "推出首個完整產品系列，並建立永續材料採購準則。"
+      },
+      {
+        "year": "2023",
+        "text": "展開與獨立設計師的訂製合作計畫，作品進駐十餘個居家與商業空間。"
+      },
+      {
+        "year": "2026",
+        "text": "持續深耕材質研發，致力成為亞洲當代高端家具的代表品牌之一。"
+      }
+    ],
+    "valuesEyebrow": "Our Values",
+    "valuesTitle": "我們所堅持的",
+    "values": [
+      {
+        "title": "誠實的材質",
+        "text": "不掩飾、不過度加工，讓木紋、皮革與布料展現本來的表情。"
+      },
+      {
+        "title": "節制的設計",
+        "text": "拒絕多餘裝飾，用比例與留白定義空間的呼吸感。"
+      },
+      {
+        "title": "長效的工藝",
+        "text": "每件作品皆以十年以上的使用壽命為設計前提。"
+      },
+      {
+        "title": "在地與永續",
+        "text": "優先選用具永續認證的原料，並支持在地工坊技術傳承。"
+      }
+    ],
+    "studioAlt": "萬角工作室一隅"
+  },
+  "explore": {
+    "title": "新品搶先看",
+    "items": [
+      {
+        "code": "MAAN_GOK_01",
+        "name": "三足圓凳",
+        "category": "邊几 · 實木",
+        "cta": "洽詢預購"
+      },
+      {
+        "code": "MAAN_GOK_02",
+        "name": "Frankie 大理石圓凳",
+        "category": "邊几 · 大理石 × 木作",
+        "cta": "洽詢預購"
+      }
+    ]
+  },
+  "projectsPage": {
+    "eyebrow": "Projects & Inspiration",
+    "title": "案例故事",
+    "description": "從山居到海景公寓，每一個空間都訴說著居住者與設計師共同完成的生活提案。",
+    "backToAll": "← 返回所有案例"
+  },
+  "journalPage": {
+    "eyebrow": "Journal",
+    "title": "期刊",
+    "description": "關於工藝、材質與生活方式的長篇閱讀，紀錄萬角如何思考「家」這件事。",
+    "readMore": "閱讀全文 →",
+    "furtherReading": "延伸閱讀",
+    "writtenBy": "撰文 — {author}"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "與我們聯繫",
+    "description": "無論是產品諮詢、到府丈量，或訂製提案，我們的顧問團隊都樂於為您提供協助。",
+    "faqTitle": "常見問題",
+    "faqs": [
+      {
+        "q": "是否提供到府丈量與規劃服務？",
+        "a": "是的，凡預約諮詢的客戶，皆可安排設計顧問到府丈量，並依空間提供家具配置建議。"
+      },
+      {
+        "q": "訂製家具的製作時間大約多久？",
+        "a": "依產品與材質選配不同，一般訂製週期約為 8 至 14 週，重大訂製案將由專人另行告知時程。"
+      },
+      {
+        "q": "產品是否提供保固？",
+        "a": "所有萬角家具皆提供五年結構保固，布藝與皮革另有專屬保養建議與保固條款。"
+      },
+      {
+        "q": "可以只購買布料或木紋樣品嗎？",
+        "a": "可以，我們提供樣品申請服務，方便您在下訂前實際比對材質與空間的搭配效果。"
+      }
+    ],
+    "form": {
+      "name": "姓名",
+      "phone": "聯絡電話",
+      "email": "電子郵件",
+      "topic": "諮詢項目",
+      "topicOptions": [
+        "產品諮詢",
+        "訂製服務",
+        "展示空間預約",
+        "售後與保養",
+        "其他"
+      ],
+      "message": "訊息內容",
+      "submit": "送出訊息",
+      "thanksTitle": "感謝您的訊息",
+      "thanksBody": "我們的團隊將於一個工作天內與您聯繫。",
+      "sending": "傳送中…",
+      "error": "訊息未能送出，請稍後再試。"
+    }
+  },
+  "categories": {
+    "sofa": "沙發",
+    "armchair": "單椅",
+    "dining-table": "餐桌",
+    "dining-chair": "餐椅",
+    "coffee-table": "茶几",
+    "bed": "床架",
+    "sideboard": "邊櫃",
+    "lounge-chair": "休閒椅"
+  },
+  "imageComparison": {
+    "before": "工序之前",
+    "after": "工序之後"
+  },
+  "languageSwitcher": {
+    "label": "語言",
+    "zh": "中文",
+    "en": "English"
+  },
+  "privacy": {
+    "title": "隱私權政策",
+    "updated": "最後更新：2026 年 8 月",
+    "intro": "萬角 MAAN GOK 尊重您的隱私。本政策說明我們透過本網站蒐集哪些個人資料、如何使用與保存，以及您可以行使哪些權利。",
+    "sections": [
+      {
+        "heading": "我們蒐集哪些資料",
+        "body": [
+          "當您送出聯絡表單時，我們會蒐集您填寫的姓名、電子郵件、聯絡電話（選填）、諮詢項目，以及訊息內容。",
+          "當您訂閱電子報時，我們僅蒐集您的電子郵件地址。",
+          "以上皆由您主動提供。若不提供，我們將無法回覆您的詢問或寄送電子報。"
+        ]
+      },
+      {
+        "heading": "我們如何使用這些資料",
+        "body": [
+          "聯絡表單的內容僅用於回覆您的詢問、提供產品諮詢與後續服務聯繫。",
+          "電子報訂閱者的電子郵件僅用於寄送新品發布與品牌訊息。",
+          "我們不會將您的個人資料販售、出租或交換給第三方，也不會用於您未預期的用途。"
+        ]
+      },
+      {
+        "heading": "資料存放位置與第三方服務",
+        "body": [
+          "您送出的表單內容會傳送至 Google 試算表儲存，該服務由 Google LLC 提供，資料可能存放於台灣境外的伺服器。",
+          "本網站託管於 Vercel Inc.，其伺服器記錄可能包含您的 IP 位址與瀏覽器資訊，用於維運與資安目的。",
+          "本網站不使用 Google Analytics 或任何第三方追蹤工具，也不投放廣告追蹤程式碼。"
+        ]
+      },
+      {
+        "heading": "Cookie 的使用",
+        "body": [
+          "本網站僅使用一個名為 NEXT_LOCALE 的必要性 Cookie，用於記住您選擇的語言版本（中文或英文）。",
+          "此 Cookie 不含個人識別資訊，也不用於追蹤您的瀏覽行為。您可以隨時透過瀏覽器設定清除它，僅會影響語言偏好的記憶。"
+        ]
+      },
+      {
+        "heading": "保存期間",
+        "body": [
+          "聯絡表單的內容自送出之日起保存二年，以便處理後續服務與保固相關事宜，期滿後刪除。",
+          "電子報訂閱者的電子郵件將保存至您取消訂閱為止。"
+        ]
+      },
+      {
+        "heading": "您的權利",
+        "body": [
+          "依據中華民國《個人資料保護法》，您得就我們保有的個人資料，請求查詢、閱覽、製給複製本、補充或更正、停止蒐集處理利用，或請求刪除。",
+          "如需行使上述權利，請透過本網站的聯絡表單與我們聯繫，並註明您的請求內容。我們將於收到請求後三十日內回覆。"
+        ]
+      },
+      {
+        "heading": "資料安全",
+        "body": [
+          "本網站全站採用 HTTPS 加密傳輸。表單資料在傳送過程中經加密保護，儲存端由 Google 帳號權限控管，僅限授權人員存取。",
+          "惟網際網路傳輸無法保證絕對安全，我們將持續採取合理措施保護您的資料。"
+        ]
+      },
+      {
+        "heading": "政策修訂",
+        "body": [
+          "本政策如有修訂，將直接更新於本頁面並標示更新日期。建議您不時查閱，以了解最新內容。"
+        ]
+      }
+    ]
+  }
+}

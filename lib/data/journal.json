@@ -1,0 +1,156 @@
+{
+  "posts": [
+    {
+      "id": "j1",
+      "slug": "the-honesty-of-solid-wood",
+      "title": {
+        "zh": "實木的誠實：從一塊原木到一件家具的旅程",
+        "en": "The Honesty of Solid Wood: From a Log to a Piece of Furniture"
+      },
+      "excerpt": {
+        "zh": "在萬角，每一件實木家具的誕生都始於對一棵樹的尊重。我們走訪工坊，記錄木材如何從原始素材蛻變為承載日常的器物。",
+        "en": "At MAAN GOK, every piece of solid-wood furniture begins with respect for a single tree. We visited the workshop to trace how raw timber becomes an object for daily life."
+      },
+      "content": {
+        "zh": [
+          "選材是所有工藝的起點。我們的木材皆來自具永續認證的林場，並經過至少五年的自然風乾，確保含水率穩定，未來使用中不易變形開裂。",
+          "工匠會依據每塊木料的紋理走向與節疤位置，決定它最終會成為桌面、椅背，或是邊櫃的門片——這是一場材料與想像力的對話。",
+          "從裁切、刨光、榫接到最後的手工上油，一件家具平均需要經過十四道工序、超過四十小時的工時才能完成。這正是「快速家具」無法複製的溫度。"
+        ],
+        "en": [
+          "Material selection is where every craft begins. Our timber comes from sustainably certified forests and is air-dried for at least five years, keeping moisture content stable so it won't warp or crack later in life.",
+          "Craftspeople read the grain direction and knot placement of each piece of timber to decide whether it becomes a tabletop, a chair back, or a sideboard door — a conversation between material and imagination.",
+          "From cutting and planing to joinery and final hand-oiling, a single piece of furniture takes an average of fourteen production steps and over forty hours of labour — a warmth that fast furniture simply cannot replicate."
+        ]
+      },
+      "category": {
+        "zh": "工藝",
+        "en": "Craft"
+      },
+      "coverImage": "/images/products/yanceng-sideboard/studio-1.jpg",
+      "date": "2026-06-12",
+      "readTime": {
+        "zh": "6 分鐘閱讀",
+        "en": "6 min read"
+      },
+      "author": {
+        "zh": "萬角編輯部",
+        "en": "MAAN GOK Editorial"
+      }
+    },
+    {
+      "id": "j2",
+      "slug": "colour-of-quiet-living",
+      "title": {
+        "zh": "寧靜生活的色彩學：為什麼我們鍾情於暖中性色調",
+        "en": "The Colour Theory of Quiet Living: Why We Favour Warm Neutrals"
+      },
+      "excerpt": {
+        "zh": "從沙棕、燕麥到煙燻橡木，萬角的色彩系統刻意避開飽和與對比，因為真正的奢華，是讓空間先安靜下來。",
+        "en": "From sand to oat to smoked oak, MAAN GOK's colour system deliberately avoids saturation and contrast — because true luxury is a space that settles into quiet first."
+      },
+      "content": {
+        "zh": [
+          "色彩心理學研究指出，低飽和度的暖色調能有效降低視覺疲勞，這也是我們選擇以暖白、燕麥、灰石作為主色調的原因。",
+          "每一款布料與木色的搭配，都經過至少三輪的自然光與人工光源測試，確保在不同時間、不同空間中都能維持一致的溫潤質感。",
+          "橄欖綠、陶土橘、青銅棕作為點綴色，則是向自然界的礦石與植物致敬，為空間增添恰到好處的層次。"
+        ],
+        "en": [
+          "Colour psychology research shows that low-saturation warm tones reduce visual fatigue — which is exactly why we build our palette around warm white, oat, and stone grey.",
+          "Every fabric-and-timber pairing is tested across at least three rounds of natural and artificial light, to make sure the same warm quality holds up across different times of day and different spaces.",
+          "Olive green, terracotta, and bronze appear only as accents — a nod to natural minerals and plant life, adding just enough layering to a room."
+        ]
+      },
+      "category": {
+        "zh": "設計哲學",
+        "en": "Design Philosophy"
+      },
+      "coverImage": "/images/products/jinggu-lounge-chair/studio-1.jpg",
+      "date": "2026-05-28",
+      "readTime": {
+        "zh": "5 分鐘閱讀",
+        "en": "5 min read"
+      },
+      "author": {
+        "zh": "萬角編輯部",
+        "en": "MAAN GOK Editorial"
+      }
+    },
+    {
+      "id": "j3",
+      "slug": "a-copenhagen-atelier-visit",
+      "title": {
+        "zh": "走訪哥本哈根工作室：與拉爾斯・克里斯坦森對談",
+        "en": "A Visit to the Copenhagen Atelier: In Conversation with Lars Kristensen"
+      },
+      "excerpt": {
+        "zh": "我們前往丹麥，與長期合作的設計師拉爾斯，聊聊他如何在極簡與舒適之間，找到屬於北歐的平衡。",
+        "en": "We travelled to Denmark to talk with our long-time collaborator Lars about how he finds a distinctly Nordic balance between minimalism and comfort."
+      },
+      "content": {
+        "zh": [
+          "「好的家具應該先被身體記住，才被眼睛記住。」拉爾斯這樣形容他的設計哲學。在他位於哥本哈根近郊的工作室裡，隨處可見尚未完工的椅架與布料樣本。",
+          "他認為北歐設計之所以歷久彌新，是因為始終將「日常使用」置於造型之前——每一個角度、每一吋填充，都必須先通過生活的測試。",
+          "這次拜訪也促成了悅風沙發最終扶手弧度的微調——從初版的直角，改為現在略微內收的斜角。"
+        ],
+        "en": [
+          "\"Good furniture should be remembered by the body before it's remembered by the eye,\" Lars says of his design philosophy. In his studio on the outskirts of Copenhagen, unfinished chair frames and fabric samples are scattered everywhere.",
+          "He believes Nordic design endures because it always puts everyday use before form — every angle, every inch of fill has to pass the test of real life first.",
+          "This visit also led to a final tweak in the Yuefeng Sofa's armrest curve — from the original square angle to the gently tapered line it has today."
+        ]
+      },
+      "category": {
+        "zh": "設計師專訪",
+        "en": "Designer Interview"
+      },
+      "coverImage": "/images/products/huyue-dining-chair/studio-1.jpg",
+      "date": "2026-04-15",
+      "readTime": {
+        "zh": "8 分鐘閱讀",
+        "en": "8 min read"
+      },
+      "author": {
+        "zh": "萬角編輯部",
+        "en": "MAAN GOK Editorial"
+      }
+    },
+    {
+      "id": "j4",
+      "slug": "living-with-less-but-better",
+      "title": {
+        "zh": "少即是奢：一個關於留白的居家提案",
+        "en": "Less Is Luxury: A Case for Negative Space at Home"
+      },
+      "excerpt": {
+        "zh": "當代生活習慣以填滿空間來展示豐盛，萬角選擇相反的路徑——用留白，讓每一件家具都有呼吸的餘地。",
+        "en": "Contemporary life tends to fill space to signal abundance. MAAN GOK takes the opposite path — using negative space to let every piece of furniture breathe."
+      },
+      "content": {
+        "zh": [
+          "留白不是空無，而是一種主動的取捨。在我們參與的多個居家專案中，最常見的建議是「先減後加」——移除非必要的物件，讓真正重要的家具成為空間的主角。",
+          "一張好的沙發、一張耐用的餐桌，遠比十件裝飾品更能定義一個家的性格。",
+          "這也是萬角持續專注於「少量精品」而非「大量款式」的原因：我們相信品質與空間感，才是奢華真正的樣貌。"
+        ],
+        "en": [
+          "Negative space isn't emptiness — it's an active choice. Across the home projects we've worked on, the most common advice is 'subtract first, then add' — remove what isn't essential so the furniture that matters can take centre stage.",
+          "One good sofa or one durable dining table defines a home's character far more than ten decorative objects ever could.",
+          "It's also why MAAN GOK keeps its focus on a small number of considered pieces rather than a large catalogue — we believe quality and a sense of space are what true luxury actually looks like."
+        ]
+      },
+      "category": {
+        "zh": "生活提案",
+        "en": "Living Ideas"
+      },
+      "coverImage": "/images/products/mianyun-bed-frame/studio-1.jpg",
+      "date": "2026-03-02",
+      "readTime": {
+        "zh": "4 分鐘閱讀",
+        "en": "4 min read"
+      },
+      "author": {
+        "zh": "萬角編輯部",
+        "en": "MAAN GOK Editorial"
+      }
+    }
+  ]
+}

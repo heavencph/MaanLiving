@@ -1,0 +1,52 @@
+{
+  "materials": [
+    {
+      "id": "m1",
+      "title": {
+        "zh": "北歐橡木",
+        "en": "Nordic Oak"
+      },
+      "subtitle": {
+        "zh": "永續林場・五年自然風乾",
+        "en": "Sustainable forestry · Air-dried 5 years"
+      },
+      "image": "/images/products/shanxing-dining-table/studio-1.jpg"
+    },
+    {
+      "id": "m2",
+      "title": {
+        "zh": "義大利植鞣皮革",
+        "en": "Italian Vegetable-Tanned Leather"
+      },
+      "subtitle": {
+        "zh": "天然植物鞣製・隨時間包漿",
+        "en": "Naturally tanned · Patinas with age"
+      },
+      "image": "/images/products/muyang-lounge-chair/studio-1.jpg"
+    },
+    {
+      "id": "m3",
+      "title": {
+        "zh": "比利時亞麻布藝",
+        "en": "Belgian Linen"
+      },
+      "subtitle": {
+        "zh": "十萬次馬丁代爾耐磨測試",
+        "en": "100,000 Martindale abrasion tested"
+      },
+      "image": "/images/products/yuefeng-sofa/studio-1.jpg"
+    },
+    {
+      "id": "m4",
+      "title": {
+        "zh": "台灣萊姆石",
+        "en": "Taiwanese Limestone"
+      },
+      "subtitle": {
+        "zh": "在地開採・天然紋理",
+        "en": "Locally quarried · Natural veining"
+      },
+      "image": "/images/products/chaoxi-coffee-table/studio-1.jpg"
+    }
+  ]
+}
