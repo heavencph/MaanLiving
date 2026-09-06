@@ -9,14 +9,14 @@ import { ColourConfigurator } from "@/components/product/colour-configurator";
 import { VariantSelector } from "@/components/product/variant-selector";
 import { SpecAccordion } from "@/components/product/spec-accordion";
 import { formatPrice } from "@/lib/data";
-import type { Product } from "@/types/product";
+import type { ColourOption, Product } from "@/types/product";
 import type { AppLocale } from "@/i18n/routing";
 
 export function ProductDetailClient({ product }: { product: Product }) {
   const t = useTranslations("product");
   const locale = useLocale() as AppLocale;
   const price = formatPrice(product.price, product.currency, locale);
-  const [colour, setColour] = useState(product.variants.colours[0]);
+  const [colour, setColour] = useState<ColourOption | undefined>(product.variants.colours[0]);
   const [sizeId, setSizeId] = useState(product.variants.sizes?.[0]?.id ?? "");
   const [legId, setLegId] = useState(product.variants.legFinishes?.[0]?.id ?? "");
 
@@ -46,11 +46,15 @@ export function ProductDetailClient({ product }: { product: Product }) {
     );
   }, [product]);
 
-  // One colour is not a choice. A piece that comes in a single finish says so
-  // and shows its one photograph; it does not offer a picker with nothing to
-  // pick, and it does not feed the gallery an override of a shot already in
-  // it. Products arrive with one colour long before they arrive with six.
+  // One colour is not a choice, and none at all is not a thing to say. A piece
+  // that comes in a single finish states it where the picker would be; a piece
+  // whose finishes have not been photographed yet — which is how most of them
+  // arrive — shows nothing there, rather than a control with nothing in it.
+  // The gallery is not handed an override in either case, so its filmstrip
+  // does not carry a second copy of the one photograph there is.
   const hasColourChoice = product.variants.colours.length > 1;
+  const hasVariants =
+    Boolean(colour) || Boolean(product.variants.sizes) || Boolean(product.variants.legFinishes);
 
   return (
     <div>
@@ -58,8 +62,8 @@ export function ProductDetailClient({ product }: { product: Product }) {
         {/* gallery */}
         <ProductGallery
           images={galleryImages}
-          activeOverrideImage={hasColourChoice ? colour.image : undefined}
-          activeOverrideLabel={hasColourChoice ? colour.name : undefined}
+          activeOverrideImage={hasColourChoice ? colour?.image : undefined}
+          activeOverrideLabel={hasColourChoice ? colour?.name : undefined}
           productName={product.name}
         />
 
@@ -71,28 +75,36 @@ export function ProductDetailClient({ product }: { product: Product }) {
           <h1 className="mt-2 font-heading text-3xl font-light leading-tight text-foreground md:text-4xl">
             {product.name}
           </h1>
-          <p className="mt-1 text-sm text-muted-foreground">{product.nameAlt}</p>
-          <p className="mt-5 text-sm leading-relaxed text-foreground/80">
-            {product.shortDescription}
-          </p>
+          {/* The name in the other language, when there is another one. A model
+              designation is the same string in both, and printing it twice
+              reads as a mistake. */}
+          {product.nameAlt !== product.name && (
+            <p className="mt-1 text-sm text-muted-foreground">{product.nameAlt}</p>
+          )}
+          {product.shortDescription && (
+            <p className="mt-5 text-sm leading-relaxed text-foreground/80">
+              {product.shortDescription}
+            </p>
+          )}
           {price && <p className="mt-5 font-heading text-2xl text-foreground">{price}</p>}
 
+          {hasVariants && (
           <div className="mt-8 space-y-7 border-t border-border pt-7">
-            {hasColourChoice ? (
+            {hasColourChoice && colour ? (
               <ColourConfigurator
                 colours={product.variants.colours}
                 selected={colour}
                 onChange={setColour}
                 label={product.variants.fabrics ? t("fabricColour") : t("colourWood")}
               />
-            ) : (
+            ) : colour ? (
               <div className="flex items-baseline justify-between">
                 <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
                   {product.variants.fabrics ? t("fabricColour") : t("colourWood")}
                 </p>
                 <p className="font-heading text-base text-foreground">{colour.name}</p>
               </div>
-            )}
+            ) : null}
 
             {product.variants.sizes && (
               <VariantSelector
@@ -118,6 +130,7 @@ export function ProductDetailClient({ product }: { product: Product }) {
               </p>
             )}
           </div>
+          )}
 
           <div className="mt-8 flex flex-col gap-3">
             <motion.button

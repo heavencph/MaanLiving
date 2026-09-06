@@ -67,10 +67,10 @@
     "groupProducts": "Collection",
     "groupBrand": "Brand",
     "groupServices": "Services",
-    "linkSofa": "Sofas",
-    "linkDiningSet": "Dining Tables & Chairs",
-    "linkArmchair": "Armchairs",
-    "linkBedroom": "Bedroom",
+    "linkDiningChair": "Dining Chairs",
+    "linkLoungeChair": "Lounge Chairs",
+    "linkStool": "Stools",
+    "linkCabinet": "Cabinets",
     "linkAllProducts": "All Products",
     "linkAbout": "About Us",
     "linkProjects": "Projects",
@@ -165,7 +165,9 @@
   "products": {
     "eyebrow": "Collection",
     "title": "Collection",
-    "description": "Every piece is refined through repeated study of material, proportion and process — choose a collection or a single piece to see the design detail."
+    "description": "Every piece is refined through repeated study of material, proportion and process — choose a collection or a single piece to see the design detail.",
+    "count": "{count, plural, one {# piece} other {# pieces}}",
+    "viewAll": "View all {count} →"
   },
   "collection": {
     "eyebrow": "Collection",
@@ -325,14 +327,10 @@
     }
   },
   "categories": {
-    "sofa": "Sofa",
-    "armchair": "Armchair",
-    "dining-table": "Dining Table",
     "dining-chair": "Dining Chair",
-    "coffee-table": "Coffee Table",
-    "bed": "Bed Frame",
-    "sideboard": "Sideboard",
-    "lounge-chair": "Lounge Chair"
+    "lounge-chair": "Lounge Chair",
+    "stool": "Stool",
+    "cabinet": "Cabinet"
   },
   "imageComparison": {
     "before": "Before",

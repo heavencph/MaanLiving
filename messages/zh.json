@@ -67,10 +67,10 @@
     "groupProducts": "產品系列",
     "groupBrand": "品牌",
     "groupServices": "服務",
-    "linkSofa": "沙發",
-    "linkDiningSet": "餐桌與餐椅",
-    "linkArmchair": "單椅",
-    "linkBedroom": "臥室",
+    "linkDiningChair": "餐椅",
+    "linkLoungeChair": "休閒椅",
+    "linkStool": "腳凳",
+    "linkCabinet": "櫃體",
     "linkAllProducts": "全部產品",
     "linkAbout": "關於我們",
     "linkProjects": "案例故事",
@@ -165,7 +165,9 @@
   "products": {
     "eyebrow": "Collection",
     "title": "產品系列",
-    "description": "每一件作品都經過材質、比例與工序的反覆推敲，點選系列或單品，深入了解設計細節。"
+    "description": "每一件作品都經過材質、比例與工序的反覆推敲，點選系列或單品，深入了解設計細節。",
+    "count": "共 {count} 款",
+    "viewAll": "查看全部 {count} 款 →"
   },
   "collection": {
     "eyebrow": "Collection",
@@ -325,14 +327,10 @@
     }
   },
   "categories": {
-    "sofa": "沙發",
-    "armchair": "單椅",
-    "dining-table": "餐桌",
     "dining-chair": "餐椅",
-    "coffee-table": "茶几",
-    "bed": "床架",
-    "sideboard": "邊櫃",
-    "lounge-chair": "休閒椅"
+    "lounge-chair": "休閒椅",
+    "stool": "腳凳",
+    "cabinet": "櫃體"
   },
   "imageComparison": {
     "before": "工序之前",

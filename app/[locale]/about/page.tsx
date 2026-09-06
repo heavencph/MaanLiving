@@ -21,10 +21,10 @@ export async function generateMetadata({
 }
 
 const GRID_IMAGES = [
-  { image: "/images/products/yanceng-sideboard/insitu-1.jpg", span: "wide" as const },
-  { image: "/images/products/jinggu-lounge-chair/insitu-2.jpg" },
-  { image: "/images/products/chaoxi-coffee-table/insitu-1.jpg" },
-  { image: "/images/products/shanxing-dining-table/insitu-2.jpg", span: "wide" as const },
+  { image: "/images/craft/factory-03.webp", span: "wide" as const },
+  { image: "/images/craft/detail-03.webp" },
+  { image: "/images/craft/factory-09.webp" },
+  { image: "/images/craft/detail-05.webp", span: "wide" as const },
 ];
 
 export default async function AboutPage({
@@ -43,7 +43,7 @@ export default async function AboutPage({
     <div>
       <section className="relative flex h-[60vh] min-h-[420px] items-end overflow-hidden bg-charcoal">
         <Image
-          src="/images/products/yuefeng-sofa/insitu-3.jpg"
+          src="/images/craft/factory-16.webp"
           alt={t("studioAlt")}
           fill
           priority

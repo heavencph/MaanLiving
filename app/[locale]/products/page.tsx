@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import { alternates } from "@/lib/seo";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { SectionHeading } from "@/components/shared/section-heading";
-import { ALL, Catalogue } from "@/sections/products/catalogue";
-import { getAllCategoryKeys, getProducts } from "@/lib/data";
+import { CategoryOverview } from "@/sections/products/category-overview";
 import type { AppLocale } from "@/i18n/routing";
 
 export async function generateMetadata({
@@ -39,12 +38,7 @@ export default async function ProductsPage({
         entrance="none"
         as="h1"
       />
-      <Catalogue
-        locale={locale as AppLocale}
-        products={getProducts(locale as AppLocale)}
-        categories={getAllCategoryKeys()}
-        active={ALL}
-      />
+      <CategoryOverview locale={locale as AppLocale} />
     </div>
   );
 }

@@ -3,7 +3,7 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Reveal } from "@/components/motion/reveal";
 
-const IMG = "/images/products/muyang-lounge-chair/insitu-1.jpg";
+const IMG = "/images/lifestyle/dining-03.webp";
 
 export function PhilosophyTeaser() {
   const t = useTranslations("home.philosophyTeaser");

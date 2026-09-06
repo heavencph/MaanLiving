@@ -10,10 +10,10 @@ export function Footer() {
     {
       title: t("groupProducts"),
       links: [
-        { label: t("linkSofa"), href: "/collections/sofa" },
-        { label: t("linkDiningSet"), href: "/collections/dining-table" },
-        { label: t("linkArmchair"), href: "/collections/armchair" },
-        { label: t("linkBedroom"), href: "/collections/bed" },
+        { label: t("linkDiningChair"), href: "/collections/dining-chair" },
+        { label: t("linkLoungeChair"), href: "/collections/lounge-chair" },
+        { label: t("linkStool"), href: "/collections/stool" },
+        { label: t("linkCabinet"), href: "/collections/cabinet" },
         { label: t("linkAllProducts"), href: "/products" },
       ],
     },

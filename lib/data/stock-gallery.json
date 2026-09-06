@@ -2,27 +2,27 @@
   "images": [
     {
       "id": "stock-1",
-      "image": "/images/products/chaoxi-coffee-table/insitu-2.jpg"
+      "image": "/images/lifestyle/cover-01.webp"
     },
     {
       "id": "stock-2",
-      "image": "/images/products/chaoxi-coffee-table/insitu-3.jpg"
+      "image": "/images/lifestyle/dining-01.webp"
     },
     {
       "id": "stock-3",
-      "image": "/images/products/shanxing-dining-table/insitu-2.jpg"
+      "image": "/images/lifestyle/lounge-01.webp"
     },
     {
       "id": "stock-4",
-      "image": "/images/products/shanxing-dining-table/insitu-3.jpg"
+      "image": "/images/lifestyle/lounge-11.webp"
     },
     {
       "id": "stock-5",
-      "image": "/images/products/yanceng-sideboard/insitu-3.jpg"
+      "image": "/images/lifestyle/dining-06.webp"
     },
     {
       "id": "stock-6",
-      "image": "/images/products/yanceng-sideboard/insitu-4.jpg"
+      "image": "/images/lifestyle/lounge-06.webp"
     }
   ]
 }

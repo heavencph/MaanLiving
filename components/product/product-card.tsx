@@ -52,7 +52,12 @@ export function ProductCard({ product, priority = false }: { product: Product; p
       <div className="mt-4 flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between sm:gap-2">
         <div>
           <p className="font-heading text-base text-foreground md:text-lg">{product.name}</p>
-          <p className="mt-1 text-xs text-muted-foreground">{product.category} · {product.designer.name}</p>
+          {/* The designer is not always known — a supplier's catalogue gives a
+              model and a category and often nothing else — and a category
+              followed by a lone middot reads as a name that failed to load. */}
+          <p className="mt-1 text-xs text-muted-foreground">
+            {product.designer.name ? `${product.category} · ${product.designer.name}` : product.category}
+          </p>
         </div>
         {price && (
           <p className="whitespace-nowrap text-sm text-muted-foreground">{price}</p>
