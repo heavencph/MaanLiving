@@ -8,8 +8,9 @@
 > - [x] 開新 repo
 > - [x] Vercel 匯入
 > - [x] `public/admin/config.yml` 的 `repo:` 已指向這個 repo
-> - [ ] `base_url:` ← **還沒填**，等網域決定（或先用 `xxx.vercel.app`）
-> - [ ] 新的 GitHub OAuth App（要等網址確定）
+> - [x] 網域 `maanliving.com`，已綁到 Vercel 並可連線
+> - [x] `base_url:` 已填入 `https://maanliving.com`
+> - [ ] 新的 GitHub OAuth App
 > - [ ] 新的 Google 試算表 + Apps Script
 > - [ ] Vercel 環境變數
 > - [ ] `lib/brand.ts` 換名字

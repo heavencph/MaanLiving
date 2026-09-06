@@ -7,12 +7,9 @@ backend:
   # moves with it. Must also match the callback URL registered on the GitHub
   # OAuth App. See docs/cms.md.
   #
-  # ⚠️ 尚未設定。填入「這個站自己的網址」：網域還沒定之前，先用 Vercel 給的
-  # xxx.vercel.app，接上自訂網域後再改成正式網域。改這行的同時，GitHub OAuth
-  # App 的 Authorization callback URL 也要是同一個主機，兩邊必須一致。
-  # 維持現狀不改的話，/admin 會登不進去（這是刻意的：寧可登不進去，也不要
-  # 悄悄把內容存到別的站去）。
-  base_url: https://TODO-填入本站網址
+  # 這一行、GitHub OAuth App 的 Authorization callback URL、以及 Vercel 的
+  # GITHUB_OAUTH_ALLOWED_HOSTS，三者的主機必須完全一致，否則 /admin 登不進去。
+  base_url: https://maanliving.com
   auth_endpoint: api/auth
   commit_messages:
     update: '內容更新：{{collection}} · {{path}}'
