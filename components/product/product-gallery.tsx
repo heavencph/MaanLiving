@@ -52,13 +52,27 @@ export function ProductGallery({
   // against 1.0s for the same photograph on the catalogue. There is nothing to
   // cross-fade from on the shot you arrive at, so it simply arrives.
   const [openedOn] = useState(activeSrc);
-  const thumbs = activeOverrideImage
-    ? [{ src: activeOverrideImage, kind: "studio" as const }, ...images]
+  // The colour shot earns a thumbnail of its own only when it is a photograph
+  // the strip does not already hold. Every colour of a piece often points at
+  // the same studio shot, and then the extra slot is the same picture twice —
+  // so instead the strip highlights the one it already has.
+  const overrideIndex = activeOverrideImage
+    ? images.findIndex((img) => img.src === activeOverrideImage)
+    : -1;
+  const overrideIsExtra = Boolean(activeOverrideImage) && overrideIndex === -1;
+  const thumbs = overrideIsExtra
+    ? [{ src: activeOverrideImage!, kind: "studio" as const }, ...images]
     : images;
-  const activeThumbIndex = isOverrideActive ? 0 : activeOverrideImage ? index + 1 : index;
+  const activeThumbIndex = isOverrideActive
+    ? overrideIsExtra
+      ? 0
+      : overrideIndex
+    : overrideIsExtra
+      ? index + 1
+      : index;
 
   function goTo(i: number) {
-    if (activeOverrideImage) {
+    if (overrideIsExtra) {
       if (i <= 0) {
         setShowOverride(true);
         return;
@@ -66,6 +80,7 @@ export function ProductGallery({
       setShowOverride(false);
       setIndex((i - 1 + images.length) % images.length);
     } else {
+      setShowOverride(false);
       setIndex((i + images.length) % images.length);
     }
   }
@@ -129,7 +144,10 @@ export function ProductGallery({
         </div>
       </div>
 
-      {/* thumbnails */}
+      {/* Thumbnails, unless there is only one shot — a filmstrip of one is a
+          control that cannot do anything, and it reads as a piece missing
+          rather than as a piece that does not exist. */}
+      {thumbs.length > 1 && (
       <div className="no-scrollbar flex gap-3 overflow-x-auto lg:w-24 lg:flex-col lg:overflow-y-auto">
         {thumbs.map((img, i) => (
           <button
@@ -144,6 +162,7 @@ export function ProductGallery({
           </button>
         ))}
       </div>
+      )}
 
       <AnimatePresence>
         {fullscreen && (

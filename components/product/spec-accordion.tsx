@@ -28,8 +28,21 @@ export function SpecAccordion({
   designer: Designer;
 }) {
   const t = useTranslations("product");
+  // A piece that has just been announced usually has a photograph, a name and
+  // nothing else. Each section here is rendered only if it has content, and
+  // the one that opens by default is the first that survives — "overview" is
+  // not always among them.
+  const present = [
+    description.length > 0 && "overview",
+    dimensions.length > 0 && "dimensions",
+    materials.length > 0 && "materials",
+    Boolean(designer.name) && "designer",
+    downloads.length > 0 && "downloads",
+  ].filter((v): v is string => typeof v === "string");
+
   return (
-    <Accordion type="multiple" defaultValue={["overview"]} className="w-full">
+    <Accordion type="multiple" defaultValue={present.slice(0, 1)} className="w-full">
+      {present.includes("overview") && (
       <AccordionItem value="overview">
         <AccordionTrigger className="font-heading text-base">{t("specOverview")}</AccordionTrigger>
         <AccordionContent className="space-y-3 text-sm leading-relaxed text-muted-foreground">
@@ -38,7 +51,9 @@ export function SpecAccordion({
           ))}
         </AccordionContent>
       </AccordionItem>
+      )}
 
+      {present.includes("dimensions") && (
       <AccordionItem value="dimensions">
         <AccordionTrigger className="font-heading text-base">{t("specDimensions")}</AccordionTrigger>
         <AccordionContent>
@@ -52,7 +67,9 @@ export function SpecAccordion({
           </dl>
         </AccordionContent>
       </AccordionItem>
+      )}
 
+      {present.includes("materials") && (
       <AccordionItem value="materials">
         <AccordionTrigger className="font-heading text-base">{t("specMaterials")}</AccordionTrigger>
         <AccordionContent className="space-y-4">
@@ -64,7 +81,9 @@ export function SpecAccordion({
           ))}
         </AccordionContent>
       </AccordionItem>
+      )}
 
+      {present.includes("designer") && (
       <AccordionItem value="designer">
         <AccordionTrigger className="font-heading text-base">{t("specDesigner")}</AccordionTrigger>
         <AccordionContent>
@@ -76,7 +95,9 @@ export function SpecAccordion({
           </div>
         </AccordionContent>
       </AccordionItem>
+      )}
 
+      {present.includes("downloads") && (
       <AccordionItem value="downloads">
         <AccordionTrigger className="font-heading text-base">{t("specDownloads")}</AccordionTrigger>
         <AccordionContent className="space-y-2">
@@ -101,6 +122,7 @@ export function SpecAccordion({
           })}
         </AccordionContent>
       </AccordionItem>
+      )}
     </Accordion>
   );
 }

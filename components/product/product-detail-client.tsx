@@ -22,10 +22,35 @@ export function ProductDetailClient({ product }: { product: Product }) {
 
   const selectedSize = product.variants.sizes?.find((s) => s.id === sizeId);
 
-  const galleryImages = useMemo(
-    () => [{ src: product.heroImage, kind: "studio" as const }, ...product.gallery],
-    [product]
-  );
+  // Every one of the accordion's sections is optional, and a new piece often
+  // has none of them yet. All empty, the block is a horizontal rule over five
+  // headings that open onto nothing.
+  const hasSpecs =
+    product.description.length > 0 ||
+    product.dimensions.length > 0 ||
+    product.materials.length > 0 ||
+    product.downloads.length > 0 ||
+    Boolean(product.designer.name);
+
+  // The hero shot is usually also the first gallery entry, so the strip used
+  // to open on the same photograph twice. Harmless at six images; at one it is
+  // the whole strip.
+  const galleryImages = useMemo(() => {
+    const seen = new Set<string>();
+    return [{ src: product.heroImage, kind: "studio" as const }, ...product.gallery].filter(
+      (img) => {
+        if (seen.has(img.src)) return false;
+        seen.add(img.src);
+        return true;
+      }
+    );
+  }, [product]);
+
+  // One colour is not a choice. A piece that comes in a single finish says so
+  // and shows its one photograph; it does not offer a picker with nothing to
+  // pick, and it does not feed the gallery an override of a shot already in
+  // it. Products arrive with one colour long before they arrive with six.
+  const hasColourChoice = product.variants.colours.length > 1;
 
   return (
     <div>
@@ -33,8 +58,8 @@ export function ProductDetailClient({ product }: { product: Product }) {
         {/* gallery */}
         <ProductGallery
           images={galleryImages}
-          activeOverrideImage={colour.image}
-          activeOverrideLabel={colour.name}
+          activeOverrideImage={hasColourChoice ? colour.image : undefined}
+          activeOverrideLabel={hasColourChoice ? colour.name : undefined}
           productName={product.name}
         />
 
@@ -53,12 +78,21 @@ export function ProductDetailClient({ product }: { product: Product }) {
           {price && <p className="mt-5 font-heading text-2xl text-foreground">{price}</p>}
 
           <div className="mt-8 space-y-7 border-t border-border pt-7">
-            <ColourConfigurator
-              colours={product.variants.colours}
-              selected={colour}
-              onChange={setColour}
-              label={product.variants.fabrics ? t("fabricColour") : t("colourWood")}
-            />
+            {hasColourChoice ? (
+              <ColourConfigurator
+                colours={product.variants.colours}
+                selected={colour}
+                onChange={setColour}
+                label={product.variants.fabrics ? t("fabricColour") : t("colourWood")}
+              />
+            ) : (
+              <div className="flex items-baseline justify-between">
+                <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
+                  {product.variants.fabrics ? t("fabricColour") : t("colourWood")}
+                </p>
+                <p className="font-heading text-base text-foreground">{colour.name}</p>
+              </div>
+            )}
 
             {product.variants.sizes && (
               <VariantSelector
@@ -100,6 +134,7 @@ export function ProductDetailClient({ product }: { product: Product }) {
             </Link>
           </div>
 
+          {hasSpecs && (
           <div className="mt-10 border-t border-border pt-8">
             <SpecAccordion
               description={product.description}
@@ -109,6 +144,7 @@ export function ProductDetailClient({ product }: { product: Product }) {
               designer={product.designer}
             />
           </div>
+          )}
         </div>
       </div>
 
