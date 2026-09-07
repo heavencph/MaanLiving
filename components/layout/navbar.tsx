@@ -1,30 +1,26 @@
 "use client";
 
-import Image from "next/image";
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { brand } from "@/lib/brand";
-import { getProducts } from "@/lib/data";
+import { getAllCategoryKeys } from "@/lib/data";
 import { MobileNav } from "@/components/layout/mobile-nav";
 import { LanguageSwitcher } from "@/components/layout/language-switcher";
-import type { AppLocale } from "@/i18n/routing";
 
 export function Navbar() {
   const t = useTranslations("nav");
   const tCategories = useTranslations("categories");
-  const locale = useLocale() as AppLocale;
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [megaOpen, setMegaOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [lastPathname, setLastPathname] = useState(pathname);
 
-  const products = getProducts(locale);
-  const categories = Array.from(new Set(products.map((p) => p.categoryKey)));
+  const categories = getAllCategoryKeys();
 
   // One array feeds both the desktop row and the slide-in menu, so they
   // cannot drift apart.
@@ -119,61 +115,40 @@ export function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
-            className="hidden border-t border-border bg-background/98 backdrop-blur-md lg:block"
+            // Deep brown at 70%, so the page keeps showing through it. Warm
+            // white on that reads at 5.3:1 over the site's own paper, which is
+            // past the 4.5:1 a reader with low vision needs — the blur is what
+            // keeps it there over a photograph rather than over the paper.
+            className="hidden border-t border-warmwhite/15 bg-charcoal/70 backdrop-blur-md lg:block"
             onMouseEnter={() => setMegaOpen(true)}
           >
-            <div className="container-fluid grid grid-cols-4 gap-10 py-10">
-              <div className="col-span-1">
-                <p className="mb-4 text-xs uppercase tracking-[0.2em] text-muted-foreground">
-                  {t("browseByCollection")}
-                </p>
-                <ul className="space-y-3">
-                  {categories.map((cat) => (
-                    <li key={cat}>
-                      <Link
-                        href={`/collections/${cat}`}
-                        className="underline-reveal font-heading text-lg text-foreground"
-                      >
-                        {tCategories(cat)}
-                      </Link>
-                    </li>
-                  ))}
-                  <li className="pt-2">
+            {/* Four names and a link. It used to carry three product
+                photographs beside them, which is a picture of the catalogue
+                shown to someone who is on their way to the catalogue — so the
+                menu is a row now rather than a panel, and it takes the height
+                of one line instead of a card. */}
+            <div className="container-fluid flex items-baseline gap-10 py-6">
+              <p className="text-xs uppercase tracking-[0.2em] text-warmwhite/55">
+                {t("browseByCollection")}
+              </p>
+              <ul className="flex flex-wrap items-baseline gap-x-9 gap-y-3">
+                {categories.map((cat) => (
+                  <li key={cat}>
                     <Link
-                      href="/products"
-                      className="text-xs font-medium tracking-wide text-muted-foreground underline-reveal"
+                      href={`/collections/${cat}`}
+                      className="underline-reveal font-heading text-lg text-warmwhite"
                     >
-                      {t("viewAllProducts")}
+                      {tCategories(cat)}
                     </Link>
                   </li>
-                </ul>
-              </div>
-              <div className="col-span-3 grid grid-cols-3 gap-6">
-                {products.slice(0, 3).map((p) => (
-                  <Link
-                    key={p.id}
-                    href={`/products/${p.slug}`}
-                    className="group block"
-                  >
-                    {/* These are 300px wide and were being served as the
-                        originals — 920KB of photograph for three thumbnails,
-                        one of them 2000px across, pulled on every hover of
-                        產品系列 on every page. */}
-                    <div className="relative aspect-[4/5] overflow-hidden bg-muted">
-                      <Image
-                        src={p.heroImage}
-                        alt={p.name}
-                        fill
-                        // The menu is desktop only, so there is no small case.
-                        sizes="25vw"
-                        className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                      />
-                    </div>
-                    <p className="mt-3 font-heading text-base text-foreground">{p.name}</p>
-                    <p className="text-xs text-muted-foreground">{p.category}</p>
-                  </Link>
                 ))}
-              </div>
+              </ul>
+              <Link
+                href="/products"
+                className="underline-reveal ml-auto text-xs font-medium tracking-wide text-warmwhite/70"
+              >
+                {t("viewAllProducts")}
+              </Link>
             </div>
           </motion.div>
         )}
