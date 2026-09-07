@@ -32,10 +32,6 @@
       "title": "Journal",
       "description": "The MAAN Journal: long-form reading on craft, material, designer interviews, and ideas for living."
     },
-    "explore": {
-      "title": "Explore",
-      "description": "A first look at MAAN's latest designs, still being refined, ahead of joining the collection."
-    },
     "contact": {
       "title": "Contact",
       "description": "Book a visit to the MAAN showroom, or reach our advisory team to begin your custom furniture journey."
@@ -47,7 +43,6 @@
     "about": "About",
     "projects": "Projects",
     "journal": "Journal",
-    "explore": "Explore",
     "contact": "Contact",
     "bookConsultation": "Book a Consultation",
     "openMenu": "Open menu",
@@ -85,7 +80,7 @@
   "home": {
     "hero": {
       "tagline": "SHAPE YOUR CORNER",
-      "ctaExplore": "Explore",
+      "ctaProducts": "Browse the collection",
       "scrollHint": "Scroll to explore"
     },
     "collectionPreview": {
@@ -179,7 +174,7 @@
     "storyTitle1": "From two city studios",
     "storyTitle2": "to one complete furniture system",
     "storyP1": "MAAN was founded on a belief in 'slow furniture' — in an age of fast consumption, we chose to spend longer refining every piece, so furniture becomes a companion for decades rather than a seasonal purchase.",
-    "storyP2": "The brand name '漫家居' (MAAN) comes from the image 'a house has ten thousand corners, and light lives in every one' — a home is made of countless corners, edges and details, and we believe only by weighing proportion and material from a thousand angles can every corner be treated with care. We fuse Nordic minimalist craft tradition with the relaxed aesthetic of Australian coastal living, developing a furniture language for the contemporary Asian home.",
+    "storyP2": "The brand name '萬閣' (MAAN) comes from the image 'a house has ten thousand corners, and light lives in every one' — a home is made of countless corners, edges and details, and we believe only by weighing proportion and material from a thousand angles can every corner be treated with care. We fuse Nordic minimalist craft tradition with the relaxed aesthetic of Australian coastal living, developing a furniture language for the contemporary Asian home.",
     "storyP3": "Today, MAAN continues to collaborate with designers from Denmark, France and Japan, while developing a new generation of sustainable materials together with local Taiwanese workshops — hoping to redefine 'made to last' as a way of living anyone can practise.",
     "philosophyEyebrow": "Design Philosophy",
     "philosophyTitle1": "We don't design furniture —",
@@ -247,23 +242,6 @@
       }
     ],
     "studioAlt": "Inside a MAAN studio"
-  },
-  "explore": {
-    "title": "A First Look",
-    "items": [
-      {
-        "code": "MAAN_GOK_01",
-        "name": "Tripod Stool",
-        "category": "Side Table · Solid Wood",
-        "cta": "Enquire"
-      },
-      {
-        "code": "MAAN_GOK_02",
-        "name": "Frankie Marble Stool",
-        "category": "Side Table · Marble × Wood",
-        "cta": "Enquire"
-      }
-    ]
   },
   "projectsPage": {
     "eyebrow": "Projects & Inspiration",

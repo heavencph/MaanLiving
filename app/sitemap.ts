@@ -58,7 +58,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       entry(`/journal/${slug}`, "yearly", 0.6, postDates.get(slug))
     ),
     entry("/about", "yearly", 0.6),
-    entry("/explore", "monthly", 0.6),
     entry("/contact", "yearly", 0.5),
     entry("/privacy", "yearly", 0.2),
   ];

@@ -1,20 +1,20 @@
-> ## ⚠️ 產品與文案仍是複本
+> ## ⚠️ 文案仍是複本
 >
 > 這個站是從 **萬角 MAAN GOK**（`heavencph/MannGok`）複製過來的。名字、顏色、
-> 標誌、分頁圖示都已經換成漫家居，但**產品資料、照片與品牌故事還是舊品牌的**：
-> `lib/data/*.json`、`public/images/`、`messages/{zh,en}.json` 裡的敘述只換了
-> 名字，沒換內容，兩個站現在講著同一個故事、賣著同一批家具。上線前要換掉。
+> 標誌、分頁圖示與**全部 193 件產品**都已經換成萬閣自己的，但**品牌故事與
+> SEO 描述還是舊品牌的**：`messages/{zh,en}.json` 裡的敘述只換了名字沒換內容，
+> 兩個站現在講著同一個「北歐工藝＋澳洲生活」的故事。上線前要換掉。
 >
 > 還沒做的：
 >
-> - [ ] 產品資料與照片（`lib/data/*.json`、`public/images/products/`）
 > - [ ] 品牌故事與 SEO 描述（`messages/{zh,en}.json`）
+> - [ ] 期刊與案例的內文（`lib/data/journal.json`、`projects.json`）仍是虛構的
 > - [ ] `lib/brand.ts` 的 Instagram 連結仍指向前一個品牌的帳號
-> - [ ] 探索頁的兩個 3D 模型（`public/models/`）
+> - [ ] 首頁 hero 的貼紙（`public/images/home/`）仍是前一個品牌的素材
 >
 > 換品牌的完整步驟見 [`docs/rebrand.md`](docs/rebrand.md)。
 
-# 漫家居 MAAN
+# 萬閣 MAAN
 
 當代高端家具品牌網站——以 Next.js App Router、TypeScript、Tailwind CSS 與 Framer Motion 打造，靈感取自 Jardan、Minotti、B&B Italia、Living Divani、Muuto 等國際高端家具品牌的質感，但為完全原創設計。
 
@@ -88,7 +88,7 @@ npm 11 以現有 lock 檔解得開；npm 10 則要求額外安裝 `@swc/helpers@
 ## 專案結構
 
 ```
-app/                路由（App Router）：首頁、探索、產品、產品詳情、分類、關於我們、案例故事、期刊、聯繫我們
+app/                路由（App Router）：首頁、產品、產品詳情、分類、關於我們、案例故事、期刊、聯繫我們
 components/         可重用元件（layout / product / shared / motion / ui）
 sections/           頁面專屬的組合區塊（首頁各段落、產品列表、聯絡表單…）
 lib/                資料存取層與工具函式（lib/data.ts、lib/data/*.json）

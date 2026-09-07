@@ -19,6 +19,11 @@ const nextConfig: NextConfig = {
     return [
       { source: "/philosophy", destination: "/about", permanent: true },
       { source: "/:locale(en|zh)/philosophy", destination: "/:locale/about", permanent: true },
+      // The explore page showed two pieces as 3D models you could turn. This
+      // brand's catalogue has no models, so the page is gone and its address
+      // goes to the catalogue, which is the nearest thing it was for.
+      { source: "/explore", destination: "/products", permanent: true },
+      { source: "/:locale(en|zh)/explore", destination: "/:locale/products", permanent: true },
     ];
   },
   // No `images.remotePatterns`: every photo is served from this deployment.

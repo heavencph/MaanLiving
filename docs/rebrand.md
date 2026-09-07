@@ -62,7 +62,7 @@ git push -u origin main
 ```ts
 export const brand = {
   slug: "maan",           // 檔名用，小寫無空格
-  zh: "漫家居",            // 中文名
+  zh: "萬閣",            // 中文名
   latin: "MAAN",          // 英文名，句子裡的寫法
   wordmark: "MAAN",       // 標誌用的寫法（這個品牌兩者相同）
   wordmarkRuns: [ ... ],  // 見下
@@ -137,7 +137,6 @@ Noto Sans TC。換掉的話要一併確認：
 |---|---|---|
 | 產品、材質、案例、日誌資料 | `lib/data/*.json` | 96KB |
 | 產品照片 | `public/images/` | 15MB |
-| 3D 模型（探索頁） | `public/models/` | 1.4MB |
 
 資料也可以進 `/admin` 後台改，不必動程式碼，見 `docs/cms.md`。
 
@@ -173,7 +172,7 @@ node scripts/generate-brand-icons.mjs    # app/ 的三個分頁圖示
 
 - [ ] `npx tsc --noEmit` 與 `npx eslint` 都過
 - [ ] `npm run build` 過
-- [ ] 全站搜尋不到舊品牌：`grep -rn "漫家居\|MAAN\|maan" --include="*.ts*" --include="*.json" --include="*.yml" .`（換成舊品牌的名字來搜）
+- [ ] 全站搜尋不到舊品牌：`grep -rn "萬閣\|MAAN\|maan" --include="*.ts*" --include="*.json" --include="*.yml" .`（換成舊品牌的名字來搜）
 - [ ] 中英文首頁的載入動畫都看得到新名字
 - [ ] 分享一個連結到通訊軟體，卡片是新品牌
 - [ ] `/admin` 登入得進去，存檔 commit 進**新** repo

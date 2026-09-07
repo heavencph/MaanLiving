@@ -26,13 +26,10 @@ export function Navbar() {
   const products = getProducts(locale);
   const categories = Array.from(new Set(products.map((p) => p.categoryKey)));
 
-  // Explore sits directly after Home: it is where the hero's one call to
-  // action leads, so burying it fifth put the page the site is steering
-  // people towards below everything else. One array feeds both the desktop
-  // row and the slide-in menu, so they cannot drift apart.
+  // One array feeds both the desktop row and the slide-in menu, so they
+  // cannot drift apart.
   const NAV_LINKS = [
     { label: t("home"), href: "/" },
-    { label: t("explore"), href: "/explore" },
     { label: t("products"), href: "/products", mega: true },
     { label: t("about"), href: "/about" },
     { label: t("contact"), href: "/contact" },

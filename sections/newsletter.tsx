@@ -5,9 +5,9 @@ import { useTranslations, useLocale } from "next-intl";
 import { Reveal } from "@/components/motion/reveal";
 
 /**
- * Hidden, not deleted. Nothing renders this at present — it came off the home,
- * explore and about pages, and off the philosophy page before that page was
- * folded into about. Putting it back is an import and a
+ * Hidden, not deleted. Nothing renders this at present — it came off the home
+ * and about pages, and off the philosophy page before that page was folded
+ * into about. Putting it back is an import and a
  * `<Newsletter />` on whichever page should carry it; the copy, the styling and
  * the `type: "newsletter"` path through /api/contact are all still here and
  * still work.

@@ -263,7 +263,7 @@ export function Hero() {
   //
   // Fonts load with `swap`, so the first paint uses a fallback whose Chinese
   // characters are proportioned differently — and this strip magnifies height
-  // sixteen times, so what is normally an unnoticed reflow became 漫家居 visibly
+  // sixteen times, so what is normally an unnoticed reflow became 萬閣 visibly
   // jumping from small to large as the webfont arrived. Everything else on the
   // page is at its own size and swaps without drawing attention, so only this
   // one strip holds back; it is decoration and `aria-hidden`, so nothing is
@@ -345,14 +345,14 @@ export function Hero() {
                     box — CSS `scale` doesn't reserve extra room for the
                     overflow the way layout-affecting properties would. With
                     zero gap elsewhere, that overflow drew the Latin run straight
-                    through the characters on both sides (居/M within a
-                    repeat, N/漫 across the seam). `mx-[0.65em]` is the
+                    through the characters on both sides (閣/M within a
+                    repeat, N/萬 across the seam). `mx-[0.65em]` is the
                     measured amount of self-overlap this exact scale creates
                     on each edge — closes it to ~0px without reopening a
                     visible gap. */}
                 {/* The scale and offset here are not taste calls. Chinese
                     ideographs fill far more of the em than Latin capitals do —
-                    measured in these two faces, 漫家居 inks 0.978em where MAAN
+                    measured in these two faces, 萬閣 inks 0.958em where MAAN
                     inks 0.725em, so the Latin sits a quarter short. Stretched
                     sixteen times over, that reads as the two scripts having
                     nothing to do with each other.
@@ -365,8 +365,8 @@ export function Hero() {
                     sitting low. At these two values the two ink boxes land on
                     the same pixel, top and bottom, at 400px type. Re-derive
                     them the same way if either the name or the face changes —
-                    they are specific to 漫家居 in Noto Sans TC against MAAN in
-                    Inter, and the first brand's pair wanted different numbers.
+                    they are specific to 萬閣 in Noto Sans TC against MAAN in
+                    Inter. Three characters wanted 1.354; two want 1.328.
 
                     The margin is the third measured value and belongs to the
                     string, not to the type: `scale-x-125` paints the run 25%
@@ -381,7 +381,7 @@ export function Hero() {
                     `brand.wordmarkRuns` marks. MAAN has no curve in it, so
                     there is one run here and nothing to correct. */}
                 {brand.zh}
-                <span className="mx-[0.39em] inline-block -translate-y-[0.0135em] scale-x-125 scale-y-[1.354] tracking-[-0.05em]">
+                <span className="mx-[0.39em] inline-block -translate-y-[0.0133em] scale-x-125 scale-y-[1.328] tracking-[-0.05em]">
                   {brand.wordmarkRuns.map((run) =>
                     run.round ? (
                       <span key={run.text} className="inline-block origin-top scale-y-[0.992]">
@@ -470,10 +470,10 @@ export function Hero() {
           className="pointer-events-auto mt-10"
         >
           <Link
-            href="/explore"
+            href="/products"
             className="group inline-flex items-center gap-2 rounded-full bg-charcoal px-9 py-3.5 text-xs font-medium tracking-[0.15em] text-warmwhite transition-transform hover:scale-[1.03]"
           >
-            {t("ctaExplore")}
+            {t("ctaProducts")}
             <ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
           </Link>
         </motion.div>

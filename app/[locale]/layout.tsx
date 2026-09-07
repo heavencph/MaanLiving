@@ -24,9 +24,9 @@ const inter = Inter({
 // document declares and the copy it is set in. The two cuts draw shared
 // characters to different regional standards, so the wrong one does not fail
 // loudly: it quietly misspells a fraction of every Chinese sentence on the
-// site to a reader who can tell. 漫家居 happens to be drawn the same either
-// way, so the brand name is not what settles this — the other few thousand
-// characters are.
+// site to a reader who can tell. Both characters of the brand name are among
+// them — 萬 and 閣 are 万 and 阁 in the Simplified cut — so the wrong file
+// would not merely set the wordmark badly, it would spell it wrong.
 //
 // The weight list is deliberately short of the hero's: it sets its wordmark
 // at 840 and its headline at 700, neither of which is loaded, and the

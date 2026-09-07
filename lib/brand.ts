@@ -26,7 +26,7 @@ export const brand = {
    */
   slug: "maan",
   /** The Chinese name. The navbar, the footer and the mobile drawer show it alone. */
-  zh: "漫家居",
+  zh: "萬閣",
   /**
    * The Latin name. This brand sets it the same way everywhere — one word, no
    * space — so `latin` and `wordmark` hold the same string. They stay separate
