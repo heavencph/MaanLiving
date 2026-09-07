@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { useTranslations } from "next-intl";
@@ -70,6 +70,23 @@ export function ProductGallery({
     : overrideIsExtra
       ? index + 1
       : index;
+
+  // Escape gets out of the viewer, and the page underneath holds still while
+  // it is open — on a phone the overlay is the whole screen, so a scroll that
+  // reaches the page behind it moves something the reader cannot see.
+  useEffect(() => {
+    if (!fullscreen) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setFullscreen(false);
+    };
+    const previous = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    window.addEventListener("keydown", onKey);
+    return () => {
+      document.body.style.overflow = previous;
+      window.removeEventListener("keydown", onKey);
+    };
+  }, [fullscreen]);
 
   function goTo(i: number) {
     if (overrideIsExtra) {
@@ -167,24 +184,34 @@ export function ProductGallery({
       <AnimatePresence>
         {fullscreen && (
           <motion.div
+            role="dialog"
+            aria-modal="true"
+            aria-label={productName}
             className="fixed inset-0 z-[100] flex items-center justify-center bg-matte-black/95 p-4 md:p-10"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={() => setFullscreen(false)}
           >
+            {/* The controls are painted after the picture and so need saying so.
+                Both are positioned with no z-index of their own, which makes
+                document order decide, and the picture's box comes last — on a
+                phone, where that box is the full width of the screen rather
+                than the 4xl it is asked to stop at, it lay straight over the
+                close button and the two arrows. Every tap on them landed on
+                the picture instead, and the viewer could not be got out of. */}
             <button
               aria-label={t("close")}
-              className="absolute right-6 top-6 text-warmwhite"
+              className="absolute right-6 top-6 z-10 p-2 text-warmwhite"
               onClick={() => setFullscreen(false)}
             >
               <X className="h-7 w-7" />
             </button>
-            {!isOverrideActive && (
+            {!isOverrideActive && images.length > 1 && (
               <>
                 <button
                   aria-label={t("previous")}
-                  className="absolute left-4 text-warmwhite md:left-8"
+                  className="absolute left-4 z-10 p-2 text-warmwhite md:left-8"
                   onClick={(e) => {
                     e.stopPropagation();
                     setIndex((index - 1 + images.length) % images.length);
@@ -194,7 +221,7 @@ export function ProductGallery({
                 </button>
                 <button
                   aria-label={t("next")}
-                  className="absolute right-4 text-warmwhite md:right-8"
+                  className="absolute right-4 z-10 p-2 text-warmwhite md:right-8"
                   onClick={(e) => {
                     e.stopPropagation();
                     setIndex((index + 1) % images.length);
@@ -204,9 +231,13 @@ export function ProductGallery({
                 </button>
               </>
             )}
+            {/* No `stopPropagation` here. The box is the size of the screen
+                while the photograph inside it is letterboxed, so holding the
+                tap meant the dark margin around a picture — the obvious place
+                to tap to get out — was the one place that did nothing. A tap
+                anywhere closes it; the arrows stop their own. */}
             <motion.div
               className="relative h-full w-full max-w-4xl"
-              onClick={(e) => e.stopPropagation()}
               initial={{ scale: 0.96 }}
               animate={{ scale: 1 }}
             >
